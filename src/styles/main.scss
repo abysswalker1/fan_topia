@@ -1,0 +1,19 @@
+
+@import 'variables';
+
+//@import 'bootstrap/scss/bootstrap';
+
+@import 'app';
+@import 'fonts';
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+// Components
+@import "components/footer";
+@import "components/header";
+@import "components/navSidebar";
+
+// Pages
+@import "pages/login";
+@import "pages/home";

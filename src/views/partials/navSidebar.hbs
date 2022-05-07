@@ -1,0 +1,12 @@
+<div class="nav-sidebar">
+  <nav class="nav-sidebar__list">
+    {{#each main.sidebar}}
+      <a href="{{this.href}}" class="nav-sidebar__list-item {{#if @first }}nav-sidebar__list-item_active{{/if}}">
+        <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#{{this.svg}}"></use>
+        </svg>
+        <span class="nav-sidebar__list-item-title">{{this.title}}</span>
+      </a>
+    {{/each}}
+  </nav>
+</div>

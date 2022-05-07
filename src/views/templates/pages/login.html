@@ -1,0 +1,79 @@
+{{> header title="Page"}}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="login">
+      <div class="login__cta">
+        <h1 class="login__title">
+          <span class="login__title-part">Earn from your Fanbase.</span>
+          <span class="login__title-part">It's that easy.</span>
+        </h1>
+        <h3 class="login__subtitle">Become a creator and enjoy the industries highest payouts.</h3>
+
+        <div class="login__lady" id="login-lady">
+          <img src="{{assets}}/img/main/girl-login-page.png" alt="" class="login__lady-img">
+        </div>
+      </div>
+
+      <div class="login__enter">
+        <div class="login__enter-form">
+          <h2 class="login__enter-title">Sign in</h2>
+
+          <form action="">
+            <div class="login__form-input-list">
+              <div class="login__form-input-holder">
+                <input type="text" class="login__form-input" placeholder="Email">
+              </div>
+              <div class="login__form-input-holder">
+                <input type="text" class="login__form-input" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="login__form-button-wrap">
+              <button class="login__form-button" type="submit">Sign in</button>
+            </div>
+
+            <div class="login__form-links">
+              <a href="/forgot-password" class="login__form-links-item">Forgot password?</a>
+              <a href="/create-account" class="login__form-links-item">Create account</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="login__socials">
+          <button class="login__socials-item login__socials-item_google" type="button">
+            <span class="login__socials-item-icon">
+              <svg viewBox="0 0 48 48">
+                <use href="assets/img/svg-sprite/sprite.svg#google"></use>
+              </svg>
+            </span>
+
+            Sign in with Google
+          </button>
+          <button class="login__socials-item login__socials-item_fb" type="button">
+            <span class="login__socials-item-icon">
+             <svg viewBox="0 0 32 32">
+              <use href="assets/img/svg-sprite/sprite.svg#facebok"></use>
+             </svg>
+            </span>
+
+            Sign in with Facebook
+          </button>
+          <button class="login__socials-item login__socials-item_twitter" type="button">
+            <span class="login__socials-item-icon">
+              <svg viewBox="0 0 310 310">
+                <use href="assets/img/svg-sprite/sprite.svg#twitter"></use>
+              </svg>
+            </span>
+
+            Sign in with Twitter
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{> footerContent }}
+  {{> footer }}
+
+</div>

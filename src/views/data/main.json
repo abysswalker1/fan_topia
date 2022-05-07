@@ -1,0 +1,87 @@
+{
+  "footerLinks": {
+    "col1": [
+      {
+        "href": "/blog",
+        "title": "Blog"
+      },
+      {
+        "href": "/how-it-works",
+        "title": "How it works"
+      },
+      {
+        "href": "/help",
+        "title": "Help & support"
+      },
+      {
+        "href": "/usc-2257",
+        "title": "USC 2257"
+      }
+    ],
+    "col2": [
+      {
+        "href": "/terms",
+        "title": "Terms"
+      },
+      {
+        "href": "/privacy",
+        "title": "Privacy"
+      },
+      {
+        "href": "/cookie-notice",
+        "title": "Cookie Notice"
+      },
+      {
+        "href": "/dmca",
+        "title": "DMCA"
+      }
+    ],
+    "col3": [
+      {
+        "href": "/usc-2257",
+        "title": "USC 2257"
+      },
+      {
+        "href": "/dmca",
+        "title": "DMCA"
+      }
+    ]
+  },
+  "sidebar": [
+    {
+      "title": "Home",
+      "id": "home",
+      "href": "/",
+      "svg": "home"
+    },
+    {
+      "title": "Subscriptions",
+      "id": "subscriptions",
+      "href": "/subscriptions",
+      "svg": "person"
+    },
+    {
+      "title": "Purchased posts",
+      "id": "purchasedPosts",
+      "href": "/purchased-posts",
+      "svg": "purchase"
+    },
+    {
+      "title": "Referrals",
+      "id": "referrals",
+      "href": "/referrals",
+      "svg": "referrals"
+    },
+    {
+      "title": "My balance",
+      "id": "myBalance",
+      "href": "/my-balance",
+      "svg": "balance"
+    },
+    {
+      "title": "Log out",
+      "id": "logout",
+      "svg": "logout"
+    }
+  ]
+}

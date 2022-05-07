@@ -1,0 +1,94 @@
+// Fonts
+@mixin regular() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@mixin light() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+@mixin medium() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+@mixin bold() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+@mixin reset-button-styles() {
+  border: none;
+  border-radius: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@mixin std-button($height, $bg: var(--green-color), $fsz: 18px, $fontColor: var(--text-color), $hoverBg: var(--mailing-text-color)) {
+  @include reset-button-styles();
+  height: $height;
+  background: $bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $fsz;
+  @include bold();
+  color: $fontColor;
+  border-radius: 8px;
+  transition: background .3s ease-in-out;
+
+  &:hover {
+    background: $hoverBg;
+  }
+}
+
+@mixin std-container() {
+  max-width: 1030px + 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin std-input($height) {
+  height: $height;
+  width: 100%;
+  outline: none;
+  color: var(--text-color);
+  font-size: 14px;
+  padding-left: 13px;
+  border: 1px solid #C2C2C2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #F7F7F7;
+  @include light();
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: normal !important;
+
+  &::placeholder {
+    @include regular();
+    color: #919191;
+  }
+
+  &:focus {
+    border: 1px solid var(--green-color);
+  }
+
+  &:disabled {
+    background: #f6f6f6;
+  }
+}
+
+
+
+
+
