@@ -2,4 +2,9 @@
   display: flex;
   flex-grow: 10;
   position: relative;
+  justify-content: space-between;
+
+  &__content {
+    width: 100%;
+  }
 }

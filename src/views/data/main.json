@@ -83,5 +83,44 @@
       "id": "logout",
       "svg": "logout"
     }
+  ],
+  "promotedCreators": [
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Mia Lia",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Natalie Reagen",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Mia Lia",
+      "bg": "https://picsum.photos/380/100"
+    }
+  ],
+  "sidebarNav": [
+    {
+      "href": "/terms",
+      "title": "Terms"
+    },
+    {
+      "href": "/privacy",
+      "title": "Privacy"
+    },
+    {
+      "href": "/usc-2257",
+      "title": "USC 2257"
+    },
+    {
+      "href": "/dmca",
+      "title": "DMCA"
+    },
+    {
+      "href": "/blog",
+      "title": "Blog"
+    }
   ]
 }
