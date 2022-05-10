@@ -1,0 +1,18 @@
+.not-verified-message {
+  background: rgba(241, 214, 119, 0.2);
+  border: 2px solid #F1D677;
+  border-radius: 4px;
+  padding: 9px 4px;
+
+  &__text {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    @include bold();
+    color: var(--text-color);
+
+    &_link {
+      color: var(--dark-green-color);
+    }
+  }
+}

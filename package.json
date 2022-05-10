@@ -52,8 +52,10 @@
     "bootstrap": "^4.5.0",
     "current-device": "^0.10.1",
     "jquery": "^3.5.1",
+    "micromodal": "^0.4.10",
     "popper.js": "^1.16.1",
     "require-dir": "^1.2.0",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "swiper": "^8.1.4"
   }
 }

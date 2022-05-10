@@ -10,6 +10,11 @@
     {{/each}}
   </nav>
 
-  <button class="nav-sidebar__create-post" type="button">Create post</button>
-  <button class="nav-sidebar__create-post" type="button">Become creator</button>
+  <button class="nav-sidebar__create-post" type="button" data-custom-open="modal-1">
+    <svg class="nav-sidebar__create-post-icon" viewBox="0 0 17 17">
+      <use href="{{assets}}/img/svg-sprite/sprite.svg#plus"></use>
+    </svg>
+    Create post
+  </button>
+  <button class="nav-sidebar__become-creator" type="button">Become creator</button>
 </div>

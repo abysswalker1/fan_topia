@@ -1,8 +1,13 @@
 .promoted-creators-sidebar {
-  max-width: 420px;
-  min-width: 32.8%;
   width: 100%;
   padding: 20px;
+
+  .home__content & {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+  }
 
   &__title {
     font-size: 18px;
@@ -54,6 +59,7 @@
 
   &__item-avatar-wrap {
     width: 58px;
+    min-width: 58px;
     height: 58px;
     border-radius: 50%;
     overflow: hidden;
@@ -143,5 +149,17 @@
     height: 100%;
     max-width: 100%;
     max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .promoted-creators-sidebar {
+
+    .home__content & {
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+      padding: 20px;
+    }
   }
 }

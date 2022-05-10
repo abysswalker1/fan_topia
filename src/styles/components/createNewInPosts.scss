@@ -1,0 +1,63 @@
+.create-new-in-posts {
+ @include std-card();
+
+  &__top {
+   padding: 13px 18px 14px 15px;
+   border-bottom: 1px solid #C2C2C2;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+  }
+
+ &__img-wrap {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+ }
+
+ &__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+ &__input-holder {
+  width: calc(100% - 34px - 15px);
+ }
+
+ &__input {
+  @include std-input(34px);
+ }
+
+ &__bottom {
+  padding: 10px 18px 9px 63px;
+ }
+
+ &__button {
+  @include reset-button-styles();
+ }
+}
+
+@media screen and (max-width: 500px) {
+ .create-new-in-posts {
+
+  &__top {
+   padding: 13px 14px 14px 8px;
+  }
+
+  &__img-wrap {
+   display: none;
+  }
+
+  &__input-holder {
+   width: 100%;
+  }
+
+  &__bottom {
+   padding: 10px 14px 9px 13px;
+  }
+ }
+}

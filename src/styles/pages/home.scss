@@ -3,8 +3,53 @@
   flex-grow: 10;
   position: relative;
   justify-content: space-between;
+  background: #FAFAFA;
+
+  &__sidebar {
+    max-width: 24.6%;
+  }
 
   &__content {
+    padding: 20px;
+    max-width: 42.6%;
     width: 100%;
+  }
+
+  &__promoted-creators {
+    max-width: 32.8%;
+  }
+
+  &__not-verified-message {
+    margin-bottom: 44px;
+  }
+
+  &__create-new-post {
+    margin-bottom: 33px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .home {
+
+    &__content {
+      max-width: 75.4%;
+    }
+
+    &__promoted-creators {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+
+    &__sidebar {
+      display: none;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
   }
 }

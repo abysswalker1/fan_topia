@@ -1,0 +1,29 @@
+<div class="posts">
+  {{#each main.posts}}
+    <div class="posts__item">
+      <div class="posts__item-content">
+        <div class="posts__item-top">
+          <div class="posts__item-top-main">
+            <a href="{{this.href}}" class="posts__item-avatar-wrap">
+              <img src="{{this.img}}" alt="" class="posts__item-avatar">
+            </a>
+
+            <div class="posts__item-top-text">
+              <a href="{{this.href}}" class="posts__item-name">{{this.name}}</a>
+              <p class="posts__item-time">{{this.time}}</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="posts__item-text-wrap info-box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor id eu leo commodo. Lectus egestas risus non semper a. Quis fermentum ultricies sagittis amet et, ac tortor.</p><p><a href='https://www.figma.com/'>Volutpat adipiscing dui proin</a> Volutpat adipiscing dui proin pretium dolor consectetur malesuada faucibus vitae. Sit velit sed enim elementum non nascetur. Volutpat sapien maecenas lectus nulla tincidunt.</p>
+        </div>
+
+        <video class="posts__item-video">
+          <source  src="https://youtu.be/5qap5aO4i9A" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  {{/each}}
+</div>

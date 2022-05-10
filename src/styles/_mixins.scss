@@ -32,7 +32,7 @@
   text-decoration: none;
 }
 
-@mixin std-button($height, $bg: var(--green-color), $fsz: 18px, $fontColor: var(--text-color), $hoverBg: var(--mailing-text-color)) {
+@mixin std-button($height, $bg: var(--green-color), $fsz: 18px, $fontColor: var(--text-color), $hoverBg: var(--hover-green-color)) {
   @include reset-button-styles();
   height: $height;
   background: $bg;
@@ -88,7 +88,9 @@
   }
 }
 
-
-
-
-
+@mixin std-card() {
+  border: 1px solid rgba(194, 194, 194, 0.2);
+  box-shadow: 4px 4px 10px rgba(196, 196, 196, 0.2);
+  border-radius: 4px;
+  background: white;
+}

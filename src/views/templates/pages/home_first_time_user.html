@@ -1,0 +1,32 @@
+{{> header title="Page" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="home">
+      <div class="home__sidebar">
+        {{> navSidebar activeTab="home" }}
+      </div>
+
+      <div class="home__content">
+        <div class="home__create-new-post">
+          {{> createNewInPosts }}
+        </div>
+
+        {{> promotedCreatorsSidebar isMobile="true" }}
+
+        {{> posts }}
+      </div>
+
+      <div class="home__promoted-creators">
+        {{> promotedCreatorsSidebar }}
+      </div>
+    </div>
+  </div>
+
+  {{> mobileNavigation }}
+
+  {{> footerContent }}
+  {{> footer }}
+
+</div>

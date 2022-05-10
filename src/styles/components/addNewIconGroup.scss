@@ -1,0 +1,18 @@
+.add-new-icon-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__icon {
+    margin-right: 7px;
+    width: 22px;
+    height: 16px;
+    color: var(--text-color);
+  }
+
+  &__text {
+    font-size: 16px;
+    @include light();
+    color: black;
+  }
+}
