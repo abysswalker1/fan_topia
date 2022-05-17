@@ -156,5 +156,29 @@
       "likes": "142",
       "messages": "5"
     }
+  ],
+  "settingsPages": [
+    {
+      "title": "Account",
+      "href": "/"
+    },
+    {
+      "title": "Payments",
+      "href": "/"
+    },
+    {
+      "title": "Profile",
+      "href": "/"
+    }
+  ],
+  "windowHead": [
+    {
+      "button": true,
+      "title": "Settings"
+    },
+    {
+      "button": false,
+      "title": "My balance"
+    }
   ]
 }

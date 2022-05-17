@@ -1,0 +1,35 @@
+.account-verification {
+    color: #333333;
+
+    &__title {
+        margin-bottom: 16px;
+        line-height: 21px;
+        font-size: 18px;
+        @include medium();
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        @include light();
+    }
+
+    &__button {
+        width: 176px;
+        @include std-button(38px);
+    }
+
+    &__note {
+        max-width: 460px;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 16px;
+        @include light();
+
+        span {
+            color: #535353;
+            @include bold();
+        } 
+    }
+}

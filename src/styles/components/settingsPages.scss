@@ -1,0 +1,38 @@
+.settingsPages {
+    width: 100%;
+    padding: 0 20px;
+    border-bottom: $grey-border;
+
+    &__container {
+        width: 100%;
+        max-width: 256px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+        height: 40px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #333333;
+        @include medium();
+
+        &_active  {
+            border-bottom: 2px solid rgba(144, 200, 94, 0.3);
+            height: 38px;
+        }
+
+        &_disabled {
+            color: rgba(51, 51, 51, 0.3)
+        }
+
+        &:nth-child(2) {
+            opacity: 0.3;
+        }
+    }
+}

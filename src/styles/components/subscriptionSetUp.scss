@@ -1,0 +1,35 @@
+.subscription-set-up__title {
+    font-size: 18px;
+    padding-bottom: 25px;
+    @include medium();
+}
+
+.subscription-price {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 12px;
+
+    &__title {
+        font-size: 14px;
+        @include light();
+    }
+    
+    &__text {
+        font-size: 14px;
+        @include light(); 
+    }
+
+    &__switch {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &-text {
+            font-style: 16px;
+            @include light();
+        }
+    }
+}

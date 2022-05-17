@@ -1,0 +1,68 @@
+.settings {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 10;
+  
+  &__sidebar {
+      max-width: 24.6%;
+    }
+  
+  &__content {
+    padding: 20px;
+    width: 100%;
+    max-width: 72%;
+  }
+
+  &__window {
+    border: $grey-border;
+    box-shadow: 4px 4px 10px rgba(196, 196, 196, 0.2);
+    border-radius: 4px;
+
+    &-inner {
+      width: 100%;
+
+      &--verification {
+        padding: 30px 20px 40px 20px;
+        border-bottom: $grey-border;
+      }
+
+      &--subscription {
+        padding: 30px 20px;
+
+        &--message {
+          padding-top: 30px;
+          margin-top: 60px;
+
+          h1 {
+            margin-bottom: 4px;
+            font-style: 16px;
+            @include bold();
+          }
+
+          p {
+            font-size: 14px;
+            @include light();
+          }
+        }
+
+        &.disabled {
+          opacity: 0.4;
+          pointer-events: none;  
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .settings {
+
+    &__sidebar {
+      display: none;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+  }
+}

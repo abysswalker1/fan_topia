@@ -19,7 +19,14 @@
 @import "components/createNewInPosts";
 @import "components/addNewIconGroup";
 @import "components/notVerifiedMessage";
+@import "components/windowHead";
+@import "components/settingsPages";
+@import "components/accountVerification";
+@import "components/subscriptionSetUp";
+@import "components/select2.scss";
+@import "components/switch.scss";
 
 // Pages
 @import "pages/login";
 @import "pages/home";
+@import "pages/settings";

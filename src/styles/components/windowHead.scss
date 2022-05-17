@@ -1,0 +1,23 @@
+.window-head {
+    padding: 20px 20px 16px 20px;
+    border-bottom: $grey-border;
+    
+    &__title {
+        display: inline;
+        font-size: 18px;
+        @include medium()
+    }
+
+    &__button {
+        display: inline-block;
+        @include reset-button-styles();
+
+        svg {
+            margin-right: 11px;
+        }
+    }
+}
+
+.window-back {
+    cursor: pointer;
+}

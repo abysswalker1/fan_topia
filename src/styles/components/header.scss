@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: $grey-border;
 
   &__logo-wrap {
     max-width: 146px;

@@ -1,0 +1,40 @@
+{{> header title="Page" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+    <div class="page-wrap__content">
+        <div class="settings">
+            <div class="settings__sidebar">
+                {{> navSidebar }}
+            </div>
+            <div class="settings__content">
+                <div class="settings__window">
+
+                    {{> windowHead head="Settings"}}
+
+                    {{> settingsPages activeTab="Account" disabled="Payments"}}
+
+                    <div class="settings__window-inner">
+                        <div class="settings__window-inner--verification">
+                            {{> accountVerification }}
+                        </div>
+                        <div class="settings__window-inner--subscription disabled">
+                            {{> subscriptionSetUp }}
+
+                            <div class="settings__window-inner--subscription--message">
+                                <h1>Automatic Welcome Message</h1>
+                                <p>This message will automatically be sent to your new subscribers when they first subscribe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> mobileNavigation }}
+
+    {{> footerContent }}
+    {{> footer }}
+
+</div>
