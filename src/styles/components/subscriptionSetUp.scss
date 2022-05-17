@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     margin-bottom: 12px;
 
     &__title {
@@ -32,4 +33,17 @@
             @include light();
         }
     }
+}
+
+
+@media screen and (max-width: 420px){
+
+    .subscription-price {
+
+        &__select {
+            order: 2;
+            margin-top: 25px;
+        }
+    }
+
 }
