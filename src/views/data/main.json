@@ -222,5 +222,19 @@
       "title" : "Twitter",
       "placeholder" : "Enter link"
     }
+  ],
+  "verifySteps": [
+    {
+      "title": "Upload Front of ID:",
+      "id": "verify-account-upload-file-id-2"
+    },
+    {
+      "title": "Upload Back of ID:",
+      "id": "verify-account-upload-file-id-3"
+    },
+    {
+      "title": "Upload Selfie with ID:",
+      "id": "verify-account-upload-file-id-4"
+    }
   ]
 }

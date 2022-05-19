@@ -1,10 +1,9 @@
-import $ from'jquery';
-window.jQuery = window.$ = $;
+import 'select2';
 
-$(document).ready(function() {
-    $('.standart-select').select2({
-        minimumResultsForSearch: -1,
-        closeOnSelect: false
-    });
-
-});
+(function () {
+  $('.js-standard-select').select2({
+    minimumResultsForSearch: -1,
+    closeOnSelect: false,
+    width: '100%'
+  });
+})();

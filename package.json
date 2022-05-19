@@ -48,6 +48,7 @@
     "yargs": "^15.4.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.27",
     "ansi-colors": "^4.1.1",
     "bootstrap": "^4.5.0",
     "current-device": "^0.10.1",

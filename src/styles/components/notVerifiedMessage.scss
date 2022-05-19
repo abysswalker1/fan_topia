@@ -12,6 +12,7 @@
     color: var(--text-color);
 
     &_link {
+      @include reset-button-styles();
       color: var(--dark-green-color);
     }
   }

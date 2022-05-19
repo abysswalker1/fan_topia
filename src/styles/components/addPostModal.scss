@@ -1,0 +1,59 @@
+.add-post-modal {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &.fancybox__content {
+    padding: 0;
+  }
+
+  &__title-wrap {
+    border-bottom: 1px solid #C2C2C2;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    padding-left: 41px;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: black;
+    @include medium();
+  }
+
+  &__content {
+
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 0;
+  }
+
+  &__avatar {
+    width: 57px;
+    min-width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin-right: 12px;
+    overflow: hidden;
+  }
+
+  &__avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 6px;
+    @include light();
+  }
+}
