@@ -1,18 +1,28 @@
 <div class="promoted-creators-sidebar">
   <h3 class="promoted-creators-sidebar__title">Promoted creators</h3>
 
-  <div class="promoted-creators-sidebar__list">
-    {{#each main.promotedCreators }}
-      <div class="promoted-creators-sidebar__item" style="background-image: url({{this.bg}})">
-        <div class="promoted-creators-sidebar__item-main">
-          <a href="/creators/{{this.name}}" class="promoted-creators-sidebar__item-avatar-wrap">
-            <img src="{{this.avatar}}" alt="{{this.name}}" class="promoted-creators-sidebar__item-avatar">
-          </a>
-          <a href="/creators/{{this.name}}" class="promoted-creators-sidebar__item-name">{{this.name}}</a>
+  <div class="promoted-creators-sidebar__list js-swiper swiper">
+    <div class="promoted-creators-sidebar__list-wrapper swiper-wrapper">
+      {{#each main.promotedCreators }}
+        <div class="promoted-creators-sidebar__slide swiper-slide">
+          {{#each this }}
+            <div class="promoted-creators-sidebar__item">
+              <div class="creator-item" style="background-image: url({{this.bg}})">
+                <div class="creator-item__main">
+                  <a href="/creators/{{this.name}}" class="creator-item__avatar-wrap">
+                    <img src="{{this.avatar}}" alt="{{this.name}}" class="creator-item__avatar">
+                  </a>
+                  <a href="/creators/{{this.name}}" class="creator-item__name">{{this.name}}</a>
+                </div>
+                <button class="creator-item__subscribe" type="button">Subscribe</button>
+              </div>
+            </div>
+          {{/each}}
         </div>
-        <button class="promoted-creators-sidebar__item-subscribe" type="button">Subscribe</button>
-      </div>
-    {{/each}}
+      {{/each}}
+    </div>
+
+    <div class="promoted-creators-sidebar__list-pagination"></div>
   </div>
 
   {{#unless isMobile}}

@@ -1,0 +1,15 @@
+<div class="profile-dropdown">
+  <div class="profile-dropdown__list">
+    {{#each main.profileDropdown}}
+      <a href="{{this.href}}" class="profile-dropdown__item">
+        <div class="profile-dropdown__item-icon-wrap">
+          <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#{{this.svg}}"></use>
+          </svg>
+        </div>
+
+        <span class="profile-dropdown__item-text">{{this.title}}</span>
+      </a>
+    {{/each}}
+  </div>
+</div>

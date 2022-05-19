@@ -19,21 +19,6 @@
   &__search-wrap {
     max-width: 330px;
     width: 100%;
-    position: relative;
-  }
-
-  &__search-input {
-    @include std-input(32px);
-    padding-left: 35px;
-  }
-
-  &__search-icon {
-    position: absolute;
-    width: 15px;
-    height: 13px;
-    left: 10px;
-    top: 50%;
-    margin-top: -6px;
   }
 
   &__main {
@@ -83,6 +68,18 @@
     border-right: 5px solid transparent;
 
     border-top: 5px solid #C2C2C2;
+  }
+
+  &__profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    z-index: 10;
+
+    &_open {
+      display: block;
+    }
   }
 
   &__notifications {

@@ -94,3 +94,22 @@
   border-radius: 4px;
   background: white;
 }
+
+@mixin stdScrollbarStyles($trackColor: #b3b3b3, $mainColor: transparent) {
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: $mainColor;
+  }
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    -webkit-overflow-scrolling: touch;
+    width: 5px;
+    background-color: $mainColor;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $trackColor;
+  }
+}

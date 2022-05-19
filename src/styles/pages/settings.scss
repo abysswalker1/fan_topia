@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   flex-grow: 10;
-  
+
   &__sidebar {
-      max-width: 24.6%;
-    }
-  
+    max-width: 24.6%;
+  }
+
   &__content {
     padding: 20px;
     width: 100%;
@@ -47,10 +47,10 @@
 
         &.disabled {
           opacity: 0.4;
-          pointer-events: none;  
+          pointer-events: none;
         }
       }
-    
+
     }
     &-person {
       width: 100%;
@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 1025px) {
   .settings {
-    
+
     &__window {
 
       &-person {
@@ -98,6 +98,6 @@
       max-width: 100%;
     }
 
-    
+
   }
 }
