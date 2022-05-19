@@ -2,7 +2,7 @@
   "name": "funtopia",
   "version": "1.0.0",
   "description": "",
-  "author": "Funtopia",
+  "author": "Fantopia",
   "license": "MIT",
   "scripts": {
     "dev": "gulp",
@@ -48,14 +48,13 @@
     "yargs": "^15.4.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.27",
     "ansi-colors": "^4.1.1",
-    "bootstrap": "^4.5.0",
     "current-device": "^0.10.1",
     "jquery": "^3.5.1",
-    "micromodal": "^0.4.10",
-    "popper.js": "^1.16.1",
     "require-dir": "^1.2.0",
+    "select2": "^4.1.0-rc.0",
     "svg4everybody": "^2.1.9",
-    "swiper": "^8.1.4"
+    "swiper": "^8.1.5"
   }
 }

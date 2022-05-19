@@ -1,0 +1,38 @@
+<div class="search-modal" id="search-modal">
+  <!-- TOP -->
+  <div class="search-modal__top">
+    <button class="search-modal__back js-search-modal-toggle" type="button" id="search-modal-close">
+      <svg class="search-modal__back-icon" viewBox="0 0 11 16">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow"></use>
+      </svg>
+    </button>
+    <div class="search-modal__input-wrap">
+      {{> searchInput }}
+    </div>
+  </div>
+  <!-- /TOP -->
+
+  <!-- RESULTS -->
+  <div class="search-modal__results">
+    <h2 class="search-modal__results-title">Results</h2>
+
+    <div class="search-modal__results-list">
+      <div class="search-modal__results-list-inner">
+        {{#each main.searchResults }}
+          <div class="search-modal__results-item">
+            <div class="creator-item" style="background-image: url({{this.bg}})">
+              <div class="creator-item__main">
+                <a href="/creators/{{this.name}}" class="creator-item__avatar-wrap">
+                  <img src="{{this.avatar}}" alt="{{this.name}}" class="creator-item__avatar">
+                </a>
+                <a href="/creators/{{this.name}}" class="creator-item__name">{{this.name}}</a>
+              </div>
+              <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <!-- /RESULTS -->
+</div>

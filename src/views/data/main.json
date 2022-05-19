@@ -84,7 +84,100 @@
       "svg": "logout"
     }
   ],
-  "promotedCreators": [
+  "promotedCreators": {
+    "slide1": [
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Mia Lia",
+        "bg": "https://picsum.photos/380/100"
+      },
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Natalie Reagen",
+        "bg": "https://picsum.photos/380/100"
+      },
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Mia Lia",
+        "bg": "https://picsum.photos/380/100"
+      }
+    ],
+    "slide2": [
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Mia Lia",
+        "bg": "https://picsum.photos/380/100"
+      },
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Natalie Reagen",
+        "bg": "https://picsum.photos/380/100"
+      },
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Mia Lia",
+        "bg": "https://picsum.photos/380/100"
+      }
+    ],
+    "slide3": [
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Mia Lia",
+        "bg": "https://picsum.photos/380/100"
+      },
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Natalie Reagen",
+        "bg": "https://picsum.photos/380/100"
+      },
+      {
+        "avatar": "https://picsum.photos/100/100",
+        "name": "Mia Lia",
+        "bg": "https://picsum.photos/380/100"
+      }
+    ]
+  },
+  "searchResults": [
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Mia Lia",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Natalie Reagen",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Mia Lia",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Mia Lia",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Natalie Reagen",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Mia Lia",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Mia Lia",
+      "bg": "https://picsum.photos/380/100"
+    },
+    {
+      "avatar": "https://picsum.photos/100/100",
+      "name": "Natalie Reagen",
+      "bg": "https://picsum.photos/380/100"
+    },
     {
       "avatar": "https://picsum.photos/100/100",
       "name": "Mia Lia",
@@ -181,6 +274,61 @@
       "title": "My balance"
     }
   ],
+  "profileDropdown": [
+    {
+      "title": "Settings",
+      "id": "settings",
+      "href": "/settings",
+      "svg": "settings"
+    },
+    {
+      "title": "Subscribers",
+      "id": "subscribers",
+      "href": "/subscribers",
+      "svg": "subscribers"
+    },
+    {
+      "title": "Subscriptions",
+      "id": "subscriptions",
+      "href": "/subscriptions",
+      "svg": "subscriptions"
+    },
+    {
+      "title": "Purchased posts",
+      "id": "purchasedPosts",
+      "href": "/purchased-posts",
+      "svg": "purchase"
+    },
+    {
+      "title": "Referrals",
+      "id": "referrals",
+      "href": "/referrals",
+      "svg": "referrals"
+    },
+    {
+      "title": "My balance",
+      "id": "myBalance",
+      "href": "/my-balance",
+      "svg": "balance"
+    },
+    {
+      "title": "Become creator",
+      "id": "becomeCreator",
+      "href": "/become-creator",
+      "svg": "pen"
+    },
+    {
+      "title": "Help & Support",
+      "id": "help",
+      "href": "/help",
+      "svg": "help"
+    },
+    {
+      "title": "Log out",
+      "id": "logout",
+      "svg": "logout"
+    }
+  ],
   "profileInfo" : [
     { "id" : "username",
       "title" : "User name",
@@ -221,6 +369,20 @@
       "id" : "Twitter",
       "title" : "Twitter",
       "placeholder" : "Enter link"
+    }
+  ],
+  "verifySteps": [
+    {
+      "title": "Upload Front of ID:",
+      "id": "verify-account-upload-file-id-2"
+    },
+    {
+      "title": "Upload Back of ID:",
+      "id": "verify-account-upload-file-id-3"
+    },
+    {
+      "title": "Upload Selfie with ID:",
+      "id": "verify-account-upload-file-id-4"
     }
   ]
 }

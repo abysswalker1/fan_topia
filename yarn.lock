@@ -913,6 +913,11 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
+"@fancyapps/ui@^4.0.27":
+  version "4.0.27"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.27.tgz#0b34e508c45b7d9e414e602d130052628124eb10"
+  integrity sha512-IpLREaLVhLGxcYeloCHrSuuPErRP4oEiLDgztZZMcBaKM4NnvRifw7MbU8unDKX+KCL+Ai9mEtH6J17zQ8FEig==
+
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@gulp-sourcemaps/identity-map/-/identity-map-1.0.2.tgz#1e6fe5d8027b1f285dc0d31762f566bccd73d5a9"

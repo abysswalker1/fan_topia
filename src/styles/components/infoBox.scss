@@ -1,0 +1,20 @@
+.info-box {
+
+  p {
+    font-size: 16px;
+    line-height: 19px;
+    @include light();
+    color: #000000;
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 19px;
+    @include light();
+    color: var(--dark-green-color);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

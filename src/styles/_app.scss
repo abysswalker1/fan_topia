@@ -11,3 +11,11 @@
     flex-direction: column;
   }
 }
+
+body {
+
+  &.popup-open {
+    height: 100vh;
+    overflow: hidden;
+  }
+}

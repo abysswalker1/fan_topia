@@ -1,0 +1,19 @@
+.search-input {
+  position: relative;
+  width: 100%;
+
+  &__input-itself {
+    @include std-input(32px);
+    padding-left: 35px;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    left: 10px;
+    top: 50%;
+    margin-top: -6px;
+  }
+
+}

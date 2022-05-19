@@ -5,21 +5,21 @@
 
   <!--  SEARCH  -->
   <div class="header__search-wrap">
-    <input class="header__search-input" placeholder="Search for posts">
-
-    <svg class="header__search-icon" viewBox="0 0 17 14">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#magnifyer"></use>
-    </svg>
+   {{> searchInput }}
   </div>
   <!--  /SEARCH  -->
 
   <div class="header__main">
     <!--  PROFILE  -->
     <div class="header__profile">
-      <div class="header__profile-button">
+      <button class="header__profile-button" id="profile-dropdown-trigger" type="button">
         <img src="https://place-hold.it/146x35/666" alt="" class="header__profile-img">
-        <p class="header__profile-name">Kate Lindman</p>
+        <span class="header__profile-name">Kate Lindman</span>
         <span class="header__profile-down"></span>
+      </button>
+
+      <div class="header__profile-dropdown" id="profile-dropdown">
+        {{> profileDropdown}}
       </div>
     </div>
     <!--  /PROFILE  -->
@@ -44,10 +44,15 @@
   </div>
 
   <!--  RESPONSIVE SEARCH  -->
-  <button class="header__open-search" type="button">
+  <button class="header__open-search js-search-modal-toggle" type="button">
     <svg class="header__open-search-icon" viewBox="0 0 17 14">
       <use href="{{assets}}/img/svg-sprite/sprite.svg#magnifyer"></use>
     </svg>
   </button>
   <!--  /RESPONSIVE SEARCH  -->
+
+
+  <!--  RESPONSIVE SEARCH MODAL  -->
+  {{> searchModal }}
+  <!--  /RESPONSIVE SEARCH MODAL  -->
 </div>

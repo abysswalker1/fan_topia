@@ -1,0 +1,96 @@
+<div id="verify-account-modal" style="display:none;" class="verify-account-modal">
+
+  <div class="verify-account-modal__ongoing" id="verify-account-steps">
+    <!-- TOP -->
+    <div class="verify-account-modal__top">
+      <h2 class="verify-account-modal__title">Verify account</h2>
+
+      <div class="verify-account-modal__step">
+        <span class="verify-account-modal__step-text">Step</span>
+        <span class="verify-account-modal__step-text" id="current-step">1</span>
+        <span class="verify-account-modal__step-text">of</span>
+        <span class="verify-account-modal__step-text">4</span>
+      </div>
+    </div>
+    <!-- /TOP -->
+
+    <!-- PROGRESS -->
+    <div class="verify-account-modal__progress">
+      <div class="verify-account-modal__progress-bar" id="verify-account-progress-bar" style="width: 9%"></div>
+    </div>
+    <!-- /PROGRESS -->
+
+    <!-- CONTENT -->
+    <div class="verify-account-modal__content">
+      <p class="verify-account-modal__text verify-account-modal__text_step-1" id="verify-account-text-step-1">
+        You must verify your account in order to become a creator.
+        Start by choosing document type and proceed to the next 3 steps to complete your verification.
+      </p>
+
+      <p class="verify-account-modal__text" id="verify-account-text-all-steps">
+        Verification is completed manually, so images uploaded must be clear (not blurry or cropped) - and allow a couple of days for verification.
+      </p>
+
+
+      <div class="verify-account-modal__content-main">
+        <!-- SELECT -->
+        <div class="verify-account-modal__select-wrap" id="verify-account-select">
+          <p class="verify-account-modal__select-title">Document Type</p>
+          <select class="verify-account-modal__select js-standard-select">
+            <option value="Driving license">Driving license</option>
+            <option value="Id card">Id card</option>
+            <option value="Passport">Passport</option>
+          </select>
+        </div>
+        <!-- /SELECT -->
+
+        <!-- UPLOAD FILES -->
+        <div class="verify-account-modal__upload-wrap js-upload-wrap" id="verify-account-upload">
+          {{#each main.verifySteps}}
+            <div class="verify-account-modal__upload-section js-verify-account-upload-item" id="{{this.id}}">
+              <div class="verify-account-modal__upload-main">
+                <p class="verify-account-modal__upload-title">{{this.title}}</p>
+
+                <button class="verify-account-modal__upload-button js-upload-photo-button" type="button">Choose file</button>
+                <input type="file" class="verify-account-modal__upload-input js-popup-upload-input">
+
+              </div>
+              <div class="verify-account-modal__photo-item js-popup-photo-item">
+                <div class="verify-account-modal__photo-item-img js-popup-img">
+                </div>
+                <a href="#" class="verify-account-modal__photo-item-delete js-popup-photo-delete"></a>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+        <!-- /UPLOAD FILES -->
+
+        <!-- BUTTONS -->
+        <div class="verify-account-modal__buttons">
+          <button class="verify-account-modal__buttons-item" type="button" id="verify-account-prev">Previous</button>
+          <button class="verify-account-modal__buttons-item" type="button" id="verify-account-next">Next</button>
+        </div>
+        <!-- /BUTTONS -->
+      </div>
+    </div>
+    <!-- /CONTENT -->
+  </div>
+
+  <!-- RESULT -->
+  <div class="verify-account-modal__result" id="verify-account-results">
+    <div class="verify-account-modal__result-top">
+      <h3 class="verify-account-modal__result-top-title">Your photos are uploaded successfully!</h3>
+    </div>
+
+    <div class="verify-account-modal__result-main">
+      <h2 class="verify-account-modal__result-main-title">Would you like to complete your profile by setting up subscription price and specials?</h2>
+      <p class="verify-account-modal__result-main-subtitle">Setting up your account helps you stand out.</p>
+
+      <div class="verify-account-modal__result-buttons">
+        <button class="verify-account-modal__result-buttons-item" type="button">Set up account</button>
+        <button class="verify-account-modal__result-buttons-item" type="button">I’ll do it later</button>
+      </div>
+    </div>
+  </div>
+  <!-- RESULT -->
+</div>
