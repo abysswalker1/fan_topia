@@ -1,0 +1,29 @@
+.linked-accounts {
+    padding: 16px 0 19px;
+
+    &__title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 13px;
+        @include bold();
+    }
+
+    &__blank-item {
+        margin-bottom: 44px;
+
+        &--title {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 4px;
+            @include light();
+        }
+    
+        &--input {
+            @include std-input(30px);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

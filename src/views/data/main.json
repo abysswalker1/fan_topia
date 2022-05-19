@@ -160,7 +160,7 @@
   "settingsPages": [
     {
       "title": "Account",
-      "href": "/"
+      "href": "/pages/settings_unverfified_account.html"
     },
     {
       "title": "Payments",
@@ -168,7 +168,7 @@
     },
     {
       "title": "Profile",
-      "href": "/"
+      "href": "/pages/settings_unverified_profile.html"
     }
   ],
   "windowHead": [
@@ -179,6 +179,48 @@
     {
       "button": false,
       "title": "My balance"
+    }
+  ],
+  "profileInfo" : [
+    { "id" : "username",
+      "title" : "User name",
+      "value" : "usernamegoeshere",
+      "notice" : "Your username is how you will be seen and identified on the site. Your First and last name are not displayed.",
+      "is saved" : false,
+      "important" : true
+    },
+    {
+      "id" : "displayname",
+      "title" : "Display Name",
+      "value" : "Zlatomira Miteva",
+      "notice" : "",
+      "is saved" : false,
+      "important" : true
+    },
+    {
+      "id" : "email",
+      "title" : "Email Address",
+      "value" : "email@gmail.com",
+      "notice" : "",
+      "saved" : true,
+      "important" : true
+    }
+  ],
+  "linkedAccounts": [
+    {
+      "id" : "Facebook",
+      "title" : "Facebook",
+      "placeholder" : "Enter link"
+    },
+    {
+      "id" : "Instagram",
+      "title" : "Instagram",
+      "placeholder" : "Enter link"
+    },
+    {
+      "id" : "Twitter",
+      "title" : "Twitter",
+      "placeholder" : "Enter link"
     }
   ]
 }

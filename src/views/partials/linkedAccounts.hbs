@@ -1,0 +1,17 @@
+<div class="linked-accounts">
+    <h1 class="linked-accounts__title">Linked Accounts</h1>
+    <div class="linked-accounts__blank">
+    {{#each main.linkedAccounts}}
+    <div class="linked-accounts__blank-item">
+        <label for={{this.id}}>
+            <h3 class="linked-accounts__blank-item--title">{{this.title}}</h3>
+            <input  type="text" 
+                    class="linked-accounts__blank-item--input" 
+                    placeholder="Enter link"
+                    id = {{this.id}}
+            >
+        </label>
+    </div>
+    {{/each}}
+    </div>
+</div>

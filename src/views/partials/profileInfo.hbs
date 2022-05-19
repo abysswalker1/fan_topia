@@ -1,0 +1,33 @@
+<div class="profile-info">
+    <h1 class="profile-info__title">Basic info</h1>
+    <div class="profile-info__blank">
+    {{#each main.profileInfo}}
+        <label for={{this.id}}>
+            <h3 class="profile-info__blank-title">
+                {{this.title}}
+                {{#if important}}*{{/if}}
+            </h3>
+            <div class="profile-info__blank-frame">
+                <input type="text" class="profile-info__blank-frame--input" value={{this.value}} id={{this.id}}>
+                {{#if saved}}
+                    <div class="profile-info__blank-frame--saved">
+                        <svg width="14px" height="11px" viewBox="0 0 14 11">
+                            <use href="{{assets}}/img/svg-sprite/sprite.svg#complete">
+                        </svg>
+                        <span>Saved!</span>
+                    </div>
+                {{/if}}
+                <p class="profile-info__blank-notice">{{this.notice}}</p>
+            </div>
+        </label>
+    {{/each}}
+    <div class="profile-info__blank-bio">
+        <label for="shortBio">
+            <h3 class="profile-info__blank-title">Short bio</h3>
+            <div class="profile-info__blank-frame">
+                <textarea type="textarea" class="profile-info__blank-frame--input" id="shortBio" value="email@gmail.com"></textarea>
+            </div>
+        </label>
+    </div>
+    </div>
+</div>

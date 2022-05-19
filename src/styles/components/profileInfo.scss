@@ -1,0 +1,57 @@
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    &__title {
+        color: #333333;
+        line-height: 21px;
+        font-size: 18px;
+        margin-bottom: 34px;
+        @include medium();
+    }
+
+    &__blank {
+        height: calc(100% - 21px - 36px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__blank-title {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 4px;
+        @include light();
+    }
+
+    &__blank-notice {
+        margin-top: 4px;
+        padding-left: 6px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #535353;
+        @include light();
+    }
+
+    &__blank-frame {
+        position: relative;
+
+        &--input {
+            @include std-input(30px)
+        }
+
+        &--saved {
+            position: absolute;
+            right: 6px;
+            top: 25%;
+            font-size: 14px;
+            color: #535353;
+            @include light();
+        }
+    }
+
+    &__blank-bio textarea {
+        @include std-input(158px);
+    }
+}

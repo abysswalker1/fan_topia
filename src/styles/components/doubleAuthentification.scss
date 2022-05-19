@@ -1,0 +1,20 @@
+.double-authentification {
+
+    h1 {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 28px;
+        @include bold();
+    }
+
+    &__switch {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            @include regular();
+        }
+    }
+}    

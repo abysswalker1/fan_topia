@@ -50,6 +50,39 @@
           pointer-events: none;  
         }
       }
+    
+    }
+    &-person {
+      width: 100%;
+      padding: 30px 20px;
+      display: grid;
+      grid-template-columns: 432px minmax(150px, 1fr);
+      grid-template-rows: 1fr auto;
+      grid-gap: 30px;
+      background-color: #fff;
+      border-bottom: $grey-border;
+    }
+
+    &-authentification {
+      padding: 20px 20px 26px;
+      border-bottom: $grey-border;
+    }
+
+    &-password {
+      padding: 20px 20px 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .settings {
+    
+    &__window {
+
+      &-person {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr auto;
+      }
     }
   }
 }
@@ -64,5 +97,7 @@
     &__content {
       max-width: 100%;
     }
+
+    
   }
 }
