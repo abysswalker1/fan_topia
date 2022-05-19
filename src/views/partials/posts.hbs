@@ -20,9 +20,15 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor id eu leo commodo. Lectus egestas risus non semper a. Quis fermentum ultricies sagittis amet et, ac tortor.</p><p><a href='https://www.figma.com/'>Volutpat adipiscing dui proin</a> Volutpat adipiscing dui proin pretium dolor consectetur malesuada faucibus vitae. Sit velit sed enim elementum non nascetur. Volutpat sapien maecenas lectus nulla tincidunt.</p>
         </div>
 
-        <video class="posts__item-video">
-          <source  src="https://youtu.be/5qap5aO4i9A" type="video/mp4">
-        </video>
+        <a class="posts__item-video" data-fancybox data-fancybox-type="iframe" href="https://youtu.be/5qap5aO4i9A">
+          <img src="https://picsum.photos/1000/1000" alt="" class="posts__item-video-img">
+
+          <div class="posts__item-play-btn">
+            <svg class="posts__item-play-btn-icon" viewBox="0 0 20 23">
+              <use href="{{assets}}/img/svg-sprite/sprite.svg#triangle"></use>
+            </svg>
+          </div>
+        </a>
       </div>
     </div>
   {{/each}}
