@@ -252,12 +252,15 @@
   ],
   "settingsPages": [
     {
+      "id" : "account",
       "title": "Account"
     },
     {
+      "id" : "payments",
       "title": "Payments"
     },
     {
+      "id" : "profile",
       "title": "Profile"
     }
   ],

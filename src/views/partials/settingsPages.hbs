@@ -2,9 +2,10 @@
     <div class="settingsPages__container">
         {{#each main.settingsPages}}
             <button 
+                id={{this.id}}
                 type="button"
                 class="settingsPages__button
-                js-settings-pages 
+                js-settings-button 
                 {{#if @first}} settingsPages__button_active {{/if}}
             ">
                 {{this.title}}

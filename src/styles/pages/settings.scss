@@ -94,8 +94,16 @@
   }
 }
 
-.non-active {
+.account {
   display: none;
+}
+
+.profile {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 @media screen and (max-width: 1025px) {
