@@ -37,44 +37,47 @@
     uploadBlock.hide();
 
     // Select the target node.
-    const target = document.getElementById("current-step")
+    const target = document.getElementById("current-step");
 
-    // Create an observer instance.
-    const observer = new MutationObserver(function(mutations) {
-      const step = +target.innerText;
-      progressbar.css('width', `${100 / 5 * step}%`);
+    if (target) {
+      // Create an observer instance.
+      const observer = new MutationObserver(function() {
+        const step = +target.innerText;
+        progressbar.css('width', `${100 / 5 * step}%`);
 
-      if (step === 1) {
-        prevButton.hide();
-        textFrom1Step.show();
-        mainText.hide();
-        select.show();
-        uploadBlock.hide();
-      } else {
-        prevButton.show();
-        textFrom1Step.hide();
-        mainText.show();
-        select.hide();
-        uploadBlock.show();
-        allUploadSections.hide();
-        $(`#verify-account-upload-file-id-${step}`).show();
-      }
+        if (step === 1) {
+          prevButton.hide();
+          textFrom1Step.show();
+          mainText.hide();
+          select.show();
+          uploadBlock.hide();
+        } else {
+          prevButton.show();
+          textFrom1Step.hide();
+          mainText.show();
+          select.hide();
+          uploadBlock.show();
+          allUploadSections.hide();
+          $(`#verify-account-upload-file-id-${step}`).show();
+        }
 
-      if (step === 4) {
-        nextButton.text("Upload photos");
-      }
+        if (step === 4) {
+          nextButton.text("Upload photos");
+        }
 
-      if (step === 5) {
-        stepsForm.hide();
-        resultForm.show();
-      }
-    });
+        if (step === 5) {
+          stepsForm.hide();
+          resultForm.show();
+        }
+      });
 
-    // Pass in the target node, as well as the observer options.
-    observer.observe(target, {
-      attributes:    true,
-      childList:     true,
-      characterData: true
-    });
+      // Pass in the target node, as well as the observer options.
+      observer.observe(target, {
+        attributes:    true,
+        childList:     true,
+        characterData: true
+      });
+    }
+
   }
 })();
