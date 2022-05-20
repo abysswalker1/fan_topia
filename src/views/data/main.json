@@ -252,16 +252,13 @@
   ],
   "settingsPages": [
     {
-      "title": "Account",
-      "href": "/pages/settings_unverfified_account.html"
+      "title": "Account"
     },
     {
-      "title": "Payments",
-      "href": "/"
+      "title": "Payments"
     },
     {
-      "title": "Profile",
-      "href": "/pages/settings_unverified_profile.html"
+      "title": "Profile"
     }
   ],
   "windowHead": [
@@ -383,6 +380,26 @@
     {
       "title": "Upload Selfie with ID:",
       "id": "verify-account-upload-file-id-4"
+    }
+  ],
+  "specials" : [
+    {
+      "id" : "retention",
+      "title" : "Retention Special",
+      "text" : "This is a special for when someone goes to unsubscribe. Set a special price for them to stay subscribed for a given timeframe e.g. $5 per month for 3 months.",
+      "status" : true
+    },
+    {
+      "id" : "new",
+      "title" : "New Subscribers Special",
+      "text" : "Set a special to entice new fans to subscribe. Only new accounts can claim this, not old subscribers.",
+      "status" : false
+    },
+    {
+      "id" : "past",
+      "title" : "Past Subscribers Special",
+      "text" : "Set a special to bring old fans back! They will get an email letting them know about your special.",
+      "status" : false
     }
   ]
 }

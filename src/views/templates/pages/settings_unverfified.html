@@ -1,0 +1,67 @@
+{{> header title="Page" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+    <div class="page-wrap__content">
+        <div class="settings">
+            <div class="settings__sidebar">
+                {{> navSidebar }}
+            </div>
+            <div class="settings__content">
+                <div class="settings__window">
+
+                    {{> windowHead }}
+
+                    {{> settingsPages activeTab="Account" disabled="Payments"}}
+
+                    <div class="settings__window-inner">
+                        <div class="account">
+                            <div class="settings__window-verification">
+                                {{> accountVerification }}
+                            </div>
+                            <div class="settings__window-subscription">
+                                {{> subscriptionSetUp }}
+    
+                                <div class="settings__window-subscription--message">
+                                    <h1>Automatic Welcome Message</h1>
+                                    <p>This message will automatically be sent to your new subscribers when they first subscribe.</p>
+                                    <textarea placeholder="Enter message here"></textarea>
+                                    <div class="settings__window-subscription--message--attach">
+                                        <svg width="24px" height="24px" viewBox="0 0 24 24">
+                                            <use href="{{assets}}/img/svg-sprite/sprite.svg#panorama">
+                                        </svg>
+                                        <span>Attach Photo / Video to message</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings__window-specials">
+                                    {{> setUpSpecials }}
+                            </div>
+                        </div>
+                        <div class="person non-active">
+                            <div class="settings__window-person">
+                                {{> profilePerson }}
+    
+                                {{> profileInfo }}
+    
+                                {{> linkedAccounts}}
+                            </div>
+                            <div class="settings__window-authentification">
+                                {{> doubleAuthentification }}
+                            </div>
+                            <div class="settings__window-password">
+                                {{> passwordSettings }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> mobileNavigation }}
+
+    {{> footerContent }}
+    {{> footer }}
+
+</div>

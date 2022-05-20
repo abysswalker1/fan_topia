@@ -11,7 +11,8 @@
         align-items: flex-end;
     }
 
-    &__link {
+    &__button {
+        @include reset-button-styles();
         display: flex;
         justify-content: center;
         align-items: center;

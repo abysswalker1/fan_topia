@@ -4,7 +4,7 @@ window.jQuery = window.$ = $;
 import device from 'current-device';
 
 
-
+require('./components/settingsPageChange');
 require('./app');
 require('./components/addPostModal');
 require('./components/openProfileDropdown');
