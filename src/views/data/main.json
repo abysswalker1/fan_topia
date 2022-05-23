@@ -252,26 +252,19 @@
   ],
   "settingsPages": [
     {
-      "id" : "account",
-      "title": "Account"
+      "id" : "settings__button-id1",
+      "title": "Account",
+      "dataId": "1"
     },
     {
-      "id" : "payments",
-      "title": "Payments"
+      "id" : "settings__button-id2",
+      "title": "Payments",
+      "dataId": "2"
     },
     {
-      "id" : "profile",
-      "title": "Profile"
-    }
-  ],
-  "windowHead": [
-    {
-      "button": true,
-      "title": "Settings"
-    },
-    {
-      "button": false,
-      "title": "My balance"
+      "id" : "settings__button-id3",
+      "title": "Profile",
+      "dataId": "3"
     }
   ],
   "profileDropdown": [
@@ -403,6 +396,72 @@
       "title" : "Past Subscribers Special",
       "text" : "Set a special to bring old fans back! They will get an email letting them know about your special.",
       "status" : false
+    }
+  ],
+  "myWallets" : [
+    {
+      "type" : "dollars",
+      "crypto": false, 
+      "balance": "159.60",
+      "enable": true
+    },
+    {
+      "type" : "bitcoin",
+      "crypto": true,
+      "balance": "0.60",
+      "enable": false
+    }
+  ],
+  "myWalletsFan": [
+    {
+      "type" : "dollars",
+      "crypto": false, 
+      "balance": "",
+      "enable": true
+    },
+    {
+      "type" : "bitcoin",
+      "crypto": true,
+      "balance": "",
+      "enable": true
+    }
+  ],
+  "balanceHistory": [
+    {
+      "title": "Tips history",
+      "description": false,
+      "data": [
+        {
+          "date": "Apr, 09, 2022",
+          "method": "Post",
+          "description": "Mark White",
+          "amount": "$ 45.00"
+        },
+        {
+          "date": "Apr, 06, 2022",
+          "method": "Chat",
+          "description": "Luke Skywalker",
+          "amount": "$ 5.00"
+        }
+      ]
+    },
+    {
+      "title": "Withdraw history",
+      "description": true,
+      "data": [
+        {
+          "date": "Apr, 09, 2022",
+          "method": "USD",
+          "description": "Direct to Local Bank Transfer",
+          "amount": "$ 45.00"
+        },
+        {
+          "date": "Apr, 06, 2022",
+          "method": "Crypto",
+          "description": "Direct to wallet",
+          "amount": "0.6"
+        }
+      ]
     }
   ]
 }

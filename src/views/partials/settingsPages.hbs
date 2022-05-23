@@ -3,10 +3,11 @@
         {{#each main.settingsPages}}
             <button 
                 id={{this.id}}
+                data-id="{{this.dataId}}"
                 type="button"
                 class="settingsPages__button
                 js-settings-button 
-                {{#if @first}} settingsPages__button_active {{/if}}
+                {{#if @first}} js-active-button {{/if}}
             ">
                 {{this.title}}
             </button>

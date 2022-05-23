@@ -1,0 +1,32 @@
+{{> header title="Page" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+    <div class="page-wrap__content">
+        <div class="balance">
+            <div class="balance__sidebar">
+                {{> navSidebar }}
+            </div>
+            <div class="balance__content">
+                <div class="balance-card">
+                    <div class="balance-card__head">
+                        <h1>My balance</h1>
+                    </div>
+                    <div class="balance-card__wallets">
+                        {{> myWallets main.myWalletsFan }}
+                    </div>
+                    <div class="balance-card__history-clear">
+                        <h2>Payment history</h2>
+                        <p>No records found</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> mobileNavigation }}
+
+    {{> footerContent }}
+    {{> footer }}
+
+</div>
