@@ -1,0 +1,37 @@
+<div class="specials">
+    <h1 class="specials__title">Set up specials</h1>
+    {{#each main.specials}}
+        <div class="specials__item">
+            <h1 class="specials__item-title">{{this.title}}</h1>
+            <p class="specials__item-text">{{this.text}}</p>
+            <div class="specials__item-select-wrapper">
+                <h3>Status</h3>
+                <select class="js-standard-select specials__item-select">
+                    <option>
+                        Mounths
+                    </option>
+                </select>
+            </div>
+            <div class="specials__item-row">
+                <div class="specials__item-select-wrapper">
+                    <label for={{this.id}}>
+                        <h3>Status</h3>
+                        <select class="js-standard-select specials__item-select" name="price">
+                            <option>
+                                Mounths
+                            </option>
+                        </select>
+                    </label>
+                </div>
+                <div class="specials__item-price">
+                    <span class="specials__item-price--title">Price</span>
+                    <div class="specials__item-price--frame">
+                        <input type="text" class="">
+                        <p>$</p>
+                        <p class="specials__item-note">Original price: $5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>

@@ -1,0 +1,28 @@
+<div class="balance-history">
+    {{#each this}}
+    <div class="balance-history__item">
+        <div class="balance-history__item-head">
+            <h1>{{title}}</h1>
+           <svg class="balance-history__item-head--arrow" width="8px" height="11" viewBox="0 0 8 11">
+                <use href="{{assets}}/img/svg-sprite/sprite.svg#back-arrow"></use>
+            </svg> 
+        </div>
+        <div class="balance-history__item-table">
+            <div class="balance-history__item-table--row head">
+                <div class="balance-history__item-table--row--section date">Date</div>
+                <div class="balance-history__item-table--row--section method">Method</div>
+                <div class="balance-history__item-table--row--section description">{{#if description}}Description{{else}}From{{/if}}</div>
+                <div class="balance-history__item-table--row--section amount">Amount</div>
+            </div>
+            {{#each data}}
+                <div class="balance-history__item-table--row">
+                    <div class="balance-history__item-table--row--section date">{{this.date}}</div>
+                <div class="balance-history__item-table--row--section method">{{this.method}}</div>
+                <div class="balance-history__item-table--row--section description">{{this.description}}</div>
+                <div class="balance-history__item-table--row--section amount">{{this.amount}}</div>
+                </div>
+            {{/each }}
+        </div>
+    </div>
+    {{/each}}
+</div>

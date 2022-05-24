@@ -33,6 +33,9 @@
             @include light();
         }
     }
+    &__select {
+        width: 155px;
+    }
 }
 
 

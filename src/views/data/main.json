@@ -252,26 +252,19 @@
   ],
   "settingsPages": [
     {
+      "id" : "settings__button-id1",
       "title": "Account",
-      "href": "/pages/settings_unverfified_account.html"
+      "dataId": "1"
     },
     {
+      "id" : "settings__button-id2",
       "title": "Payments",
-      "href": "/"
+      "dataId": "2"
     },
     {
+      "id" : "settings__button-id3",
       "title": "Profile",
-      "href": "/pages/settings_unverified_profile.html"
-    }
-  ],
-  "windowHead": [
-    {
-      "button": true,
-      "title": "Settings"
-    },
-    {
-      "button": false,
-      "title": "My balance"
+      "dataId": "3"
     }
   ],
   "profileDropdown": [
@@ -383,6 +376,92 @@
     {
       "title": "Upload Selfie with ID:",
       "id": "verify-account-upload-file-id-4"
+    }
+  ],
+  "specials" : [
+    {
+      "id" : "retention",
+      "title" : "Retention Special",
+      "text" : "This is a special for when someone goes to unsubscribe. Set a special price for them to stay subscribed for a given timeframe e.g. $5 per month for 3 months.",
+      "status" : true
+    },
+    {
+      "id" : "new",
+      "title" : "New Subscribers Special",
+      "text" : "Set a special to entice new fans to subscribe. Only new accounts can claim this, not old subscribers.",
+      "status" : false
+    },
+    {
+      "id" : "past",
+      "title" : "Past Subscribers Special",
+      "text" : "Set a special to bring old fans back! They will get an email letting them know about your special.",
+      "status" : false
+    }
+  ],
+  "myWallets" : [
+    {
+      "type" : "dollars",
+      "crypto": false, 
+      "balance": "159.60",
+      "enable": true
+    },
+    {
+      "type" : "bitcoin",
+      "crypto": true,
+      "balance": "0.60",
+      "enable": false
+    }
+  ],
+  "myWalletsFan": [
+    {
+      "type" : "dollars",
+      "crypto": false, 
+      "balance": "",
+      "enable": true
+    },
+    {
+      "type" : "bitcoin",
+      "crypto": true,
+      "balance": "",
+      "enable": true
+    }
+  ],
+  "balanceHistory": [
+    {
+      "title": "Tips history",
+      "description": false,
+      "data": [
+        {
+          "date": "Apr, 09, 2022",
+          "method": "Post",
+          "description": "Mark White",
+          "amount": "$ 45.00"
+        },
+        {
+          "date": "Apr, 06, 2022",
+          "method": "Chat",
+          "description": "Luke Skywalker",
+          "amount": "$ 5.00"
+        }
+      ]
+    },
+    {
+      "title": "Withdraw history",
+      "description": true,
+      "data": [
+        {
+          "date": "Apr, 09, 2022",
+          "method": "USD",
+          "description": "Direct to Local Bank Transfer",
+          "amount": "$ 45.00"
+        },
+        {
+          "date": "Apr, 06, 2022",
+          "method": "Crypto",
+          "description": "Direct to wallet",
+          "amount": "0.6"
+        }
+      ]
     }
   ]
 }

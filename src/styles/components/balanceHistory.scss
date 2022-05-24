@@ -1,0 +1,133 @@
+.balance-history {
+    &__item {
+        padding: 18px 22px 21px;
+    }
+
+    &__item-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+
+        h1 {
+            font-size: 16px;
+            line-height: 19px;
+            @include bold();
+        }
+
+        &--arrow {
+            transform: rotate(180deg)
+        }
+    }
+
+    &__item-table {
+        border: $grey-border;
+        border-radius: 3px;
+
+        &--row {
+            display: flex;
+            height: 42px;
+            border-bottom: $grey-border;
+            &.head {
+                background: #F7F7F7;
+                border-bottom: none;
+                .amount {
+                    font-size: 16px;
+                    line-height: 19px;
+                    @include regular();
+                }
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &--section {
+                border-right: $grey-border;
+                padding: 0 22px;
+                display: flex;
+                align-items: center;    
+                font-size: 16px;
+                line-height: 19px;
+                @include regular();
+                color: #333333;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+.balance-history_mobile {
+    display: none;
+    &__item {
+        padding: 18px 13px;
+        border-bottom: $grey-border;
+        &:last-child {
+            border: none;
+        }
+        span {
+            font-size: 14px;
+            line-height: 16px;
+            margin-right: 5px;
+            @include light();
+        }
+    }
+
+    &__item-wrapp {
+        border-bottom: $grey-border;
+        padding: 20px 0;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__item-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--elem {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 16px;
+            line-height: 19px;
+            @include regular();
+        }
+    }
+}
+
+.date {
+    flex: 1;
+}
+
+.method {
+    flex: 1.5;
+}
+
+.description {
+    flex: 2;
+}
+
+.amount {
+    flex: 1;
+    font-size: 18px;
+    line-height: 21px;
+    justify-content: flex-end;
+    @include medium();
+}
+
+@media screen and (max-width: 800px) {
+    .balance-history {
+        display: none;
+    }
+
+    .balance-history_mobile {
+        display: block;
+    }
+}

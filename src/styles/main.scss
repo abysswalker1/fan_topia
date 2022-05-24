@@ -16,7 +16,7 @@
 @import "components/createNewInPosts";
 @import "components/addNewIconGroup";
 @import "components/notVerifiedMessage";
-@import "components/windowHead";
+@import "components/windowHeadSettings";
 @import "components/settingsPages";
 @import "components/accountVerification";
 @import "components/subscriptionSetUp";
@@ -34,11 +34,15 @@
 @import "components/linkedAccounts.scss";
 @import "components/doubleAuthentification";
 @import "components/passwordSettings";
+@import "components/setUpSpecials";
+@import "components/myWallets";
+@import "components/balanceHistory";
 
 // Pages
 @import "pages/login";
 @import "pages/home";
 @import "pages/settings";
+@import "pages/balance";
 
 //Libraries
 @import "../../node_modules/swiper/swiper";

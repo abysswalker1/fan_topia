@@ -20,38 +20,58 @@
 
     &-inner {
       width: 100%;
+    }
 
-      &--verification {
-        padding: 30px 20px 40px 20px;
-        border-bottom: $grey-border;
-      }
+    &-verification {
+      padding: 30px 20px 40px 20px;
+      border-bottom: $grey-border;
+    }
 
-      &--subscription {
-        padding: 30px 20px;
+    &-subscription {
+      padding: 30px 20px;
+      border-bottom: $grey-border;
 
-        &--message {
-          padding-top: 30px;
-          margin-top: 60px;
-
-          h1 {
-            margin-bottom: 4px;
-            font-style: 16px;
-            @include bold();
-          }
-
-          p {
-            font-size: 14px;
+      &--message {
+        padding-top: 30px;
+        margin-top: 60px;
+        h1 {
+          margin-bottom: 4px;
+          font-style: 16px;
+          @include bold();
+        }
+        p {
+          font-size: 14px;
+          @include light();
+        }
+        textarea {
+            @include std-input(123px);
+            max-width: 660px;
+            margin-top: 16px;
+            padding: 15px;
+        }
+        &--attach {
+          margin-top: 15px;
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 16px;
+            line-height: 19px;
+            margin-left: 4px;
             @include light();
           }
         }
-
-        &.disabled {
-          opacity: 0.4;
-          pointer-events: none;
-        }
       }
 
+      &.disabled {
+        opacity: 0.4;
+        pointer-events: none;
+      }
     }
+
+    &-specials {
+      padding: 30px 20px;
+    }
+
     &-person {
       width: 100%;
       padding: 30px 20px;
@@ -72,6 +92,18 @@
       padding: 20px 20px 45px;
     }
   }
+}
+
+.account {
+  display: none;
+}
+
+.profile {
+  display: none;
+}
+
+.js-active-page {
+  display: block;
 }
 
 @media screen and (max-width: 1025px) {

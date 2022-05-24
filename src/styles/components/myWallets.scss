@@ -1,0 +1,69 @@
+.wallets {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 277px;
+        min-height: 170px;
+        padding: 19px 0 15px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        @include std-card();
+    
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__item-balance {
+        font-size: 24px;
+        line-height: 28px;
+        @include medium();
+    }
+
+    &__item-note {
+        display: flex;
+        margin: 23px 0 16px;
+        font-size: 16px;
+        line-height: 19px;
+        @include light();
+
+        &.bitcoin {
+            margin: 8px 0 23px;
+        }
+    }
+
+    &__item-note {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        @include light();
+    }
+
+    &__item-button {
+        @include std-button(38px);
+        padding: 0 12px;
+        margin-bottom: 9px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wallets {
+        flex-direction: column;
+        align-items: center;
+        &__item {
+            margin-right: 0; 
+        }
+    }
+}

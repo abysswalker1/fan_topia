@@ -31,20 +31,10 @@
     justify-content: center;
     align-items: flex-end;
     height: 70%!important;
-    border-radius: 50%;
     margin-right: 10px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    background-image: url("../img/main/arrow_down.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: transparent;
-    background-size: contain;
-    border: none !important;
-    height: 12px !important;
-    width: 12px !important;
-    margin: auto !important;
-    top: auto !important;
-    left: auto !important;
+   width: 13px;
+   line-height: 13px;
 }

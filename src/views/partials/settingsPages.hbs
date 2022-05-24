@@ -1,12 +1,16 @@
 <div class="settingsPages">
     <div class="settingsPages__container">
         {{#each main.settingsPages}}
-            <a  href={{this.href}} 
-                class="settingsPages__link 
-                {{#if @first}} settingsPages__link_active {{/if}}
+            <button 
+                id={{this.id}}
+                data-id="{{this.dataId}}"
+                type="button"
+                class="settingsPages__button
+                js-settings-button 
+                {{#if @first}} js-active-button {{/if}}
             ">
                 {{this.title}}
-            </a>
+            </button>
         {{/each}}
     </div>
 </div>
