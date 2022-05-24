@@ -1,0 +1,40 @@
+.my-profile-pages {
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: $grey-border;
+    @include std-card();
+
+    &__button {
+        @include reset-button-styles();
+        height: 39px;
+        padding: 0 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 42px;
+        color: #333333;
+        @include medium();
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__button_active {
+        height: 37px;
+        border-bottom: 2px solid #90C85E;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .my-profile-pages {
+        justify-content: space-around;
+
+        &__button {
+            margin: 0;
+        }
+    }
+}

@@ -16,6 +16,7 @@
         }
 
         &--arrow {
+            @include reset-button-styles();
             transform: rotate(180deg)
         }
     }
@@ -130,4 +131,8 @@
     .balance-history_mobile {
         display: block;
     }
+}
+
+.opened-history {
+    display: block;
 }

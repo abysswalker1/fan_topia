@@ -37,10 +37,13 @@
 @import "components/setUpSpecials";
 @import "components/myWallets";
 @import "components/balanceHistory";
+@import "components/myProfilemain";
+@import "components/myProfilePages";
 
 // Pages
 @import "pages/login";
 @import "pages/home";
+@import "pages/myProfile";
 @import "pages/settings";
 @import "pages/balance";
 

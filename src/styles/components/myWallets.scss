@@ -4,7 +4,8 @@
     flex-wrap: wrap;
 
     &__item {
-        width: 277px;
+        width: 100%;
+        max-width: 277px;
         min-height: 170px;
         padding: 19px 0 15px;
         margin-right: 20px;
@@ -13,7 +14,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        @include std-card();
+        
+        &_active {
+            @include std-card();
+        }
     
         &:last-child {
             margin: 0;

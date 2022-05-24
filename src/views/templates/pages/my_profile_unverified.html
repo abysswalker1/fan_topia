@@ -1,0 +1,44 @@
+{{> header title="Page" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+    <div class="page-wrap__content">
+        <div class="my-profile">
+            <div class="my-profile__sidebar">
+            {{> navSidebar activeTab="home" }}
+            </div>
+
+            <div class="my-profile__content">
+            
+                <div class="my-profile__main">
+                    {{> myProfileMain verified="false" }}
+                </div>
+
+                <div class="my-profile__create-new-post">
+                    {{> createNewInPosts }}
+                </div>
+
+                <div class="my-profile__pages">
+                    {{> myProfilePages main.myProfilePages}}
+                </div>
+
+                <div class="my-profile__empty">
+                    <svg class="my-profile__empty-image">
+                        <use href="{{assets}}/img/svg-sprite/sprite.svg#empty_images"></use>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="my-profile__promoted-creators">
+            {{> promotedCreatorsSidebar }}
+            </div>
+        </div>
+    </div>
+
+  {{> mobileNavigation }}
+
+  {{> footerContent }}
+  {{> footer }}
+
+</div>

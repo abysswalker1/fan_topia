@@ -3,11 +3,13 @@
     <div class="balance-history__item">
         <div class="balance-history__item-head">
             <h1>{{title}}</h1>
-           <svg class="balance-history__item-head--arrow" width="8px" height="11" viewBox="0 0 8 11">
-                <use href="{{assets}}/img/svg-sprite/sprite.svg#back-arrow"></use>
-            </svg> 
+            <button class="balance-history__item-head--arrow js-history-button">
+                <svg width="8px" height="11" viewBox="0 0 8 11">
+                    <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow"></use>
+                </svg> 
+            </button>
         </div>
-        <div class="balance-history__item-table">
+        <div class="balance-history__item-table js-history-table">
             <div class="balance-history__item-table--row head">
                 <div class="balance-history__item-table--row--section date">Date</div>
                 <div class="balance-history__item-table--row--section method">Method</div>

@@ -223,15 +223,25 @@
       "name": "Fan-topia",
       "time": "8 months ago",
       "likes": "142",
-      "messages": "5"
+      "comments": "5",
+      "creator": {
+        "name": "Lea white",
+        "photo": "https://place-hold.it/28x28",
+        "href": "#"
+      }
     },
     {
       "img": "https://picsum.photos/380/100",
       "href": "/profiles-item",
       "name": "Fan-topia Fan-topia Fan-topia Fan-topia Fan-topia Fan-topia Fan-topia Fan-topia",
       "time": "8 months ago",
-      "likes": "142555",
-      "messages": "5"
+      "likes": "142",
+      "comments": "5",
+      "creator": {
+        "name": "Lea white",
+        "photo": "https://place-hold.it/28x28",
+        "href": "#"
+      }
     },
     {
       "img": "https://picsum.photos/380/100",
@@ -239,7 +249,12 @@
       "name": "Fan-topia Fan-topia",
       "time": "8 months ago",
       "likes": "142",
-      "messages": "5"
+      "comments": "5",
+      "creator": {
+        "name": "Lea white",
+        "photo": "https://place-hold.it/28x28",
+        "href": "#"
+      }
     },
     {
       "img": "https://picsum.photos/380/100",
@@ -247,7 +262,54 @@
       "name": "Fan-topia Fan-topia",
       "time": "8 months ago",
       "likes": "142",
-      "messages": "5"
+      "comments": "5",
+      "creator": {
+        "name": "Lea white",
+        "photo": "https://place-hold.it/28x28",
+        "href": "#"
+      }
+    }
+  ],
+  "profilePosts": [
+    {
+      "img": "https://picsum.photos/380/100",
+      "href": "/profiles-item",
+      "name": "Kate Lindman",
+      "time": "8 months ago",
+      "likes": "142",
+      "comments": "5",
+      "price": "",
+      "private": false
+    },
+    {
+      "img": "https://picsum.photos/380/100",
+      "href": "/profiles-item",
+      "name": "Kate Lindman",
+      "time": "8 months ago",
+      "likes": "142",
+      "comments": "5",
+      "price": "6",
+      "private": true
+    },
+    {
+      "img": "https://picsum.photos/380/100",
+      "href": "/profiles-item",
+      "name": "Kate Lindman",
+      "time": "8 months ago",
+      "likes": "142",
+      "comments": "5",
+      "price": "6" ,
+      "private": true
+    },
+    {
+      "img": "https://picsum.photos/380/100",
+      "href": "/profiles-item",
+      "name": "Kate Lindman",
+      "time": "8 months ago",
+      "likes": "142",
+      "comments": "5",
+      "price": "6" ,
+      "private": true
     }
   ],
   "settingsPages": [
@@ -423,7 +485,7 @@
       "type" : "bitcoin",
       "crypto": true,
       "balance": "",
-      "enable": true
+      "enable": false
     }
   ],
   "balanceHistory": [
@@ -462,6 +524,23 @@
           "amount": "0.6"
         }
       ]
+    }
+  ],
+  "myProfilePages" : [
+    {
+      "id": "profile-pages-btn1",
+      "dataId": "1",
+      "title": "Posts"
+    },
+    {
+      "id": "profile-pages-btn2",
+      "dataId": "2",
+      "title": "Photos"
+    },
+    {
+      "id": "profile-pages-btn3",
+      "dataId": "3",
+      "title": "Videos"
     }
   ]
 }
