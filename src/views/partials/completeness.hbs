@@ -1,0 +1,20 @@
+{{#unless completed}}
+<div class="completeness">
+    <div class="completeness__box {{#if empty}}completeness__box_empty{{/if}}">
+        <h1 class="completeness__title">Profile completeness: 50%</h1>
+        <ul class="completeness__list">
+            <li class="completeness__list-item">
+                <a href="#">Set up subscription price</a>
+            </li>
+            <li class="completeness__list-item">
+                <a href="#">Set up specials</a>
+            </li>
+            <li class="completeness__list-item">
+                <a href="#">Set up bank details</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{{else}}
+<h1 class="completeness__full">Profile completeness: 100%</h1>
+{{/unless}}

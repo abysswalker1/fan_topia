@@ -1,0 +1,48 @@
+.completeness {
+    margin-top: 39px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    width: 100%;
+
+    &__box {
+        background: #F8F3E0;
+        border-radius: 4px;
+        max-width: 100%;
+        min-height: 165px;
+        padding: 12px;
+        &_empty {
+            background: none;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 10px;
+        @include bold();
+    }
+
+    &__list-item {
+        margin-bottom: 10px;
+        padding-left: 20px;
+
+        a {
+            color: #306700;
+            font-size: 16px;
+            line-height: 19px;
+            @include light();
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__full {
+        margin-top: 50px;
+        padding-left: 20px;
+        font-size: 18px;
+        line-height: 21px;
+        @include bold();
+    }
+}

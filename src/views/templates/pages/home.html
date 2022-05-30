@@ -5,9 +5,11 @@
   <div class="page-wrap__content">
     <div class="home">
       <div class="home__sidebar">
-        {{> navSidebar context=main.sidebar activeTab="home" }}
+        {{> navSidebar context=main.sidebar subscriptions=true subscribers=true activeTab="home" }}
 
-        {{> sidebarButtons verified="false"}}
+        {{> sidebarButtons }}
+
+        {{> completeness }}
       </div>
 
       <div class="home__content">

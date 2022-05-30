@@ -1,0 +1,22 @@
+.sidebar-buttons {
+    padding: 0 20px;
+    &__create-post {
+        @include std-button(46px);
+        width: 186px;
+        margin-bottom: 20px;
+      }
+    
+      &__create-post-icon {
+        color: var(--text-color);
+        width: 17px;
+        height: 17px;
+        margin-right: 6px;
+      }
+    
+      &__become-creator {
+        @include std-button(37px, $bg: #EFEFEF);
+        width: 186px;
+        @include regular();
+      }
+
+}

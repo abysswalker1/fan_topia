@@ -1,20 +1,16 @@
 <div class="nav-sidebar">
-  <nav class="nav-sidebar__list">
-    {{#each main.sidebar}}
-      <a href="{{this.href}}" class="nav-sidebar__list-item {{#if @first }}nav-sidebar__list-item_active{{/if}}">
+  <nav class="nav-sidebar__list
+  {{#if subscriptions}} subscriptions_message{{/if}}
+  {{#if subscribers}} subscribers_message{{/if}}
+  {{#if activeTab}} active_{{activeTab}}{{/if}}
+   ">
+    {{#each this.context}}
+      <a href="{{indexDir}}/pages/{{href}}.html" class="nav-sidebar__list-item">
         <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
-          <use href="{{assets}}/img/svg-sprite/sprite.svg#{{this.svg}}"></use>
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#{{svg}}"></use>
         </svg>
-        <span class="nav-sidebar__list-item-title">{{this.title}}</span>
+        <span class="nav-sidebar__list-item-title">{{title}}</span>
       </a>
     {{/each}}
   </nav>
-
-  <button class="nav-sidebar__create-post" type="button" data-custom-open="modal-1">
-    <svg class="nav-sidebar__create-post-icon" viewBox="0 0 17 17">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#plus"></use>
-    </svg>
-    Create post
-  </button>
-  <button class="nav-sidebar__become-creator" type="button">Become creator</button>
 </div>

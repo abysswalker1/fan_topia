@@ -5,23 +5,26 @@
     <div class="page-wrap__content">
         <div class="settings">
             <div class="settings__sidebar">
-                {{> navSidebar context=main.sidebar}}
+                {{> navSidebar context=main.sidebarExp subscriptions="true" subscribers="true"}}
 
-                {{> sidebarButtons verified="false"}}
+                {{> sidebarButtons }}
+
+                {{> completeness }}
             </div>
             <div class="settings__content">
                 <div class="settings__window">
 
                     {{> windowHeadSettings }}
 
-                    {{> settingsPages disabled = true}}
+                    {{> settingsPages }}
 
                     <div class="settings__window-inner">
                         <div class="js-settings-page account js-active-page" id="1">
+                            
                             <div class="settings__window-verification">
-                                {{> accountVerification }}
+                                {{> accountVerificationSuccessful }}
                             </div>
-                            <div class="settings__window-subscription disabled">
+                            <div class="settings__window-subscription">
                                 {{> subscriptionSetUp }}
     
                                 <div class="settings__window-subscription--message">
@@ -36,11 +39,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="settings__window-specials disabled">
+                            <div class="settings__window-specials">
                                     {{> setUpSpecials }}
                             </div>
+
+                        </div>
+                        <div class="js-settings-page payments" id="2">
+
+                            <div class="settings__window-bank">
+                                {{> bankPaymentDetails }}
+                            </div>
+                            <div class="settings__window-crypto">
+                                {{> cryptoPaymentDetails }}
+                            </div>
+
                         </div>
                         <div class="js-settings-page profile" id="3">
+
                             <div class="settings__window-person">
                                 {{> profilePerson }}
     
@@ -54,6 +69,7 @@
                             <div class="settings__window-password">
                                 {{> passwordSettings }}
                             </div>
+
                         </div>
                     </div>
                 </div>

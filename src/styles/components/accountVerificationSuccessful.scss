@@ -1,0 +1,31 @@
+.verification-successful {
+    &__title {
+        font-size: 18px;
+        line-height: 21px;
+        color: #333333;
+        @include medium();
+    }
+
+    &__string {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    &__string-icon {
+        width: 23px;
+        height: 23px;
+        margin-right: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #5EC8A8;
+    }
+
+    &__string-text {
+        font-size: 16px;
+        line-height: 19px;
+        @include light();
+    }
+}

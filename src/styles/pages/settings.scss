@@ -23,7 +23,7 @@
     }
 
     &-verification {
-      padding: 30px 20px 40px 20px;
+      padding: 30px 20px;
       border-bottom: $grey-border;
     }
 
@@ -61,14 +61,18 @@
           }
         }
       }
-
-      &.disabled {
-        opacity: 0.4;
-        pointer-events: none;
-      }
     }
 
     &-specials {
+      padding: 30px 20px;
+    }
+
+    &-bank {
+      padding: 30px 20px;
+      border-bottom: $grey-border;
+    }
+
+    &-crypto {
       padding: 30px 20px;
     }
 
@@ -94,7 +98,16 @@
   }
 }
 
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .account {
+  display: none;
+}
+
+.payments {
   display: none;
 }
 

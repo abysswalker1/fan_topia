@@ -1,20 +1,28 @@
 .profile-person {
-    border: $grey-border;
+    border: 1px solid #C2C2C2;
     border-radius: 8px;
     position: relative;
 
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__title {
         font-size: 14px;
-        position: absolute;
-        top: 18px;
-        left: 22px;
+        line-height: 19px;
+        padding: 4px 0;
         @include bold();
     }
 
     &__button {
-        position: absolute;
-        top: 14px;
-        right: 16px;
+        @include reset-button-styles();
+        padding: 8px 18px;
+        background: rgba(194, 194, 194, 0.2);
+        border-radius: 8px;
+        color: #333333;
+        font-size: 18px;
+        @include regular();
     }
 
     &__avatar-wrapper {
@@ -38,45 +46,40 @@
     }
 
     &__image-wrapper {
-        width: 100%;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        margin-top: 30px;
     }
 
     &__image {
+        width: 100%;
+        max-width: 389px;
+        height: 100%;
+        max-height: 193px;
         object-fit: cover;
     }
 }
 
 .profile-person-top {
-    height: 210px;
+    height: 212px;
     border-bottom: $grey-border;
     position: relative;
+    padding: 14px 20px;
 }
 
 .profile-person-bottom {
-    height: 320px;
+    padding: 14px 20px;
     padding-bottom: 40px;
     position: relative;
 }
 
-.add-button {
-    @include reset-button-styles();
-    padding: 8px 18px;
-    background: rgba(194, 194, 194, 0.2);
-    border-radius: 8px;
-    color: #333333;
-    font-size: 18px;
-    @include regular();
-}
+@media screen and (max-width: 500px) {
+    .profile-person-top {
+        padding: 14px 16px;
+    }
 
-@media screen and (max-width: 375px) {
-    .profile-person {
-
-        &__button {
-            right: 16px;
-        }
+    .profile-person-bottom {
+        padding: 14px 16px;
     }
 }

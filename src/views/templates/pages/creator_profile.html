@@ -5,15 +5,15 @@
     <div class="page-wrap__content">
         <div class="my-profile">
             <div class="my-profile__sidebar">
-            {{> navSidebar context=main.sidebarExp subscriptions=true subscribers=true}}
+                {{> navSidebar context=main.sidebarExp subscriptions=true subscribers=true}}
 
-            {{> sidebarButtons verified=true}}
+                {{> sidebarButtons verified=true}}
             </div>
 
             <div class="my-profile__content">
             
                 <div class="my-profile__main">
-                    {{> myProfileMain verified=false }}
+                    {{> myProfileMain verified=true creator=true}}
                 </div>
 
                 <div class="my-profile__create-new-post">
@@ -24,10 +24,8 @@
                     {{> myProfilePages main.myProfilePages}}
                 </div>
 
-                <div class="my-profile__empty">
-                    <svg class="my-profile__empty-image">
-                        <use href="{{assets}}/img/svg-sprite/sprite.svg#empty_images"></use>
-                    </svg>
+                <div class="my-profile__posts">
+                    {{> posts main.profilePosts}}
                 </div>
 
             </div>
