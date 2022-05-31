@@ -24,7 +24,7 @@
                             <use href="{{assets}}/img/svg-sprite/sprite.svg#subscribers"></use>
                         </svg>
                         <p class="creator__subscribe-btn--text">
-                            Subscribe for $12 per month
+                            Subscribe for free
                         </p>
                     </a>
                 </button>
@@ -34,13 +34,13 @@
                 </div>
 
                 <div class="creator__posts">
-                    {{> posts main.profilePosts locked=true}}
+                    {{> posts main.profilePosts }}
                 </div>
 
             </div>
 
             <div class="creator__side-subscribe-btn">
-                {{> sideSubscribeBtn }}
+                {{> sideSubscribeBtn free=true}}
             </div>
         </div>
     </div>

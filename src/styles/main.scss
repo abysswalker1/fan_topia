@@ -44,6 +44,7 @@
 @import "components/balanceHistory";
 @import "components/myProfilemain";
 @import "components/myProfilePages";
+@import "components/sideSubscribeBtn";
 
 // Pages
 @import "pages/login";
@@ -51,6 +52,7 @@
 @import "pages/myProfile";
 @import "pages/settings";
 @import "pages/balance";
+@import "pages/creator";
 
 //Libraries
 @import "../../node_modules/swiper/swiper";

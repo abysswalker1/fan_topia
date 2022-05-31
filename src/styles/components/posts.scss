@@ -1,5 +1,43 @@
 .posts {
 
+  &-locked {
+    @include std-card();
+    height: 237px;
+    padding: 60px 25px 30px;
+
+    &__subscribe-btn {
+      @include std-button(46px);
+      width: 100%;
+      display: none;
+    }
+  
+    &__subscribe-btn--link {
+      color: #333333;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+  
+    &__subscribe-btn--text {
+      font-size: 18px;
+      line-height: 21px;
+      @include bold();
+    }
+  
+    &__subscribe-btn--icon {
+      margin-right: 3px;
+    }
+
+    &__container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
   &__item {
     @include std-card();
     padding-bottom: 23px; 
@@ -233,5 +271,12 @@
 
   &__item-footer-section--icon {
     margin-right: 5px;
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .posts-locked__subscribe-btn {
+    display: flex;
   }
 }
