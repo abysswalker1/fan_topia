@@ -1,13 +1,13 @@
 <div class="my-profile-pages">
-    {{#each this}}
-    <button class="my-profile-pages__button 
-            {{#if @first}} my-profile-pages__button_active{{/if}}
-            "
-            id={{id}}
-            data-id="{{dataId}}" 
-            type="button"
-    >
-        {{title}}
-    </button>
-    {{/each}}
+  {{#each this}}
+  <button class="my-profile-pages__button 
+          {{#if @first}} my-profile-pages__button_active{{/if}}
+          "
+          id={{id}}
+          data-id="{{dataId}}" 
+          type="button"
+  >
+      {{number}} {{title}}
+  </button>
+  {{/each}}
 </div>

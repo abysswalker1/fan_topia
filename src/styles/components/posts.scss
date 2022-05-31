@@ -3,9 +3,6 @@
   &__item {
     @include std-card();
     padding-bottom: 23px; 
-
-    &:not(:last-child) {
-    }
   }
 
   &__item-content {

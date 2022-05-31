@@ -590,6 +590,26 @@
       "title": "Videos"
     }
   ],
+  "myProfilePagesExp": [
+    {
+      "id": "profile-pages-btn1",
+      "dataId": "1",
+      "title": "Posts",
+      "number": "124"
+    },
+    {
+      "id": "profile-pages-btn2",
+      "dataId": "2",
+      "title": "Photos",
+      "number": "45"
+    },
+    {
+      "id": "profile-pages-btn3",
+      "dataId": "3",
+      "title": "Videos",
+      "number": "89"
+    }
+  ],
   "cryptoDetails": [
     {
       "id": "bitcoin",
