@@ -1,0 +1,21 @@
+<div class="crypto-details">
+    <h1 class="crypto-details__title">Crypto payment details</h1>
+    <p class="crypto-details__text">Add, update, or remove your crypto wallet details.</p>
+    <div class="crypto-details__wallets">
+        {{#each main.cryptoDetails}}
+        <div class="crypto-details__item">
+            <div class="crypto-details__item-top">
+                <div class="crypto-details__item-image-wrapper">
+                    <img src="{{this.icon}}" alt="" class="crypto-details__item-image">
+                </div>
+                <span class="crypto-details__item-text">{{this.title}}</span>
+            </div>
+            <input type="text" name="wllet_address" class="crypto-details__item-address" placeholder="Wallet address">
+            <div class="crypto-details__item-balance">
+                <h1>{{this.wallet}}</h1>
+                <span>{{this.balance}}</span>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

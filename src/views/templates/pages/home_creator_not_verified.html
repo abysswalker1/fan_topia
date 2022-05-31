@@ -5,7 +5,9 @@
   <div class="page-wrap__content">
     <div class="home">
       <div class="home__sidebar">
-        {{> navSidebar activeTab="home" subscriptions="2" }}
+        {{> navSidebar context=main.sidebar subscriptions="true" activeTab="home" }}
+
+        {{> sidebarButtons verified=true }}
       </div>
 
       <div class="home__content">
@@ -19,7 +21,7 @@
 
         {{> promotedCreatorsSidebar isMobile="true" }}
 
-        {{> posts }}
+        {{> posts main.posts}}
       </div>
 
       <div class="home__promoted-creators">

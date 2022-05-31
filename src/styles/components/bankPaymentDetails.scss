@@ -1,0 +1,49 @@
+.payment-details {
+    &__title {
+        font-size: 18px;
+        line-height: 21px;
+        color: #333333;
+        @include medium();
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        @include light();
+        margin-bottom: 22px;
+    }
+
+    &__select-wrapper {
+        width: 100%;
+        max-width: 322px;
+    }
+
+    &__select-title {
+        font-size: 14px;
+        line-height: 16px;
+        @include light();
+    }
+
+    &__age {
+        display: flex;
+        align-items: flex-start;
+        margin: 15px 0 75px;
+
+        &-checkbox {
+            min-width: 18px;
+            min-height: 18px;
+            border: 1px solid #333333;
+            border-radius: 2px;
+            margin: 0;
+            margin-right: 8px; 
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 16px;
+            @include light();
+        }
+    }
+}

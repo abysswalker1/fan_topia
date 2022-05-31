@@ -10,6 +10,8 @@
 @import "components/footer";
 @import "components/header";
 @import "components/navSidebar";
+@import "components/sideBarButtons";
+@import "components/completeness";
 @import "components/promotedCreatorsSidebar";
 @import "components/posts";
 @import "components/mobileNav";
@@ -19,7 +21,10 @@
 @import "components/windowHeadSettings";
 @import "components/settingsPages";
 @import "components/accountVerification";
+@import "components/accountVerificationSuccessful";
 @import "components/subscriptionSetUp";
+@import "components/bankPaymentDetails";
+@import "components/cryptoPaymentDetails";
 @import "components/select2.scss";
 @import "components/switch.scss";
 @import "components/profiledropdown";
@@ -37,10 +42,13 @@
 @import "components/setUpSpecials";
 @import "components/myWallets";
 @import "components/balanceHistory";
+@import "components/myProfilemain";
+@import "components/myProfilePages";
 
 // Pages
 @import "pages/login";
 @import "pages/home";
+@import "pages/myProfile";
 @import "pages/settings";
 @import "pages/balance";
 

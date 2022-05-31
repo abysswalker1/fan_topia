@@ -1,7 +1,7 @@
 <div class="wallets">
     {{#each this}}
         {{#if crypto}}
-        <div class="wallets__item"> 
+        <div class="wallets__item {{#if enable}} wallets__item_active{{/if}}"> 
             {{#if balance}}
             <h1 class="wallets__item-balance">{{balance}}</h1>
             <div class="wallets__item-note bitcoin">
@@ -14,7 +14,7 @@
             <button class="wallets__item-button">Withdraw as crypto</button>
         </div>
         {{else}}
-        <div class="wallets__item"> 
+        <div class="wallets__item {{#if enable}} wallets__item_active{{/if}}"> 
             {{#if balance}}
             <h1 class="wallets__item-balance">${{balance}}</h1>
             <div class="wallets__item-note">

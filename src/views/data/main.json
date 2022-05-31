@@ -75,7 +75,50 @@
     {
       "title": "My balance",
       "id": "myBalance",
-      "href": "/my-balance",
+      "href": "/my_balance",
+      "svg": "balance"
+    },
+    {
+      "title": "Log out",
+      "id": "logout",
+      "svg": "logout"
+    }
+  ],
+  "sidebarExp": [
+    {
+      "title": "Home",
+      "id": "home",
+      "href": "/",
+      "svg": "home"
+    },
+    {
+      "title": "Subscribers",
+      "id": "subscribers",
+      "href": "/",
+      "svg": "subscribers"
+    },
+    {
+      "title": "Subscriptions",
+      "id": "subscriptions",
+      "href": "/subscriptions",
+      "svg": "person"
+    },
+    {
+      "title": "Purchased posts",
+      "id": "purchasedPosts",
+      "href": "/purchased-posts",
+      "svg": "purchase"
+    },
+    {
+      "title": "Referrals",
+      "id": "referrals",
+      "href": "/referrals",
+      "svg": "referrals"
+    },
+    {
+      "title": "My balance",
+      "id": "myBalance",
+      "href": "/my_balance",
       "svg": "balance"
     },
     {
@@ -223,15 +266,25 @@
       "name": "Fan-topia",
       "time": "8 months ago",
       "likes": "142",
-      "messages": "5"
+      "comments": "5",
+      "creator": {
+        "name": "Lea white",
+        "photo": "https://place-hold.it/28x28",
+        "href": "#"
+      }
     },
     {
       "img": "https://picsum.photos/380/100",
       "href": "/profiles-item",
       "name": "Fan-topia Fan-topia Fan-topia Fan-topia Fan-topia Fan-topia Fan-topia Fan-topia",
       "time": "8 months ago",
-      "likes": "142555",
-      "messages": "5"
+      "likes": "142",
+      "comments": "5",
+      "creator": {
+        "name": "Lea white",
+        "photo": "https://place-hold.it/28x28",
+        "href": "#"
+      }
     },
     {
       "img": "https://picsum.photos/380/100",
@@ -239,7 +292,12 @@
       "name": "Fan-topia Fan-topia",
       "time": "8 months ago",
       "likes": "142",
-      "messages": "5"
+      "comments": "5",
+      "creator": {
+        "name": "Lea white",
+        "photo": "https://place-hold.it/28x28",
+        "href": "#"
+      }
     },
     {
       "img": "https://picsum.photos/380/100",
@@ -247,7 +305,54 @@
       "name": "Fan-topia Fan-topia",
       "time": "8 months ago",
       "likes": "142",
-      "messages": "5"
+      "comments": "5",
+      "creator": {
+        "name": "Lea white",
+        "photo": "https://place-hold.it/28x28",
+        "href": "#"
+      }
+    }
+  ],
+  "profilePosts": [
+    {
+      "img": "https://picsum.photos/380/100",
+      "href": "/profiles-item",
+      "name": "Kate Lindman",
+      "time": "8 months ago",
+      "likes": "142",
+      "comments": "5",
+      "price": "",
+      "private": false
+    },
+    {
+      "img": "https://picsum.photos/380/100",
+      "href": "/profiles-item",
+      "name": "Kate Lindman",
+      "time": "8 months ago",
+      "likes": "142",
+      "comments": "5",
+      "price": "6",
+      "private": true
+    },
+    {
+      "img": "https://picsum.photos/380/100",
+      "href": "/profiles-item",
+      "name": "Kate Lindman",
+      "time": "8 months ago",
+      "likes": "142",
+      "comments": "5",
+      "price": "6" ,
+      "private": true
+    },
+    {
+      "img": "https://picsum.photos/380/100",
+      "href": "/profiles-item",
+      "name": "Kate Lindman",
+      "time": "8 months ago",
+      "likes": "142",
+      "comments": "5",
+      "price": "6" ,
+      "private": true
     }
   ],
   "settingsPages": [
@@ -423,11 +528,13 @@
       "type" : "bitcoin",
       "crypto": true,
       "balance": "",
-      "enable": true
+      "enable": false
     }
   ],
   "balanceHistory": [
     {
+      "id": "tips",
+      "mobileId": "tips_mobile",
       "title": "Tips history",
       "description": false,
       "data": [
@@ -446,6 +553,8 @@
       ]
     },
     {
+      "id": "withdraw",
+      "mobileId": "withdraw_mobile",
       "title": "Withdraw history",
       "description": true,
       "data": [
@@ -462,6 +571,46 @@
           "amount": "0.6"
         }
       ]
+    }
+  ],
+  "myProfilePages": [
+    {
+      "id": "profile-pages-btn1",
+      "dataId": "1",
+      "title": "Posts"
+    },
+    {
+      "id": "profile-pages-btn2",
+      "dataId": "2",
+      "title": "Photos"
+    },
+    {
+      "id": "profile-pages-btn3",
+      "dataId": "3",
+      "title": "Videos"
+    }
+  ],
+  "cryptoDetails": [
+    {
+      "id": "bitcoin",
+      "title": "Bitcoin",
+      "icon": "https://place-hold.it/28x28",
+      "wallet": "BTC",
+      "balance": "$0"
+    },
+    {
+      "id": "ethereum",
+      "title": "Ethereum",
+      "icon": "https://place-hold.it/28x28",
+      "wallet": "ETH",
+      "balance": "$0"
+    },
+    {
+      "id": "usdc",
+      "title": "USDC",
+      "icon": "https://place-hold.it/28x28",
+      "wallet": "USD",
+      "balance": "$0"
     }
   ]
 }

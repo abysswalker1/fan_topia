@@ -5,7 +5,11 @@
     <div class="page-wrap__content">
         <div class="balance">
             <div class="balance__sidebar">
-                {{> navSidebar }}
+                {{> navSidebar context=main.sidebarExp subscriptions="true" activeTab="my-balance"}}
+
+                {{> sidebarButtons }}
+
+                {{> completeness empty=true}}
             </div>
             <div class="balance__content">
                 <div class="balance-card">

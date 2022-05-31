@@ -1,0 +1,85 @@
+{{> header title="Page" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+    <div class="page-wrap__content">
+        <div class="settings">
+            <div class="settings__sidebar">
+                {{> navSidebar context=main.sidebarExp subscriptions="true" subscribers="true"}}
+
+                {{> sidebarButtons }}
+
+                {{> completeness }}
+            </div>
+            <div class="settings__content">
+                <div class="settings__window">
+
+                    {{> windowHeadSettings }}
+
+                    {{> settingsPages }}
+
+                    <div class="settings__window-inner">
+                        <div class="js-settings-page account js-active-page" id="1">
+                            
+                            <div class="settings__window-verification">
+                                {{> accountVerificationSuccessful }}
+                            </div>
+                            <div class="settings__window-subscription">
+                                {{> subscriptionSetUp }}
+    
+                                <div class="settings__window-subscription--message">
+                                    <h1>Automatic Welcome Message</h1>
+                                    <p>This message will automatically be sent to your new subscribers when they first subscribe.</p>
+                                    <textarea placeholder="Enter message here"></textarea>
+                                    <div class="settings__window-subscription--message--attach">
+                                        <svg width="24px" height="24px" viewBox="0 0 24 24">
+                                            <use href="{{assets}}/img/svg-sprite/sprite.svg#panorama">
+                                        </svg>
+                                        <span>Attach Photo / Video to message</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings__window-specials">
+                                    {{> setUpSpecials }}
+                            </div>
+
+                        </div>
+                        <div class="js-settings-page payments" id="2">
+
+                            <div class="settings__window-bank">
+                                {{> bankPaymentDetails }}
+                            </div>
+                            <div class="settings__window-crypto">
+                                {{> cryptoPaymentDetails }}
+                            </div>
+
+                        </div>
+                        <div class="js-settings-page profile" id="3">
+
+                            <div class="settings__window-person">
+                                {{> profilePerson }}
+    
+                                {{> profileInfo }}
+    
+                                {{> linkedAccounts}}
+                            </div>
+                            <div class="settings__window-authentification">
+                                {{> doubleAuthentification }}
+                            </div>
+                            <div class="settings__window-password">
+                                {{> passwordSettings }}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> mobileNavigation }}
+
+    {{> footerContent }}
+    {{> footer }}
+
+</div>
