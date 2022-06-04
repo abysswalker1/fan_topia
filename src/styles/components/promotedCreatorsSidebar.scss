@@ -1,6 +1,6 @@
 .promoted-creators-sidebar {
   width: 100%;
-  padding: 30px;
+  padding: 24px 21px 30px 20px;
 
   .home__content & {
     height: 0;
@@ -17,7 +17,7 @@
   }
 
   &__list {
-    margin-bottom: 22px;
+    margin-bottom: 12px;
   }
 
   &__list-wrapper {
@@ -27,7 +27,7 @@
   &__item {
 
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
   }
 
@@ -97,7 +97,7 @@
     height: 32px;
     color: var(--grey-color);
     &:not(:last-child) {
-      margin-right: 14px;
+      margin-right: 21px;
     }
   }
 

@@ -1,5 +1,5 @@
 .header {
-  padding: 7px 20px;
+  padding: 5px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,6 +19,8 @@
   &__search-wrap {
     max-width: 330px;
     width: 100%;
+    position: relative;
+    left: 50px;
   }
 
   &__main {
@@ -28,7 +30,7 @@
   }
 
   &__profile {
-    margin-right: 45px;
+    margin-right: 33px;
     position: relative;
   }
 
@@ -95,7 +97,8 @@
   }
 
   &__notifications-icon {
-
+    width: 16px;
+    height: 19px;
   }
 
   &__notifications-count {

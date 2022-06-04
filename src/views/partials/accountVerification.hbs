@@ -1,8 +1,13 @@
 <div class="account-verification__container">
-    <p class="account-verification__title">Account verification</p>
-    <p class="account-verification__text">Verify your profile to become a creator and earn money.</p>
-    <button class="account-verification__button" type="button">Verify my account</button>
-    <p class="account-verification__note">
-        <span>Note :</span> Having your profile verified is not required to start posting or earning - it is required to withdraw funds. This is a legal requirement.
-    </p>
+  <p class="account-verification__title">Account verification</p>
+  <p class="account-verification__text">Verify your profile to become a creator and earn money.</p>
+  <button class="account-verification__button" type="button" data-fancybox data-src="#verify-account-modal">Verify my
+    account
+  </button>
+  <p class="account-verification__note">
+    <span>Note :</span> Having your profile verified is not required to start posting or earning - it is required to
+    withdraw funds. This is a legal requirement.
+  </p>
+
+  {{> verifyAccountModal}}
 </div>
