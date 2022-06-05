@@ -1,15 +1,15 @@
 <div class="nav-sidebar">
-  <nav class="nav-sidebar__list
-  {{#if subscriptions}} subscriptions_message{{/if}}
-  {{#if subscribers}} subscribers_message{{/if}}
-  {{#if activeTab}} active_{{activeTab}}{{/if}}
-   ">
+  <nav class="nav-sidebar__list">
     {{#each this.context}}
-      <a href="{{indexDir}}/pages/{{href}}.html" class="nav-sidebar__list-item">
+      <a href="{{indexDir}}/pages/{{href}}.html"
+         class="nav-sidebar__list-item {{#ifCond ../activeTab id }}nav-sidebar__list-item_active{{/ifCond}}">
         <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
           <use href="{{assets}}/img/svg-sprite/sprite.svg#{{svg}}"></use>
         </svg>
         <span class="nav-sidebar__list-item-title">{{title}}</span>
+        {{#if count }}
+          <span class="nav-sidebar__list-item-count">{{count}}</span>
+        {{/if }}
       </a>
     {{/each}}
   </nav>

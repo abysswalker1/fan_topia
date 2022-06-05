@@ -1,30 +1,31 @@
 <div class="balance-history">
-    {{#each this}}
-    <div class="balance-history__item js-history-item" id={{id}}>
-        <div class="balance-history__item-head js-history-item-head">
-            <h1>{{title}}</h1>
-            <button class="balance-history__item-head--arrow">
-                <svg width="11" height="11" viewBox="0 0 20 20" class="js-history-item-button">
-                    <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow" class="js-history-item-button"></use>
-                </svg> 
-            </button>
+  {{#each this}}
+    <div class="balance-history__item js-history-item">
+      <button class="balance-history__item-head js-history-item-trigger" type="button">
+        <h2 class="balance-history__item-title">{{title}}</h2>
+        <div class="balance-history__item-head-arrow">
+          <svg width="11" height="11" viewBox="0 0 20 20" class="balance-history__item-head-arrow-icon">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#arrow"></use>
+          </svg>
         </div>
-        <div class="balance-history__item-table">
-            <div class="balance-history__item-table--row head">
-                <div class="balance-history__item-table--row--section date">Date</div>
-                <div class="balance-history__item-table--row--section method">Method</div>
-                <div class="balance-history__item-table--row--section description">{{#if description}}Description{{else}}From{{/if}}</div>
-                <div class="balance-history__item-table--row--section amount">Amount</div>
-            </div>
-            {{#each data}}
-                <div class="balance-history__item-table--row">
-                    <div class="balance-history__item-table--row--section date">{{this.date}}</div>
-                <div class="balance-history__item-table--row--section method">{{this.method}}</div>
-                <div class="balance-history__item-table--row--section description">{{this.description}}</div>
-                <div class="balance-history__item-table--row--section amount">{{this.amount}}</div>
-                </div>
-            {{/each }}
+      </button>
+      <div class="balance-history__item-table">
+        <div class="balance-history__item-table--row head">
+          <div class="balance-history__item-table--row--section date">Date</div>
+          <div class="balance-history__item-table--row--section method">Method</div>
+          <div class="balance-history__item-table--row--section description">{{#if description}}
+            Description{{else}}From{{/if}}</div>
+          <div class="balance-history__item-table--row--section amount">Amount</div>
         </div>
+        {{#each data}}
+          <div class="balance-history__item-table--row">
+            <div class="balance-history__item-table--row--section date">{{this.date}}</div>
+            <div class="balance-history__item-table--row--section method">{{this.method}}</div>
+            <div class="balance-history__item-table--row--section description">{{this.description}}</div>
+            <div class="balance-history__item-table--row--section amount">{{this.amount}}</div>
+          </div>
+        {{/each }}
+      </div>
     </div>
-    {{/each}}
+  {{/each}}
 </div>

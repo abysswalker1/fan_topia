@@ -1,7 +1,7 @@
 .completeness {
   margin-top: 39px;
   margin-bottom: 40px;
-  padding-left: 20px;
+  margin-left: 20px;
   width: 100%;
   max-width: 275px;
 
@@ -36,8 +36,8 @@
       height: 4px;
       background: var(--dark-green-color);
       border-radius: 50%;
-      left: 0;
-      top: 0;
+      left: 6px;
+      top: 8px;
     }
 
     &:last-child {

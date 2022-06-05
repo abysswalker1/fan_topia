@@ -5,7 +5,7 @@
   <div class="page-wrap__content">
     <div class="settings">
       <div class="settings__sidebar">
-        {{> navSidebar context=main.sidebar}}
+        {{> navSidebar context=main.sidebarExp }}
 
         {{> sidebarButtons verified="false"}}
       </div>
@@ -14,10 +14,11 @@
 
           {{> windowHeadSettings }}
 
-          {{> settingsPages disabled = true}}
+          {{> settingsPages disabled="2"}}
 
           <div class="settings__window-inner">
-            <div class="js-settings-page account js-active-page" id="1">
+            <!-- ACCOUNT TAB CONTENT -->
+            <div class="js-tab-content settings__window-content-item active" id="tab-content-1">
               <div class="settings__window-verification">
                 {{> accountVerification }}
               </div>
@@ -40,7 +41,10 @@
                 {{> setUpSpecials }}
               </div>
             </div>
-            <div class="js-settings-page profile" id="3">
+            <!-- ACCOUNT TAB CONTENT -->
+
+            <!-- PROFILE TAB CONTENT -->
+            <div class="js-tab-content settings__window-content-item" id="tab-content-3">
               <div class="settings__window-person">
                 {{> profilePerson }}
 
@@ -55,6 +59,7 @@
                 {{> passwordSettings }}
               </div>
             </div>
+            <!-- /PROFILE TAB CONTENT -->
           </div>
         </div>
       </div>

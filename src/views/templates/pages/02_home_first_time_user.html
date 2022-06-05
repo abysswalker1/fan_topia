@@ -5,7 +5,7 @@
   <div class="page-wrap__content">
     <div class="home">
       <div class="home__sidebar">
-        {{> navSidebar context=main.sidebar activeTab="home" }}
+        {{> navSidebar context=main.sidebarFirstTimeUser activeTab="home" }}
 
         {{> sidebarButtons verified="false"}}
       </div>
@@ -27,6 +27,8 @@
   </div>
 
   {{> mobileNavigation }}
+
+  {{> becomeCreatorMessage }}
 
   {{> footerContent }}
   {{> footer }}

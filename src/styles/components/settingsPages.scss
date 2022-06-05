@@ -1,42 +1,48 @@
-.settingsPages {
+.settings-pages {
+  width: 100%;
+  padding: 0 16px;
+  border-bottom: $grey-border;
+
+  &__container {
     width: 100%;
-    padding: 0 20px;
-    border-bottom: $grey-border;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding-top: 10px;
+  }
 
-    &__container {
-        width: 100%;
-        max-width: 256px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+  &__button {
+    @include reset-button-styles();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333333;
+    @include medium();
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 29px;
     }
 
-    &__button {
-        @include reset-button-styles();
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 5px;
-        height: 40px;
-        font-size: 16px;
-        text-decoration: none;
-        color: #333333;
-        @include medium();
+    &.active {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--green-color);
+      }
     }
 
-    &_disabled {
-        
-        .settingsPages__button {
-            &:nth-child(2) {
-                opacity: 0.3;
-                pointer-events: none;
-            }
-        }
-
+    &:disabled {
+      opacity: 0.3;
+      pointer-events: none;
+      cursor: not-allowed;
     }
-}
-
-.js-active-button {
-    border-bottom: 2px solid rgba(144, 200, 94, 0.3);
-    height: 38px;
+  }
 }

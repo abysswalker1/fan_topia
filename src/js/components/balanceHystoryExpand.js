@@ -1,18 +1,14 @@
-$(function () {  
+(function () {
+  const $trigger = $(".js-history-item-trigger");
 
-    const historyExpand = (elem) => {
-        if (elem.classList.contains('opened')){
-            elem.classList.remove('opened');
-        } else {
-            elem.classList.add('opened');
-        }
-    }   
+  $trigger.click(function () {
+    const $t = $(this);
+    const $parent = $t.closest(".js-history-item");
 
-    $('.js-history-item').click(function (e) {
-
-        if (e.target.classList.contains('js-history-item-head') ||
-            e.target.classList.contains('js-history-item-button')) {
-            historyExpand(this)
-        }
-    })
-});
+    if ($parent.hasClass("balance-history__item_open")) {
+      $parent.removeClass("balance-history__item_open");
+    } else {
+      $parent.addClass("balance-history__item_open")
+    }
+  })
+})();

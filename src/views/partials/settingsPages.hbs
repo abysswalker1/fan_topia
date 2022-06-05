@@ -1,16 +1,16 @@
-<div class="settingsPages {{#if disabled}}settingsPages_disabled{{/if}}"> 
-    <div class="settingsPages__container">
-        {{#each main.settingsPages}}
-            <button 
-                id={{this.id}}
-                data-id="{{this.dataId}}"
-                type="button"
-                class="settingsPages__button
-                js-settings-button 
-                {{#if @first}} js-active-button {{/if}}
+<div class="settings-pages">
+  <div class="settings-pages__container">
+    {{#each main.settingsPages}}
+      <button
+              {{#ifCond ../disabled dataId }}disabled{{/ifCond}}
+              data-id="{{this.dataId}}"
+              type="button"
+              class="settings-pages__button
+                js-tabs-button
+                {{#if @first}} active {{/if}}
             ">
-                {{this.title}}
-            </button>
-        {{/each}}
-    </div>
+        {{this.title}}
+      </button>
+    {{/each}}
+  </div>
 </div>

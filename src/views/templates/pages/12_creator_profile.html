@@ -1,0 +1,53 @@
+{{> header title="Page" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="creator">
+      <div class="creator__sidebar">
+        {{> navSidebar context=main.sidebarExp }}
+
+        {{> sidebarButtons }}
+
+        {{> completeness}}
+      </div>
+
+      <div class="creator__content">
+
+        <div class="creator__main">
+          {{> myProfileMain verified=true creator=true}}
+        </div>
+
+        <button class="creator__subscribe-btn">
+          <a href="" class="creator__subscribe-btn--link">
+            <svg class="creator__subscribe-btn--icon" width="22" height="14">
+              <use href="{{assets}}/img/svg-sprite/sprite.svg#subscribers"></use>
+            </svg>
+            <p class="creator__subscribe-btn--text">
+              Subscribe for $12 per month
+            </p>
+          </a>
+        </button>
+
+        <div class="creator__pages">
+          {{> myProfilePages main.myProfilePagesExp}}
+        </div>
+
+        <div class="creator__posts">
+          {{> posts main.profilePosts locked=true}}
+        </div>
+
+      </div>
+
+      <div class="creator__side-subscribe-btn">
+        {{> sideSubscribeBtn }}
+      </div>
+    </div>
+  </div>
+
+  {{> mobileNavigation }}
+
+  {{> footerContent }}
+  {{> footer }}
+
+</div>
