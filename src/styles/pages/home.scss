@@ -6,7 +6,7 @@
   background: #FAFAFA;
 
   &__sidebar {
-    max-width: 24.6%;
+    min-width: 24.6%;
   }
 
   &__content {
@@ -16,7 +16,7 @@
   }
 
   &__promoted-creators {
-    max-width: 32.8%;
+    min-width: 32.8%;
   }
 
   &__not-verified-message {
@@ -24,7 +24,7 @@
   }
 
   &__create-new-post {
-    margin-bottom: 33px;
+    margin-bottom: 19px;
   }
 }
 

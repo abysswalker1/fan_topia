@@ -58,6 +58,44 @@
       "title": "Subscriptions",
       "id": "subscriptions",
       "href": "/subscriptions",
+      "svg": "person",
+      "count": 122
+    },
+    {
+      "title": "Purchased posts",
+      "id": "purchasedPosts",
+      "href": "/purchased-posts",
+      "svg": "purchase"
+    },
+    {
+      "title": "Referrals",
+      "id": "referrals",
+      "href": "/referrals",
+      "svg": "referrals"
+    },
+    {
+      "title": "My balance",
+      "id": "myBalance",
+      "href": "/my_balance",
+      "svg": "balance"
+    },
+    {
+      "title": "Log out",
+      "id": "logout",
+      "svg": "logout"
+    }
+  ],
+  "sidebarFirstTimeUser": [
+    {
+      "title": "Home",
+      "id": "home",
+      "href": "/",
+      "svg": "home"
+    },
+    {
+      "title": "Subscriptions",
+      "id": "subscriptions",
+      "href": "/subscriptions",
       "svg": "person"
     },
     {
@@ -95,13 +133,15 @@
       "title": "Subscribers",
       "id": "subscribers",
       "href": "/",
-      "svg": "subscribers"
+      "svg": "subscribers",
+      "count": 2
     },
     {
       "title": "Subscriptions",
       "id": "subscriptions",
       "href": "/subscriptions",
-      "svg": "person"
+      "svg": "person",
+      "count": 2
     },
     {
       "title": "Purchased posts",
@@ -357,17 +397,14 @@
   ],
   "settingsPages": [
     {
-      "id" : "settings__button-id1",
       "title": "Account",
       "dataId": "1"
     },
     {
-      "id" : "settings__button-id2",
       "title": "Payments",
       "dataId": "2"
     },
     {
-      "id" : "settings__button-id3",
       "title": "Profile",
       "dataId": "3"
     }
@@ -506,7 +543,7 @@
   "myWallets" : [
     {
       "type" : "dollars",
-      "crypto": false, 
+      "crypto": false,
       "balance": "159.60",
       "enable": true
     },
@@ -520,7 +557,7 @@
   "myWalletsFan": [
     {
       "type" : "dollars",
-      "crypto": false, 
+      "crypto": false,
       "balance": "",
       "enable": true
     },
@@ -533,7 +570,7 @@
   ],
   "balanceHistory": [
     {
-      "id": "tips",
+      "id": "1",
       "mobileId": "tips_mobile",
       "title": "Tips history",
       "description": false,
@@ -553,7 +590,7 @@
       ]
     },
     {
-      "id": "withdraw",
+      "id": "2",
       "mobileId": "withdraw_mobile",
       "title": "Withdraw history",
       "description": true,

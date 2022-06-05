@@ -4,13 +4,14 @@
   flex-grow: 10;
 
   &__sidebar {
-    max-width: 24.6%;
+    max-width: 315px;
+    width: 100%;
   }
 
   &__content {
     padding: 20px;
     width: 100%;
-    max-width: 72%;
+    max-width: calc(100% - 315px);
   }
 
   &__window {
@@ -20,6 +21,14 @@
 
     &-inner {
       width: 100%;
+    }
+
+    &-content-item {
+      display: none;
+
+      &.active {
+        display: block;
+      }
     }
 
     &-verification {
@@ -36,7 +45,7 @@
         margin-top: 60px;
         h1 {
           margin-bottom: 4px;
-          font-style: 16px;
+          font-size: 16px;
           @include bold();
         }
         p {
@@ -101,22 +110,6 @@
 .disabled {
   opacity: 0.3;
   pointer-events: none;
-}
-
-.account {
-  display: none;
-}
-
-.payments {
-  display: none;
-}
-
-.profile {
-  display: none;
-}
-
-.js-active-page {
-  display: block;
 }
 
 @media screen and (max-width: 1025px) {

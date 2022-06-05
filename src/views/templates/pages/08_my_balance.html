@@ -1,0 +1,38 @@
+{{> header title="My balance" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="balance">
+      <div class="balance__sidebar">
+        {{> navSidebar context=main.sidebarExp activeTab="myBalance"}}
+
+        {{> sidebarButtons }}
+
+        {{> completeness }}
+      </div>
+
+      <div class="balance__content">
+        <div class="balance-card">
+          <div class="balance-card__head">
+            <h1 class="balance-card__title">My balance</h1>
+          </div>
+          <div class="balance-card__wallets">
+            {{> myWallets main.myWallets }}
+          </div>
+          <div class="balance-card__history">
+            {{> balanceHistory main.balanceHistory}}
+
+            {{> balanceHistoryMobile main.balanceHistory }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{> mobileNavigation }}
+
+  {{> footerContent }}
+  {{> footer }}
+
+</div>

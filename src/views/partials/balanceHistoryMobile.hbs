@@ -1,39 +1,41 @@
-
 <div class="balance-history_mobile">
-{{#each this}}
+  {{#each this}}
     <div class="balance-history_mobile__item js-history-item">
-        <div class="balance-history__item-head js-history-item-head">
-            <h1>{{title}}</h1>
-            <svg class="balance-history__item-head--arrow js-history-item-button" width="11" height="11" viewBox="0 0 20 20">
-                <use href="{{assets}}/img/svg-sprite/sprite.svg#back-arrow" class="js-history-item-button"></use>
-            </svg>
-        </div>
-    {{#each data}}
-    <div class="balance-history_mobile__item-wrapp">
-        <div class="balance-history_mobile__item-row">
+      <button type="button" class="balance-history__item-head js-history-item-trigger">
+        <h1 class="balance-history__item-title">{{title}}</h1>
+        <span class="balance-history__item-head-arrow">
+           <svg class="balance-history__item-head-arrow-icon" width="11" height="11"
+                viewBox="0 0 20 20">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#back-arrow"></use>
+          </svg>
+        </span>
+      </button>
+      {{#each data}}
+        <div class="balance-history_mobile__item-wrapp">
+          <div class="balance-history_mobile__item-row">
             <div class="balance-history_mobile__item-row--elem">
-                <span>{{date}}</span>
+              <span>{{date}}</span>
             </div>
             <div class="balance-history_mobile__item-row--elem amount">
-                {{amount}}
+              {{amount}}
             </div>
-        </div>
-        <div class="balance-history_mobile__item-row">
+          </div>
+          <div class="balance-history_mobile__item-row">
             <div class="balance-history_mobile__item-row--elem">
-                {{#if description}}
-                    {{description}}
-                {{else}}
-                    <span>From: </span>
-                    {{description}}
-                {{/if}} 
+              {{#if description}}
+                {{description}}
+              {{else}}
+                <span>From: </span>
+                {{description}}
+              {{/if}}
             </div>
             <div class="balance-history_mobile__item-row--elem">
-                <span>Method: </span>
-                {{method}}
+              <span>Method: </span>
+              {{method}}
             </div>
+          </div>
         </div>
+      {{/each}}
     </div>
-    {{/each}}
-    </div>
-{{/each}}
+  {{/each}}
 </div>

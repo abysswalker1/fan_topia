@@ -1,0 +1,74 @@
+{{> header title="Page" }}
+{{> mainHeader }}
+
+<div class="page-wrap">
+  <div class="page-wrap__content">
+    <div class="settings">
+      <div class="settings__sidebar">
+        {{> navSidebar context=main.sidebarExp }}
+
+        {{> sidebarButtons verified="false"}}
+      </div>
+      <div class="settings__content">
+        <div class="settings__window">
+
+          {{> windowHeadSettings }}
+
+          {{> settingsPages disabled="2"}}
+
+          <div class="settings__window-inner">
+            <!-- ACCOUNT TAB CONTENT -->
+            <div class="js-tab-content settings__window-content-item active" id="tab-content-1">
+              <div class="settings__window-verification">
+                {{> accountVerification }}
+              </div>
+              <div class="settings__window-subscription disabled">
+                {{> subscriptionSetUp }}
+
+                <div class="settings__window-subscription--message">
+                  <h1>Automatic Welcome Message</h1>
+                  <p>This message will automatically be sent to your new subscribers when they first subscribe.</p>
+                  <textarea placeholder="Enter message here"></textarea>
+                  <div class="settings__window-subscription--message--attach">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24">
+                      <use href="{{assets}}/img/svg-sprite/sprite.svg#panorama" />
+                    </svg>
+                    <span>Attach Photo / Video to message</span>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__window-specials disabled">
+                {{> setUpSpecials }}
+              </div>
+            </div>
+            <!-- ACCOUNT TAB CONTENT -->
+
+            <!-- PROFILE TAB CONTENT -->
+            <div class="js-tab-content settings__window-content-item" id="tab-content-3">
+              <div class="settings__window-person">
+                {{> profilePerson }}
+
+                {{> profileInfo }}
+
+                {{> linkedAccounts}}
+              </div>
+              <div class="settings__window-authentification">
+                {{> doubleAuthentification }}
+              </div>
+              <div class="settings__window-password">
+                {{> passwordSettings }}
+              </div>
+            </div>
+            <!-- /PROFILE TAB CONTENT -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{> mobileNavigation }}
+
+  {{> footerContent }}
+  {{> footer }}
+
+</div>

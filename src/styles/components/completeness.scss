@@ -1,49 +1,66 @@
 .completeness {
-    margin-top: 39px;
-    margin-bottom: 40px;
+  margin-top: 39px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 275px;
+
+  &__box {
+    background: #F8F3E0;
+    border-radius: 4px;
+    max-width: 100%;
+    min-height: 165px;
+    padding: 12px;
+
+    &_empty {
+      background: none;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    @include bold();
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
     padding-left: 20px;
-    width: 100%;
-    max-width: 275px;
+    position: relative;
 
-    &__box {
-        background: #F8F3E0;
-        border-radius: 4px;
-        max-width: 100%;
-        min-height: 165px;
-        padding: 12px;
-        &_empty {
-            background: none;
-        }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--dark-green-color);
+      border-radius: 50%;
+      left: 6px;
+      top: 8px;
     }
 
-    &__title {
-        font-size: 18px;
-        line-height: 21px;
-        margin-bottom: 10px;
-        @include bold();
+    &:last-child {
+      margin: 0;
     }
+  }
 
-    &__list-item {
-        margin-bottom: 10px;
-        padding-left: 20px;
+  &__list-item-link {
+    color: var(--dark-green-color);
+    font-size: 16px;
+    line-height: 19px;
+    @include light();
 
-        a {
-            color: #306700;
-            font-size: 16px;
-            line-height: 19px;
-            @include light();
-        }
-
-        &:last-child {
-            margin: 0;
-        }
+    &:hover {
+      text-decoration: none;
     }
+  }
 
-    &__full {
-        margin-top: 50px;
-        padding-left: 20px;
-        font-size: 18px;
-        line-height: 21px;
-        @include bold();
-    }
+  &__full {
+    margin-top: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    @include bold();
+  }
 }

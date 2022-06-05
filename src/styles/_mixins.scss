@@ -95,25 +95,6 @@
   background: white;
 }
 
-@mixin messages($content) {
-    &::after {
-      content: $content;
-      top: 0;
-      right: -58px;
-      margin-left: 10px;
-      min-width: 35px;
-      height: 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #83C1EE;
-      border-radius: 2px;
-      font-size: 16px;
-      color: #333333;
-      @include bold();
-    }
-  }
-
 @mixin stdScrollbarStyles($trackColor: #b3b3b3, $mainColor: transparent) {
   &::-webkit-scrollbar-track {
     border-radius: 10px;
