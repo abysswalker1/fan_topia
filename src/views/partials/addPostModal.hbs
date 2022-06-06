@@ -1,6 +1,11 @@
-<div id="dialog-content" style="display:none;" class="add-post-modal">
+<div id="dialog-content" style="display:none;" class="add-post-modal js-open-create-post">
   <div class="add-post-modal__title-wrap">
     <h2 class="add-post-modal__title">Create new post</h2>
+    <button type="button" class="add-post-modal__title-btn">
+      <svg class="add-post-modal__title-img">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#close_cross"></use>
+      </svg>
+    </button>
   </div>
 
   <div class="add-post-modal__content">
@@ -12,13 +17,53 @@
 
       <div class="add-post-modal__top-content">
         <p class="add-post-modal__name">Kate Lindman</p>
-        <div class="add-post-modal__switch"></div>
+        <label class="add-post-modal__switch">
+          <input type="checkbox">
+          <div class="add-post-modal__switch-slider">
+            <div class="add-post-modal__switch-slider-item">Subscribers only</div>
+            <div class="add-post-modal__switch-slider-item">Public</div>
+          </div>
+        </label>
       </div>
     </div>
     <!-- /TOP -->
 
+    {{!-- CHECKBOXES --}}
     <div class="add-post-modal__checkboxes">
-
+        <label for="paid-post" class="add-post-modal__checkboxes-item">
+          <input type="checkbox" id="paid-post" class="add-post-modal__checkboxes-item--checkbox">
+          <span class="post-modal__checkboxes-item-text">Paid post (fans pay to unlock and view post)</span>
+        </label>
+        <label for="allow-download" class="add-post-modal__checkboxes-item">
+          <input type="checkbox" id="allow-download" class="add-post-modal__checkboxes-item--checkbox">
+          <span class="post-modal__checkboxes-item-text">Allow subscribers to download video</span>
+        </label>
+        <label for="disable-comments" class="add-post-modal__checkboxes-item">
+          <input type="checkbox" id="disable-comments" class="add-post-modal__checkboxes-item--checkbox">
+          <span class="post-modal__checkboxes-item-text">Disable comments</span>
+        </label>
     </div>
+    {{!-- /CHECKBOXES --}}
+
+    <textarea class="add-post-modal__textarea" placeholder="Create new post..." name="create-post"></textarea>
+
+    <!--ADD-PHOTO-->
+    <div class="add-post-modal__add-photo">
+      <button class="add-post-modal__add-photo--btn" type="button">
+        <svg class="add-post-modal__add-photo--btn-icon" viewBox="0 0 22 16">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#image"></use>
+        </svg>
+        <span class="add-post-modal__add-photo--btn-text">Add Photo / Video</span>
+      </button>
+    </div>
+    <!--/ADD-PHOTO-->
+
+    <div class="add-post-modal__bottom">
+      <div class="add-post-modal__bottom-select-wrapper">
+        <select name="" id="add-post-modal-select" class="add-post-modal__bottom-select"></select>
+      </div>
+      <button class="add-post-modal__bottom-button" type="button">Post</button>
+    </div>
+
   </div>
 </div>
