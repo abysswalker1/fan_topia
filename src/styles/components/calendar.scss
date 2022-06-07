@@ -1,0 +1,27 @@
+.qs {
+  &-datepicker-container.qs-hidden {
+    position: relative;
+    display: block;
+    box-shadow: none;
+    border: 1px solid #C2C2C2;
+    border-radius: 8px;
+    padding: 6px 9px 11px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &-squares {
+    row-gap: 13px;
+  }
+
+  &-day {
+    font-size: 16px;
+    @include bold();
+    opacity: 0.5;
+  }
+
+  &-square {
+    font-size: 18px;
+    @include regular();
+  }
+}

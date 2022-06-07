@@ -8,12 +8,10 @@
       <input type="text" class="create-new-in-posts__input" placeholder="Create new post...">
     </div>
   </div>
-
   <div class="create-new-in-posts__bottom">
     <button class="create-new-in-posts__button" type="button"  data-fancybox data-src="#dialog-content">
       {{> addNewIconGroup }}
     </button>
   </div>
-
-  {{> addPostModal}}
+  {{> addPostModal verified=verified}}
 </div>

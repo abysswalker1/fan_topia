@@ -46,6 +46,10 @@
 @import "components/myProfilePages";
 @import "components/sideSubscribeBtn";
 @import "components/becomeCreatorMessage";
+@import "components/postCreated";
+@import "components/calendar";
+@import "components/noteToVerificationModal";
+@import "components/scheduleConfirmationModal";
 
 // Pages
 @import "pages/login";
@@ -58,3 +62,4 @@
 //Libraries
 @import "../../node_modules/swiper/swiper";
 @import "../../node_modules/@fancyapps/ui/dist/fancybox";
+@import '../../node_modules/js-datepicker/src/datepicker.scss';

@@ -2,12 +2,13 @@
   max-width: 450px;
   width: 100%;
   border-radius: 8px;
+  min-height: 580px;
 
   &.fancybox__content {
     padding: 0;
   }
 
-  &.carousel__button {
+  &.carousel__button.is-close {
     display: none;
   }
 
@@ -224,7 +225,7 @@
     width: 84px; 
   }
 
-  &__buttons-btn-schelude {
+  &__buttons-btn-schedule {
     @include std-button(38px);
     background: rgba(194, 194, 194, 0.2);
     @include regular();
@@ -236,4 +237,126 @@
     width: 173px;
   }
 
+  &__schedule-head-btn {
+    @include reset-button-styles();
+    outline: none;
+    display: none;
+    align-items: center;
+  }
+
+  &__schedule-icon {
+    margin-right: 22px;
+  }
+
+  &__schedule-title {
+    font-size: 18px;
+    color: black;
+    @include medium();
+  }
+
+  &__schedule-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 16px 16px;
+  }
+
+  &__schedule-select-wrapper {
+    width: 330px;
+  }
+
+  &__schedule-select-title {
+    font-size: 14px;
+    line-height: 16px;
+    @include light();
+  }
+
+  &__calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+    width: 100%;
+    max-width: 286px;
+
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &-title {
+      font-size: 18px;
+      line-height: 21px;  
+      @include regular();
+      color: #000000;
+    }
+
+    &-date {
+      span {
+        font-size: 18px;
+        line-height: 21px;
+        color: #306700;
+        @include regular();
+        margin-right: 7px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+
+    &-text {
+      font-size: 18px;
+      line-height: 21px;
+      @include regular();
+      color: #000000;
+    }
+
+    &-text {
+      margin-right: 11px;
+    }
+
+    &-select-wrapper {
+      width: 76px;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__done-btn-wrapper {
+    position: absolute;
+    bottom: 16px;
+    right: 17px;
+  }
+}
+
+.add-post-modal.schedule {
+  .add-post-modal__title-wrap {
+    padding: 0 16px 0 21px;
+  }
+  .add-post-modal__title {
+    display: none;
+  }
+
+  .add-post-modal__content {
+    display: none;
+  }
+
+  .add-post-modal__schedule-head-btn {
+    display: flex;
+  }
+
+  .add-post-modal__schedule-content {
+    display: flex; 
+  }
 }

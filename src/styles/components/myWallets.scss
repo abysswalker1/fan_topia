@@ -32,6 +32,7 @@
 
     &__item-note {
         display: flex;
+        align-items: center;
         margin: 23px 0 16px;
         font-size: 16px;
         line-height: 19px;
@@ -41,14 +42,10 @@
             margin: 8px 0 23px;
         }
     }
-
-    &__item-note {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        font-size: 16px;
-        line-height: 19px;
-        @include light();
+    
+    &__item-icon {
+        border-radius: 50%;
+        margin-right: 6px;
     }
 
     &__item-button {

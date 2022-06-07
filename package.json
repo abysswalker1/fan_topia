@@ -52,6 +52,7 @@
     "ansi-colors": "^4.1.1",
     "current-device": "^0.10.1",
     "jquery": "^3.5.1",
+    "js-datepicker": "^5.18.0",
     "require-dir": "^1.2.0",
     "select2": "^4.1.0-rc.0",
     "svg4everybody": "^2.1.9",

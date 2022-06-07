@@ -1,0 +1,70 @@
+.post-created {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+
+  &.fancybox__content {
+    padding: 0;
+  }
+
+  &__close-btn {
+    @include reset-button-styles();
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    width: 12px;
+    height: 11px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 40px 31px;
+    border-bottom: 1px solid #C2C2C2;
+  }
+
+  &__top-image {
+    width: 69px;
+    height: 69px;
+    background: #5EC8A8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; 
+    margin-bottom: 25px;
+
+    &--icon {
+      width: 30px;
+    }
+
+    &__top-text {
+      font-size: 16px;
+      line-height: 19px;
+      @include light();
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 40px 27px;
+  }
+
+  &__bottom-text {
+    text-align: center;
+    line-height: 16px;
+    font-style: 14px;
+    color: #333333;
+    @include light();
+    margin-bottom: 19px;
+  }
+
+  &__bottom-btn {
+    @include std-button(38px);
+    width: 190px;
+  }
+
+}
