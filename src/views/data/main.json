@@ -551,7 +551,8 @@
       "type" : "bitcoin",
       "crypto": true,
       "balance": "0.60",
-      "enable": false
+      "enable": false,
+      "icon": "https://place-hold.it/32x30"
     }
   ],
   "myWalletsFan": [
