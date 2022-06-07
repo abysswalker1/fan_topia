@@ -37,10 +37,6 @@
     height: 12px;
   }
 
-  &__content {
-
-  }
-
   &__top {
     display: flex;
     align-items: center;
@@ -214,9 +210,26 @@
     justify-content: space-between;
   }
 
-  &__bottom-button {
+  &__buttons {
+    display: none;
+    align-items: center;
+  }
+
+  &__buttons.active-option {
+    display: flex;
+  }
+
+  &__buttons-btn {
     @include std-button(38px);
     width: 84px; 
+  }
+
+  &__buttons-btn-schelude {
+    @include std-button(38px);
+    background: rgba(194, 194, 194, 0.2);
+    @include regular();
+    width: 96px;
+    margin-right: 16px;
   }
 
   &__bottom-select-wrapper {
