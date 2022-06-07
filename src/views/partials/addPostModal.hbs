@@ -58,12 +58,30 @@
     </div>
     <!--/ADD-PHOTO-->
 
+
+    <!--BOTTOM -->
     <div class="add-post-modal__bottom">
+
+      <!--select-->
       <div class="add-post-modal__bottom-select-wrapper">
-        <select name="" id="add-post-modal-select" class="add-post-modal__bottom-select"></select>
+        <select id="add-post-modal-select" class="add-post-modal__bottom-select">
+          <option value="post-now">Post now</option>
+          <option value="schedule-post">Schelude post</option>
+        </select>
       </div>
-      <button class="add-post-modal__bottom-button" type="button">Post</button>
+
+      <!--buttons-->
+      <div data-value="post-now" class="add-post-modal__buttons js-add-post-buttons active-option">
+        <button class="add-post-modal__buttons-btn" type="button">Post</button>
+      </div>
+      <div data-value="schedule-post" class="add-post-modal__buttons js-add-post-buttons">
+        <button class="add-post-modal__buttons-btn-schelude" type="button">Schelude</button>
+        <button class="add-post-modal__buttons-btn" type="button">Done</button>
+      </div>
+
     </div>
 
   </div>
+  <!--/BOTTOM -->
+
 </div>

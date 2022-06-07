@@ -13,6 +13,7 @@ require('./components/openSearch');
 require('./components/verificationPopup');
 require('./components/uploadFile');
 require('./components/closeBecomeCreateMessage');
+require('./components/addPostSelectChange')
 
 
 require('./other/select');
