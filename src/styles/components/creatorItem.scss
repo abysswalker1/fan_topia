@@ -28,6 +28,7 @@
     align-items: center;
     position: relative;
     z-index: 2;
+    max-width: calc(100% - 115px);
   }
 
   &__avatar-wrap {
@@ -53,6 +54,10 @@
     color: white;
     font-size: 16px;
     @include light();
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 58px - 11px);
+    overflow: hidden;
 
     &:hover {
       text-decoration: none;
