@@ -69,7 +69,7 @@
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
 
-    border-top: 5px solid #C2C2C2;
+    border-top: 5px solid var(--light-grey);
   }
 
   &__profile-dropdown {
@@ -99,6 +99,7 @@
   &__notifications-icon {
     width: 16px;
     height: 19px;
+    color: var(--light-grey);
   }
 
   &__notifications-count {
@@ -133,6 +134,7 @@
     width: 20px;
     height: 20px;
     min-width: 20px;
+    color: var(--light-grey);
   }
 
   &__open-search {
@@ -166,6 +168,7 @@
     &__open-search {
       @include reset-button-styles();
       width: 32px;
+      min-width: 32px;
       height: 32px;
       display: flex;
       align-items: center;
@@ -173,6 +176,10 @@
     }
 
     &__open-search-icon {
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
       color: var(--text-color-2);
     }
   }

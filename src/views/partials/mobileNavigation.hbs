@@ -1,31 +1,47 @@
 <div class="mobile-nav">
-  <a href="/" class="mobile-nav__item mobile-nav__item_active">
-    <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#home"></use>
-    </svg>
-  </a>
+  <div class="mobile-nav__item-wrap">
+    <a href="/" class="mobile-nav__item mobile-nav__item_home mobile-nav__item_active">
+      <svg class="mobile-nav__item-icon" viewBox="0 0 24 24">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#home"></use>
+      </svg>
+    </a>
+  </div>
 
-  <a href="/notifications" class="mobile-nav__item">
-    <svg class="nav-sidebar__list-item-icon" viewBox="0 0 16 20">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#notification"></use>
-    </svg>
-  </a>
+  <div class="mobile-nav__item-wrap">
+    <a href="/notifications" class="mobile-nav__item mobile-nav__item_notification">
+      <svg class="mobile-nav__item-icon " viewBox="0 0 16 20">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
 
-  <button class="mobile-nav__item mobile-nav__item_add-post" type="button">
-    <svg class="nav-sidebar__create-post-icon" viewBox="0 0 17 17">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#plus"></use>
-    </svg>
-  </button>
+  <div class="mobile-nav__item-wrap">
+    <button class="mobile-nav__item mobile-nav__item_add-post" type="button">
+      <svg class="mobile-nav__item-icon" viewBox="0 0 17 17">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#plus"></use>
+      </svg>
+    </button>
+  </div>
 
-  <a href="" class="mobile-nav__item">
-    <svg class="header__messages-icon" viewBox="0 0 20 20">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#message"></use>
-    </svg>
-  </a>
+  <div class="mobile-nav__item-wrap">
+    <a href="" class="mobile-nav__item mobile-nav__item_message">
+      <svg class="mobile-nav__item-icon" viewBox="0 0 20 20">
+        <use href="{{assets}}/img/svg-sprite/sprite.svg#message"></use>
+      </svg>
+    </a>
+  </div>
 
-  <a href="" class="mobile-nav__item">
-    <svg class="header__messages-icon" viewBox="0 0 20 20">
-      <use href="{{assets}}/img/svg-sprite/sprite.svg#person"></use>
-    </svg>
-  </a>
+  <div class="mobile-nav__item-wrap">
+    <button type="button" class="mobile-nav__item mobile-nav__item_person {{#unless hasAvatar}}mobile-nav__item_no-avatar{{/unless}}">
+      {{#if hasAvatar}}
+        <img src="https://picsum.photos/100/100" alt="user avatar" class="mobile-nav__item-avatar">
+      {{/if}}
+
+      {{#unless hasAvatar}}
+        <svg class="mobile-nav__item-icon" viewBox="0 0 20 20">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#person_bg"></use>
+        </svg>
+      {{/unless}}
+    </button>
+  </div>
 </div>
