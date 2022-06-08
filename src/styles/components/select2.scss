@@ -29,12 +29,13 @@
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    height: 70%!important;
-    margin-right: 10px;
+    align-items: flex-end; 
+    height: 80%!important;
+    margin-right: 10px; 
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-   width: 13px;
    line-height: 13px;
+   border-width: 11px 6px 0 6px!important;
+   border-color: #333333 transparent transparent!important;
 }

@@ -1,0 +1,49 @@
+.edit-profile {
+  width: 100%;
+  max-width: 450px;
+
+  &.fancybox__content {
+    padding: 0;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 20px 11px 25px;
+    border-bottom: 1px solid #C2C2C2;
+
+  }
+
+  &__head-btn {
+    @include reset-button-styles();
+    width: 12px;
+    height: 11px;
+  }
+
+  &__head-title {
+    font-size: 18px;
+    line-height: 21px;
+    @include medium();
+  }
+
+  &__profile {
+    border-bottom: 1px solid #C2C2C2;
+  }
+
+  .profile-person__image.in-modal {
+    max-width: 414px;
+  }
+
+  &__bio {
+    padding: 9px 20px 11px 25px;
+  }
+
+  &__bio-title {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 4px 0;
+    @include bold();
+  }
+
+}

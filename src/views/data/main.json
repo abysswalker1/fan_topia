@@ -524,20 +524,45 @@
     {
       "id" : "retention",
       "title" : "Retention Special",
-      "text" : "This is a special for when someone goes to unsubscribe. Set a special price for them to stay subscribed for a given timeframe e.g. $5 per month for 3 months.",
-      "status" : true
+      "text" : "This is a special for when someone goes to unsubscribe. Set a special price for them to stay subscribed for a given timeframe e.g. $5 per month for 3 months."
     },
     {
       "id" : "new",
       "title" : "New Subscribers Special",
       "text" : "Set a special to entice new fans to subscribe. Only new accounts can claim this, not old subscribers.",
-      "status" : false
+      "options": [
+        {
+          "value": "some-special",
+          "text": "Some special"
+        },
+        {
+          "value": "some-special",
+          "text": "Some special"
+        },
+        {
+          "value": "some-special",
+          "text": "Some special"
+        }
+      ]
     },
     {
       "id" : "past",
       "title" : "Past Subscribers Special",
       "text" : "Set a special to bring old fans back! They will get an email letting them know about your special.",
-      "status" : false
+      "options": [
+        {
+          "value": "some-special",
+          "text": "Some special"
+        },
+        {
+          "value": "some-special",
+          "text": "Some special"
+        },
+        {
+          "value": "some-special",
+          "text": "Some special"
+        }
+      ]
     }
   ],
   "myWallets" : [
