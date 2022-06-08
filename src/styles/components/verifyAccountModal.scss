@@ -45,7 +45,7 @@
   }
 
   &__progress {
-    background: #C2C2C2;
+    background: var(--light-grey);
     height: 5px;
     position: relative;
   }
@@ -224,7 +224,7 @@
 
   &__result-top {
     padding: 18px;
-    border-bottom: 1px solid #C2C2C2;
+    border-bottom: 1px solid var(--light-grey);
     display: flex;
     align-items: center;
     justify-content: center;

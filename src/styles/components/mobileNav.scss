@@ -9,16 +9,90 @@
   backdrop-filter: blur(20px);
   height: 56px;
   align-items: center;
-  justify-content: center;
-  z-index: 2;
+  justify-content: space-around;
+  z-index: 100;
+
+  &__item-wrap {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__item {
     @include reset-button-styles();
     color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
 
-    &:not(:last-child) {
-      margin-right: 50px;
+    &_add-post {
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+      background: var( --mid-grey);
+      border-radius: 2px;
     }
+
+    &_person {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &_active {
+      &.mobile-nav__item_add-post {
+        background: var(--green-color);
+      }
+    }
+
+    &_no-avatar {
+      background: var( --mid-grey);
+    }
+  }
+
+  &__item-icon {
+    color: var(--grey-color);
+    max-width: 100%;
+    max-height: 100%;
+
+    .mobile-nav__item_active & {
+      color: var(--green-color);
+    }
+    .mobile-nav__item_home & {
+      width: 23px;
+      height: 23px;
+    }
+    .mobile-nav__item_notification & {
+      width: 20px;
+      height: 24px;
+    }
+    .mobile-nav__item_add-post & {
+      width: 18px;
+      height: 18px;
+      color: white;
+    }
+    .mobile-nav__item_message & {
+      width: 26px;
+      height: 26px;
+    }
+    .mobile-nav__item_person & {
+      width: 14px;
+      height: 14px;
+      color: white;
+    }
+
+  }
+
+  &__item-avatar {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -27,5 +101,4 @@
   .mobile-nav {
     display: flex;
   }
-
 }

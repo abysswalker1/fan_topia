@@ -53,3 +53,17 @@
     }
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  .home {
+
+    &__content {
+      padding: 7px 12px 20px 12px;
+    }
+
+    &__create-new-post {
+      margin-bottom: 23px;
+    }
+  }
+}

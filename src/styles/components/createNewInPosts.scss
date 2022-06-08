@@ -3,7 +3,7 @@
 
   &__top {
    padding: 13px 18px 14px 15px;
-   border-bottom: 1px solid #C2C2C2;
+   border-bottom: 1px solid var(--light-grey);
    display: flex;
    align-items: center;
    justify-content: flex-start;
@@ -47,7 +47,7 @@
  .create-new-in-posts {
 
   &__top {
-   padding: 13px 14px 14px 8px;
+   padding: 13px 14px 12px 8px;
   }
 
   &__img-wrap {
@@ -59,7 +59,7 @@
   }
 
   &__bottom {
-   padding: 10px 14px 9px 13px;
+   padding: 10px 14px 6px 13px;
   }
  }
 }
