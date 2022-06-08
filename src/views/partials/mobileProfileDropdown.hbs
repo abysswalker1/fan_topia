@@ -1,0 +1,41 @@
+<div class="mobile-profile-dropdown" id="mobile-profile-dropdown">
+  <div class="mobile-profile-dropdown__top">
+    {{#each main.profileDropdown}}
+      <a href="{{this.href}}" class="profile-dropdown__item">
+        <div class="profile-dropdown__item-icon-wrap">
+          <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+            <use href="{{assets}}/img/svg-sprite/sprite.svg#{{this.svg}}"></use>
+          </svg>
+        </div>
+
+        <span class="profile-dropdown__item-text">{{this.title}}</span>
+      </a>
+    {{/each}}
+  </div>
+
+  <div class="mobile-profile-dropdown__bottom">
+    {{#each main.sidebarNav}}
+      <a href="{{this.href}}" class="promoted-creators-sidebar__nav-item">{{this.title}}</a>
+    {{/each}}
+
+    <div class="promoted-creators-sidebar__socials">
+      <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+        <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#facebook"></use>
+        </svg>
+      </a>
+
+      <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+        <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#instagram"></use>
+        </svg>
+      </a>
+
+      <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+        <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+          <use href="{{assets}}/img/svg-sprite/sprite.svg#mail"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
