@@ -14,9 +14,11 @@
   </div>
 
   <div class="mobile-profile-dropdown__bottom">
-    {{#each main.sidebarNav}}
-      <a href="{{this.href}}" class="promoted-creators-sidebar__nav-item">{{this.title}}</a>
-    {{/each}}
+    <div class="promoted-creators-sidebar__nav">
+      {{#each main.sidebarNav}}
+        <a href="{{this.href}}" class="promoted-creators-sidebar__nav-item">{{this.title}}</a>
+      {{/each}}
+    </div>
 
     <div class="promoted-creators-sidebar__socials">
       <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">

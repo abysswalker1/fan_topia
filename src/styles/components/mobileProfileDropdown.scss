@@ -5,4 +5,18 @@
   bottom: 0;
   right: 0;
   display: none;
+  background: white;
+  z-index: 120;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+
+  &_open {
+    display: flex;
+  }
+
+  &__bottom {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }

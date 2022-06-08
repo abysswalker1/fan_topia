@@ -58,6 +58,14 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 25px;
+
+    .mobile-profile-dropdown & {
+      flex-wrap: wrap;
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: flex-start;
+    }
+
   }
 
   &__nav-item {
@@ -81,13 +89,32 @@
         top: 50%;
         margin-top: -2px;
       }
+
+      .mobile-profile-dropdown & {
+        margin-right: 30px;
+      }
     }
+
+    .mobile-profile-dropdown & {
+      margin-bottom: 9px;
+      &:nth-child(3) {
+        margin-right: 0;
+        &:after {
+          display: none;
+        }
+      }
+    }
+
   }
 
   &__socials {
     display: flex;
     align-items: center;
     padding-left: 10px;
+
+    .mobile-profile-dropdown & {
+      padding-left: 0;
+    }
   }
 
   &__socials-item {
