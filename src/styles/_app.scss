@@ -3,7 +3,23 @@
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  background-color: #FAFAFA;;
+  background-color: #FAFAFA;
+
+  &.profile-dropdown-open {
+    height: 100vh;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(51, 51, 51, 0.8);
+      z-index: 115;
+    }
+  }
 
   &__content {
     flex-grow: 10;

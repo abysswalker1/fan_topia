@@ -15,6 +15,7 @@ require('./components/uploadFile');
 require('./components/closeBecomeCreateMessage');
 require('./components/addPostSelectChange')
 require('./components/scheduleModalSwip')
+require('./components/mobileProfileDropdown')
 
 
 require('./other/select');

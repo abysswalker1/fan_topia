@@ -32,7 +32,9 @@
   </div>
 
   <div class="mobile-nav__item-wrap">
-    <button type="button" class="mobile-nav__item mobile-nav__item_person {{#unless hasAvatar}}mobile-nav__item_no-avatar{{/unless}}">
+    <button type="button"
+            class="mobile-nav__item mobile-nav__item_person {{#unless hasAvatar}}mobile-nav__item_no-avatar{{/unless}}"
+            id="trigger-mobile-dropdown">
       {{#if hasAvatar}}
         <img src="https://picsum.photos/100/100" alt="user avatar" class="mobile-nav__item-avatar">
       {{/if}}
@@ -44,4 +46,5 @@
       {{/unless}}
     </button>
   </div>
+
 </div>
