@@ -5,18 +5,32 @@
       <h1 class="specials__item-title">{{this.title}}</h1>
       <p class="specials__item-text">{{this.text}}</p>
       <div class="specials__item-select-wrapper">
-        <h3 class="specials__item-select-wrapper-title">Status</h3>
-        <select class="js-standard-select specials__item-select">
-          <option>
-            Months
-          </option>
+        <h3 class="specials__item-select-wrapper-title">
+          {{#if this.options}}
+            Select type of special
+          {{else}}
+            Status
+          {{/if}}
+        </h3>
+        <select class="specials__item-select js-standard-select">
+          {{#if this.options}}
+            <option disabled selected>
+              Type of special
+            </option>
+          {{#each this.options}}
+            <option value={{value}}>{{text}}</option>
+          {{/each}}
+          {{else}}
+          <option value="disabled">disabled</option>
+          <option value="enabled">enabled</option>
+          {{/if}}
         </select>
       </div>
       <div class="specials__item-row">
         <div class="specials__item-select-wrapper">
           <label for={{this.id}}>
-            <h3 class="specials__item-select-wrapper-title">Status</h3>
-            <select class="js-standard-select specials__item-select" name="price">
+            <h3 class="specials__item-select-wrapper-title">Special price for</h3>
+            <select class="specials__item-select js-standard-select" name="price">
               <option>
                 Months
               </option>

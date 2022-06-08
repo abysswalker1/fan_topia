@@ -15,9 +15,9 @@ require('./components/uploadFile');
 require('./components/closeBecomeCreateMessage');
 require('./components/addPostSelectChange')
 require('./components/scheduleModalSwip')
-require('./components/scheduleCalendar')
 
 
 require('./other/select');
 require('./other/swier');
 require('./other/popup');
+require('./other/scheduleCalendar')
