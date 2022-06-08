@@ -1,11 +1,11 @@
 <div class="sidebar-buttons">
-    <button class="sidebar-buttons__create-post" type="button" data-custom-open="modal-1">
+    <button class="sidebar-buttons__create-post" type="button" data-fancybox data-src="#dialog-content">
         <svg class="sidebar-buttons__create-post-icon" viewBox="0 0 17 17">
         <use href="{{assets}}/img/svg-sprite/sprite.svg#plus"></use>
         </svg>
         Create post
     </button>
-    {{#if verified}} 
+    {{#if verified}}
     <button class="sidebar-buttons__become-creator" type="button">Become creator</button>
     {{/if}}
 </div>
