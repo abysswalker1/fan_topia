@@ -235,6 +235,16 @@
 
   &__bottom-select-wrapper {
     width: 173px;
+    position: relative;
+  }
+
+  &__bottom-select-icon {
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    top: 7px;
+    left: 5px;
+    z-index: 2;
   }
 
   &__schedule-head-btn {

@@ -6,6 +6,10 @@
     padding: 0;
   }
 
+  .carousel__button.is-close {
+    display: none;
+  }
+
   &__close-btn {
     @include reset-button-styles();
     position: absolute;
