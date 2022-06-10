@@ -6,6 +6,10 @@
   flex-direction: column;
   align-items: center;
 
+  .carousel__button.is-close {
+    display: none;
+  }
+
   &__warning {
     position: relative;
     margin-bottom: 37px;
