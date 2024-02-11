@@ -1,0 +1,1425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Page</title>
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <!-- for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" lang="en" content="Page">
+  <link rel="icon" sizes="192x192" href="../assets/img/favicons/android-chrome-192x192.png">
+  <!-- for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Page">
+  <meta name="theme-color" content="#FFFFFF">
+  <!-- select 2 plugin -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <!-- datapicker plugin -->
+  <link rel="text/HTML" href="../../../node_modules/js-datepicker/dist/datepicker.min.css">
+  <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="../assets/img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="../assets/img/favicons/apple-touch-icon-1024x1024.png">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__container">
+      <a href="/" class="header__logo-wrap">
+        <img src="../assets/img/main/header-logo.png" alt="Fan topia logo" class="header__logo">
+      </a>
+      <!--  SEARCH  -->
+      <div class="header__search-wrap">
+        <div class="search-input">
+          <input class="search-input__input-itself" placeholder="Search for posts">
+          <svg class="search-input__icon" viewBox="0 0 17 14">
+            <use href="../assets/img/svg-sprite/sprite.svg#magnifyer"></use>
+          </svg>
+        </div>
+      </div>
+      <!--  /SEARCH  -->
+      <div class="header__main">
+        <!--  PROFILE  -->
+        <div class="header__profile">
+          <button class="header__profile-button" id="profile-dropdown-trigger" type="button">
+            <img src="../assets/img/content/avatar4.png" alt="" class="header__profile-img">
+            <span class="header__profile-name">Kate Lindman</span>
+            <span class="header__profile-down"></span>
+          </button>
+          <div class="header__profile-dropdown" id="profile-dropdown">
+            <div class="profile-dropdown">
+              <div class="profile-dropdown__list">
+                <a href="../07_settings" class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#settings"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">Settings</span>
+                </a>
+                <a href="../" class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#subscribers"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">Subscribers</span>
+                </a>
+                <a href="../" class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#subscriptions"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">Subscriptions</span>
+                </a>
+                <a href="../purchased-posts" class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#purchase"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">Purchased posts</span>
+                </a>
+                <a href="../referrals" class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#referrals"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">Referrals</span>
+                </a>
+                <a href="../my-balance" class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#balance"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">My balance</span>
+                </a>
+                <a href="../become-creator" class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#pen"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">Become creator</span>
+                </a>
+                <a href="../help" class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#help"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">Help &amp; Support</span>
+                </a>
+                <a href=".." class="profile-dropdown__item">
+                  <div class="profile-dropdown__item-icon-wrap">
+                    <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+                      <use href="../assets/img/svg-sprite/sprite.svg#logout"></use>
+                    </svg>
+                  </div>
+                  <span class="profile-dropdown__item-text">Log out</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  /PROFILE  -->
+        <!--  NOTIFICATIONS  -->
+        <button class="header__notifications" type="button">
+          <svg class="header__notifications-icon" viewBox="0 0 16 20">
+            <use href="../assets/img/svg-sprite/sprite.svg#notification"></use>
+          </svg>
+          <span class="header__notifications-count">23</span>
+        </button>
+        <!--  /NOTIFICATIONS  -->
+        <!--  MESSAGES  -->
+        <button class="header__messages" type="button">
+          <svg class="header__messages-icon" viewBox="0 0 20 20">
+            <use href="../assets/img/svg-sprite/sprite.svg#message"></use>
+          </svg>
+        </button>
+        <!--  /MESSAGES  -->
+      </div>
+      <!--  RESPONSIVE SEARCH  -->
+      <button class="header__open-search js-search-modal-toggle" type="button">
+        <svg class="header__open-search-icon" viewBox="0 0 17 14">
+          <use href="../assets/img/svg-sprite/sprite.svg#magnifyer"></use>
+        </svg>
+      </button>
+      <!--  /RESPONSIVE SEARCH  -->
+      <!--  RESPONSIVE SEARCH MODAL  -->
+      <div class="search-modal" id="search-modal">
+        <!-- TOP -->
+        <div class="search-modal__top">
+          <button class="search-modal__back js-search-modal-toggle" type="button" id="search-modal-close">
+            <svg class="search-modal__back-icon" viewBox="0 0 11 16">
+              <use href="../assets/img/svg-sprite/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <div class="search-modal__input-wrap">
+            <div class="search-input">
+              <input class="search-input__input-itself" placeholder="Search for posts">
+              <svg class="search-input__icon" viewBox="0 0 17 14">
+                <use href="../assets/img/svg-sprite/sprite.svg#magnifyer"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- /TOP -->
+        <!-- RESULTS -->
+        <div class="search-modal__results">
+          <h2 class="search-modal__results-title">Results</h2>
+          <div class="search-modal__results-list">
+            <div class="search-modal__results-list-inner">
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Mia Lia" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Natalie Reagen" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Mia Lia" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Mia Lia" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Natalie Reagen" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Mia Lia" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Mia Lia" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Natalie Reagen" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Mia Lia" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Natalie Reagen" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+              <div class="search-modal__results-item">
+                <div class="creator-item" style="background-image: url(https://picsum.photos/380/100)">
+                  <div class="creator-item__main">
+                    <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                      <img src="https://picsum.photos/100/100" alt="Mia Lia" class="creator-item__avatar">
+                    </a>
+                    <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                  </div>
+                  <button class="creator-item__subscribe" type="button">Subscribe for $6 per month</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /RESULTS -->
+      </div>
+      <!--  /RESPONSIVE SEARCH MODAL  -->
+    </div>
+  </div>
+  <div class="page-wrap js-page-wrap">
+    <div class="page-wrap__content">
+      <div class="home">
+        <div class="home__sidebar">
+          <div class="nav-sidebar">
+            <nav class="nav-sidebar__list">
+              <a href="../pages/02_home_first_time_user.html" class="nav-sidebar__list-item nav-sidebar__list-item_active">
+                <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
+                  <use href="../assets/img/svg-sprite/sprite.svg#home"></use>
+                </svg>
+                <span class="nav-sidebar__list-item-title">Home</span>
+              </a>
+              <a href="../pages//subscriptions.html" class="nav-sidebar__list-item ">
+                <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
+                  <use href="../assets/img/svg-sprite/sprite.svg#person"></use>
+                </svg>
+                <span class="nav-sidebar__list-item-title">Subscriptions</span>
+                <span class="nav-sidebar__list-item-count">122</span>
+              </a>
+              <a href="../pages//purchased-posts.html" class="nav-sidebar__list-item ">
+                <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
+                  <use href="../assets/img/svg-sprite/sprite.svg#purchase"></use>
+                </svg>
+                <span class="nav-sidebar__list-item-title">Purchased posts</span>
+              </a>
+              <a href="../pages//referrals.html" class="nav-sidebar__list-item ">
+                <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
+                  <use href="../assets/img/svg-sprite/sprite.svg#referrals"></use>
+                </svg>
+                <span class="nav-sidebar__list-item-title">Referrals</span>
+              </a>
+              <a href="../pages/08_my_balance.html" class="nav-sidebar__list-item ">
+                <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
+                  <use href="../assets/img/svg-sprite/sprite.svg#balance"></use>
+                </svg>
+                <span class="nav-sidebar__list-item-title">My balance</span>
+              </a>
+              <a href="../pages/.html" class="nav-sidebar__list-item ">
+                <svg class="nav-sidebar__list-item-icon" viewBox="0 0 24 24">
+                  <use href="../assets/img/svg-sprite/sprite.svg#logout"></use>
+                </svg>
+                <span class="nav-sidebar__list-item-title">Log out</span>
+              </a>
+            </nav>
+          </div>
+          <div class="sidebar-buttons">
+            <button class="sidebar-buttons__create-post" type="button" data-fancybox data-src="#dialog-content">
+              <svg class="sidebar-buttons__create-post-icon" viewBox="0 0 17 17">
+                <use href="../assets/img/svg-sprite/sprite.svg#plus"></use>
+              </svg> Create post </button>
+            <button class="sidebar-buttons__become-creator" type="button">Become creator</button>
+          </div>
+        </div>
+        <div class="home__content">
+          <div class="home__create-new-post">
+            <div class="create-new-in-posts">
+              <div class="create-new-in-posts__top">
+                <div class="create-new-in-posts__img-wrap">
+                  <img src="../assets/img/content/avatar4.png" alt="" class="create-new-in-posts__img">
+                </div>
+                <div class="create-new-in-posts__input-holder">
+                  <input type="text" class="create-new-in-posts__input" placeholder="Create new post..." data-fancybox data-src="#dialog-content">
+                </div>
+              </div>
+              <div class="create-new-in-posts__bottom">
+                <button class="create-new-in-posts__button" type="button" data-fancybox data-src="#dialog-content">
+                  <div class="add-new-icon-group">
+                    <svg class="add-new-icon-group__icon" viewBox="0 0 22 16">
+                      <use href="../assets/img/svg-sprite/sprite.svg#image"></use>
+                    </svg>
+                    <span class="add-new-icon-group__text">Add Photo / Video</span>
+                  </div>
+                </button>
+              </div>
+              <div id="dialog-content" style="display:none;" class="add-post-modal js-open-create-post">
+                <div class="add-post-modal__title-wrap">
+                  <!--title-->
+                  <h2 class="add-post-modal__title">Create new post</h2>
+                  <button class="add-post-modal__schedule-head-btn js-schedule-modal-btn">
+                    <svg class="add-post-modal__schedule-icon" width="8px" height="11" viewBox="0 0 8 11">
+                      <use href="../assets/img/svg-sprite/sprite.svg#back-arrow"></use>
+                    </svg>
+                    <h2 class="add-post-modal__schedule-title">Schedule</h2>
+                  </button>
+                  <button type="button" class="add-post-modal__title-btn js-close-modal-button">
+                    <svg class="add-post-modal__title-img">
+                      <use href="../assets/img/svg-sprite/sprite.svg#close_cross"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="add-post-modal__content">
+                  <!-- TOP -->
+                  <div class="add-post-modal__top">
+                    <div class="add-post-modal__avatar">
+                      <img src="https://place-hold.it/146x35/666" alt="" class="add-post-modal__avatar-img">
+                    </div>
+                    <div class="add-post-modal__top-content">
+                      <p class="add-post-modal__name">Kate Lindman</p>
+                      <label class="add-post-modal__switch">
+                        <input type="checkbox">
+                        <div class="add-post-modal__switch-slider">
+                          <div class="add-post-modal__switch-slider-item">Subscribers only</div>
+                          <div class="add-post-modal__switch-slider-item">Public</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- /TOP -->
+                  <div class="add-post-modal__checkboxes">
+                    <label for="paid-post" class="add-post-modal__checkboxes-item">
+                      <input type="checkbox" id="paid-post" class="add-post-modal__checkboxes-item--checkbox">
+                      <span class="post-modal__checkboxes-item-text">Paid post (fans pay to unlock and view post)</span>
+                    </label>
+                    <label for="allow-download" class="add-post-modal__checkboxes-item">
+                      <input type="checkbox" id="allow-download" class="add-post-modal__checkboxes-item--checkbox">
+                      <span class="post-modal__checkboxes-item-text">Allow subscribers to download video</span>
+                    </label>
+                    <label for="disable-comments" class="add-post-modal__checkboxes-item">
+                      <input type="checkbox" id="disable-comments" class="add-post-modal__checkboxes-item--checkbox">
+                      <span class="post-modal__checkboxes-item-text">Disable comments</span>
+                    </label>
+                  </div>
+                  <textarea class="add-post-modal__textarea" placeholder="Create new post..." name="create-post"></textarea>
+                  <!--ADD-PHOTO-->
+                  <div class="add-post-modal__add-photo">
+                    <button class="add-post-modal__add-photo--btn" type="button">
+                      <svg class="add-post-modal__add-photo--btn-icon" viewBox="0 0 22 16">
+                        <use href="../assets/img/svg-sprite/sprite.svg#image"></use>
+                      </svg>
+                      <span class="add-post-modal__add-photo--btn-text">Add Photo / Video</span>
+                    </button>
+                  </div>
+                  <!--/ADD-PHOTO-->
+                  <!--BOTTOM -->
+                  <div class="add-post-modal__bottom">
+                    <!--select-->
+                    <div class="add-post-modal__bottom-select-wrapper">
+                      <svg class="add-post-modal__bottom-select-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#event"></use>
+                      </svg>
+                      <select id="add-post-modal-select" class="add-post-modal__bottom-select">
+                        <option value="post-now">Post now</option>
+                        <option value="schedule-post">Schedule post</option>
+                      </select>
+                    </div>
+                    <!--buttons-->
+                    <div data-value="post-now" class="add-post-modal__buttons js-add-post-buttons active-option">
+                      <button class="add-post-modal__buttons-btn" type="button" data-fancybox data-src="#not-verified-modal">Post </button>
+                    </div>
+                    <div data-value="schedule-post" class="add-post-modal__buttons js-add-post-buttons">
+                      <button class="add-post-modal__buttons-btn-schedule js-schedule-btn" type="button">Schedule</button>
+                      <button class="add-post-modal__buttons-btn" type="button" data-fancybox data-src="#not-verified-modal">Done </button>
+                    </div>
+                  </div>
+                </div>
+                <!--/BOTTOM -->
+                <!--SCHEdulE CALENDAR-->
+                <div class="add-post-modal__schedule-content">
+                  <label class="add-post-modal__schedule-select-wrapper" for="schedule-select">
+                    <span class="add-post-modal__schedule-select-title">Your timezone</span>
+                    <select class="add-post-modal__schedule js-standard-select" id="schedule-select">
+                      <option value="Europe-Sofia">Europe / Sofia</option>
+                    </select>
+                  </label>
+                  <div class="add-post-modal__calendar">
+                    <div class="add-post-modal__calendar-head">
+                      <span class="add-post-modal__calendar-title">Select a date</span>
+                      <div class="add-post-modal__calendar-date">
+                        <span class="add-post-modal__calendar-date--mounth">FRI</span>
+                        <span class="add-post-modal__calendar-date--day">APR 22</span>
+                        <span class="add-post-modal__calendar-date--year">2022</span>
+                      </div>
+                    </div>
+                    <div class="js-calendar"></div>
+                  </div>
+                  <div class="add-post-modal__time">
+                    <span class="add-post-modal__time-text">Time:</span>
+                    <div class="add-post-modal__time-select-wrapper">
+                      <select class="add-post-modal__time-select js-standard-select">
+                        <option value="" disabled selected>hh</option>
+                      </select>
+                    </div>
+                    <div class="add-post-modal__time-select-wrapper">
+                      <select class="add-post-modal__time-select js-standard-select">
+                        <option value="" disabled selected>mm</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="add-post-modal__done-btn-wrapper">
+                    <button class="add-post-modal__buttons-btn" type="button" data-fancybox data-src="#schedule-confirm">Done </button>
+                  </div>
+                </div>
+                <div class="post-created" style="display:none;" id="post-created">
+                  <button class="post-created__close-btn js-close-modal-button" type="button">
+                    <svg class="post-created__close-icon" viewBox="0 0 12 11">
+                      <use href="../assets/img/svg-sprite/sprite.svg#close_cross"></use>
+                    </svg>
+                  </button>
+                  <!--TOP-->
+                  <div class="post-created__top">
+                    <div class="post-created__top-image">
+                      <svg class="post-created__top-image--icon" viewBox="0 0 10 10">
+                        <use href="../assets/img/svg-sprite/sprite.svg#complete_black"></use>
+                      </svg>
+                    </div>
+                    <p class="post-created__top-text">Your post will be visible in few minutes!</p>
+                  </div>
+                  <!--BOTTOM-->
+                  <div class="post-created__bottom">
+                    <p class="post-created__bottom-text">Please complete account verification so you <br />can withdraw funds.</p>
+                    <button type="button" class="post-created__bottom-btn">Continue</button>
+                  </div>
+                </div>
+                <div class="not-verified-modal" style="display:none;" id="not-verified-modal">
+                  <button class="post-created__close-btn js-close-modal-button">
+                    <svg class="post-created__close-icon" viewBox="0 0 12 11">
+                      <use href="../assets/img/svg-sprite/sprite.svg#close_cross"></use>
+                    </svg>
+                  </button>
+                  <div class="not-verified-modal__warning">
+                    <svg class="not-verified-modal__warning-traingle" width="90" height="90">
+                      <use href="../assets/img/svg-sprite/sprite.svg#warning_traingle"></use>
+                    </svg>
+                  </div>
+                  <p class="not-verified-modal__text">To use these features you must first <br />become a creator.</p>
+                  <button class="not-verified-modal__btn" type="button">Verify my account</button>
+                </div>
+                <div class="schedule-confirm" style="display:none;" id="schedule-confirm">
+                  <button class="schedule-confirm__close-btn">
+                    <svg class="schedule-confirm__close-icon js-close-modal-button" viewBox="0 0 12 11">
+                      <use href="../assets/img/svg-sprite/sprite.svg#close_cross"></use>
+                    </svg>
+                  </button>
+                  <div class="schedule-confirm__top">
+                    <div class="schedule-confirm__top-image">
+                      <svg class="schedule-confirm__top-image--icon" viewBox="0 0 10 10">
+                        <use href="../assets/img/svg-sprite/sprite.svg#complete_black"></use>
+                      </svg>
+                    </div>
+                    <span class="schedule-confirm__top-text">Your post is scheduled for:</span>
+                    <h1 class="schedule-confirm__top-title">Friday, April 22, 2022 <br />15:32 pm</h1>
+                  </div>
+                  <div class="schedule-confirm__bottom">
+                    <p class="schedule-confirm__bottom-text">Please complete account verification so you <br />can withdraw funds.</p>
+                    <button type="button" class="schedule-confirm__bottom-btn is-close" title="Close">Continue</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home__not-verified-message">
+            <div class="not-verified-message">
+              <p class="not-verified-message__text">
+                <button class="not-verified-message__text not-verified-message__text_link" data-fancybox data-src="#verify-account-modal">Verify your account </button> to become a creator and withdraw funds.
+              </p>
+              <div id="verify-account-modal" style="display:none;" class="verify-account-modal">
+                <div class="verify-account-modal__ongoing" id="verify-account-steps">
+                  <!-- TOP -->
+                  <div class="verify-account-modal__top">
+                    <h2 class="verify-account-modal__title">Verify account</h2>
+                    <div class="verify-account-modal__step">
+                      <span class="verify-account-modal__step-text">Step</span>
+                      <span class="verify-account-modal__step-text" id="current-step">1</span>
+                      <span class="verify-account-modal__step-text">of</span>
+                      <span class="verify-account-modal__step-text">4</span>
+                    </div>
+                    <button type="button" class="verify-account-modal__close js-close-modal-button">
+                      <svg class="verify-account-modal__close-icon">
+                        <use href="../assets/img/svg-sprite/sprite.svg#close_cross"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- /TOP -->
+                  <!-- PROGRESS -->
+                  <div class="verify-account-modal__progress">
+                    <div class="verify-account-modal__progress-bar" id="verify-account-progress-bar" style="width: 9%"></div>
+                  </div>
+                  <!-- /PROGRESS -->
+                  <!-- CONTENT -->
+                  <div class="verify-account-modal__content">
+                    <p class="verify-account-modal__text verify-account-modal__text_step-1" id="verify-account-text-step-1"> You must verify your account in order to become a creator. Start by choosing document type and proceed to the next 3 steps to complete your verification. </p>
+                    <p class="verify-account-modal__text" id="verify-account-text-all-steps"> Verification is completed manually, so images uploaded must be clear (not blurry or cropped) - and allow a couple of days for verification. </p>
+                    <div class="verify-account-modal__content-main">
+                      <!-- SELECT -->
+                      <div class="verify-account-modal__select-wrap" id="verify-account-select">
+                        <p class="verify-account-modal__select-title">Document Type</p>
+                        <select class="verify-account-modal__select js-standard-select">
+                          <option value="Driving license">Driving license</option>
+                          <option value="Id card">Id card</option>
+                          <option value="Passport">Passport</option>
+                        </select>
+                      </div>
+                      <!-- /SELECT -->
+                      <!-- UPLOAD FILES -->
+                      <div class="verify-account-modal__upload-wrap js-upload-wrap" id="verify-account-upload">
+                        <div class="verify-account-modal__upload-section js-verify-account-upload-item" id="verify-account-upload-file-id-2">
+                          <div class="verify-account-modal__upload-main">
+                            <p class="verify-account-modal__upload-title">Upload Front of ID:</p>
+                            <button class="verify-account-modal__upload-button js-upload-photo-button" type="button">Choose file</button>
+                            <input type="file" class="verify-account-modal__upload-input js-popup-upload-input">
+                          </div>
+                          <div class="verify-account-modal__photo-item js-popup-photo-item">
+                            <div class="verify-account-modal__photo-item-img js-popup-img">
+                            </div>
+                            <a href="#" class="verify-account-modal__photo-item-delete js-popup-photo-delete"></a>
+                          </div>
+                        </div>
+                        <div class="verify-account-modal__upload-section js-verify-account-upload-item" id="verify-account-upload-file-id-3">
+                          <div class="verify-account-modal__upload-main">
+                            <p class="verify-account-modal__upload-title">Upload Back of ID:</p>
+                            <button class="verify-account-modal__upload-button js-upload-photo-button" type="button">Choose file</button>
+                            <input type="file" class="verify-account-modal__upload-input js-popup-upload-input">
+                          </div>
+                          <div class="verify-account-modal__photo-item js-popup-photo-item">
+                            <div class="verify-account-modal__photo-item-img js-popup-img">
+                            </div>
+                            <a href="#" class="verify-account-modal__photo-item-delete js-popup-photo-delete"></a>
+                          </div>
+                        </div>
+                        <div class="verify-account-modal__upload-section js-verify-account-upload-item" id="verify-account-upload-file-id-4">
+                          <div class="verify-account-modal__upload-main">
+                            <p class="verify-account-modal__upload-title">Upload Selfie with ID:</p>
+                            <button class="verify-account-modal__upload-button js-upload-photo-button" type="button">Choose file</button>
+                            <input type="file" class="verify-account-modal__upload-input js-popup-upload-input">
+                          </div>
+                          <div class="verify-account-modal__photo-item js-popup-photo-item">
+                            <div class="verify-account-modal__photo-item-img js-popup-img">
+                            </div>
+                            <a href="#" class="verify-account-modal__photo-item-delete js-popup-photo-delete"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /UPLOAD FILES -->
+                      <!-- BUTTONS -->
+                      <div class="verify-account-modal__buttons">
+                        <button class="verify-account-modal__buttons-item" type="button" id="verify-account-prev">Previous</button>
+                        <button class="verify-account-modal__buttons-item" type="button" id="verify-account-next">Next</button>
+                      </div>
+                      <!-- /BUTTONS -->
+                    </div>
+                  </div>
+                  <!-- /CONTENT -->
+                </div>
+                <!-- RESULT -->
+                <div class="verify-account-modal__result" id="verify-account-results">
+                  <div class="verify-account-modal__result-top">
+                    <h3 class="verify-account-modal__result-top-title">Your photos are uploaded successfully!</h3>
+                  </div>
+                  <div class="verify-account-modal__result-main">
+                    <h2 class="verify-account-modal__result-main-title">Would you like to complete your profile by setting up subscription price and specials?</h2>
+                    <p class="verify-account-modal__result-main-subtitle">Setting up your account helps you stand out.</p>
+                    <div class="verify-account-modal__result-buttons">
+                      <button class="verify-account-modal__result-buttons-item" type="button">Set up account</button>
+                      <button class="verify-account-modal__result-buttons-item" type="button">I’ll do it later</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- RESULT -->
+              </div>
+            </div>
+          </div>
+          <div class="promoted-creators-sidebar">
+            <h3 class="promoted-creators-sidebar__title">Promoted creators</h3>
+            <div class="promoted-creators-sidebar__list js-swiper swiper">
+              <div class="promoted-creators-sidebar__list-wrapper swiper-wrapper">
+                <div class="promoted-creators-sidebar__slide swiper-slide">
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background2.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar2.png" alt="Natalie Reagen" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="promoted-creators-sidebar__slide swiper-slide">
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background2.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar2.png" alt="Natalie Reagen" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="promoted-creators-sidebar__slide swiper-slide">
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background2.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar2.png" alt="Natalie Reagen" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="promoted-creators-sidebar__list-pagination"></div>
+            </div>
+          </div>
+          <div class="posts">
+            <div class="posts__item">
+              <div class="posts__item-content">
+                <div class="posts__item-top">
+                  <div class="posts__item-top-main">
+                    <a href="/profiles-item" class="posts__item-avatar-wrap">
+                      <img src="../assets//img/content/small_logo.png" alt="" class="posts__item-avatar">
+                    </a>
+                    <div class="posts__item-top-text">
+                      <a href="/profiles-item" class="posts__item-name">Fan-topia</a>
+                      <p class="posts__item-time">8 months ago</p>
+                    </div>
+                  </div>
+                  <button class="posts__item-top-btn" type="button">
+                    <svg class="posts__item-pin" width="16" height="16" viewBox="0 0 16 16">
+                      <use href="../assets/img/svg-sprite/sprite.svg#pin"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="posts__item-text-wrap info-box">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor id eu leo commodo. Lectus egestas risus non semper a. Quis fermentum ultricies sagittis amet et, ac tortor.</p>
+                  <p><a href='https://www.figma.com/'>Volutpat adipiscing dui proin</a> Volutpat adipiscing dui proin pretium dolor consectetur malesuada faucibus vitae. Sit velit sed enim elementum non nascetur. Volutpat sapien maecenas lectus nulla tincidunt.</p>
+                </div>
+                <div class="posts__item-creator">
+                  <button class="posts__item-creator-photo-wrapper">
+                    <img src=../assets/img/content/avatar4.png alt="" class="posts__item-creator-photo">
+                  </button>
+                  <a href=# class="posts__item-creator-name"> Lea white </a>
+                </div>
+              </div>
+              <div class="posts__item-video-wrapper">
+                <a class="posts__item-video" data-fancybox data-fancybox-type="iframe" href="https://www.youtube.com/watch?v=wJWksPWDKOc&t=7822s">
+                  <img src="../assets/img/content/video.jpg" alt="" class="posts__item-video-img
+                        ">
+                  <div class="posts__item-play-btn">
+                    <svg class="posts__item-play-btn-icon" viewBox="0 0 20 23">
+                      <use href="../assets/img/svg-sprite/sprite.svg#triangle"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="posts__item-footer">
+                <div class="posts__item-footer-statistic">
+                  <div class="posts__item-footer-section">
+                    <svg class="posts__item-footer-section--icon" width="20" height="19" viewBox="0 0 20 19">
+                      <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                    </svg> 142
+                  </div>
+                  <div class="posts__item-footer-section">
+                    <svg class="posts__item-footer-section--icon" width="19" height="20" viewBox="0 0 19 20">
+                      <use href="../assets/img/svg-sprite/sprite.svg#comments"></use>
+                    </svg> 5
+                  </div>
+                </div>
+                <div class="posts__item-footer-section">
+                  <svg class="posts__item-footer-section--icon" width="24" height="24" viewBox="0 0 20 23">
+                    <use href="../assets/img/svg-sprite/sprite.svg#tips"></use>
+                  </svg>
+                  <span>Send tip</span>
+                </div>
+              </div>
+            </div>
+            <div class="posts__item">
+              <div class="posts__item-content">
+                <div class="posts__item-top">
+                  <div class="posts__item-top-main">
+                    <a href="/profiles-item" class="posts__item-avatar-wrap">
+                      <img src="../assets//img/content/small_logo.png" alt="" class="posts__item-avatar">
+                    </a>
+                    <div class="posts__item-top-text">
+                      <a href="/profiles-item" class="posts__item-name">Fan-topia</a>
+                      <p class="posts__item-time">8 months ago</p>
+                    </div>
+                  </div>
+                  <button class="posts__item-top-btn" type="button">
+                    <svg class="posts__item-pin" width="16" height="16" viewBox="0 0 16 16">
+                      <use href="../assets/img/svg-sprite/sprite.svg#pin"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="posts__item-text-wrap info-box">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor id eu leo commodo. Lectus egestas risus non semper a. Quis fermentum ultricies sagittis amet et, ac tortor.</p>
+                  <p><a href='https://www.figma.com/'>Volutpat adipiscing dui proin</a> Volutpat adipiscing dui proin pretium dolor consectetur malesuada faucibus vitae. Sit velit sed enim elementum non nascetur. Volutpat sapien maecenas lectus nulla tincidunt.</p>
+                </div>
+                <div class="posts__item-creator">
+                  <button class="posts__item-creator-photo-wrapper">
+                    <img src=../assets/img/content/avatar4.png alt="" class="posts__item-creator-photo">
+                  </button>
+                  <a href=# class="posts__item-creator-name"> Lea white </a>
+                </div>
+              </div>
+              <div class="posts__item-video-wrapper">
+                <a class="posts__item-video" data-fancybox data-fancybox-type="iframe" href="https://www.youtube.com/watch?v=wJWksPWDKOc&t=7822s">
+                  <img src="../assets/img/content/video.jpg" alt="" class="posts__item-video-img
+                        ">
+                  <div class="posts__item-play-btn">
+                    <svg class="posts__item-play-btn-icon" viewBox="0 0 20 23">
+                      <use href="../assets/img/svg-sprite/sprite.svg#triangle"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="posts__item-footer">
+                <div class="posts__item-footer-statistic">
+                  <div class="posts__item-footer-section">
+                    <svg class="posts__item-footer-section--icon" width="20" height="19" viewBox="0 0 20 19">
+                      <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                    </svg> 142
+                  </div>
+                  <div class="posts__item-footer-section">
+                    <svg class="posts__item-footer-section--icon" width="19" height="20" viewBox="0 0 19 20">
+                      <use href="../assets/img/svg-sprite/sprite.svg#comments"></use>
+                    </svg> 5
+                  </div>
+                </div>
+                <div class="posts__item-footer-section">
+                  <svg class="posts__item-footer-section--icon" width="24" height="24" viewBox="0 0 20 23">
+                    <use href="../assets/img/svg-sprite/sprite.svg#tips"></use>
+                  </svg>
+                  <span>Send tip</span>
+                </div>
+              </div>
+            </div>
+            <div class="posts__item">
+              <div class="posts__item-content">
+                <div class="posts__item-top">
+                  <div class="posts__item-top-main">
+                    <a href="/profiles-item" class="posts__item-avatar-wrap">
+                      <img src="../assets//img/content/small_logo.png" alt="" class="posts__item-avatar">
+                    </a>
+                    <div class="posts__item-top-text">
+                      <a href="/profiles-item" class="posts__item-name">Fan-topia</a>
+                      <p class="posts__item-time">8 months ago</p>
+                    </div>
+                  </div>
+                  <button class="posts__item-top-btn" type="button">
+                    <svg class="posts__item-pin" width="16" height="16" viewBox="0 0 16 16">
+                      <use href="../assets/img/svg-sprite/sprite.svg#pin"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="posts__item-text-wrap info-box">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor id eu leo commodo. Lectus egestas risus non semper a. Quis fermentum ultricies sagittis amet et, ac tortor.</p>
+                  <p><a href='https://www.figma.com/'>Volutpat adipiscing dui proin</a> Volutpat adipiscing dui proin pretium dolor consectetur malesuada faucibus vitae. Sit velit sed enim elementum non nascetur. Volutpat sapien maecenas lectus nulla tincidunt.</p>
+                </div>
+                <div class="posts__item-creator">
+                  <button class="posts__item-creator-photo-wrapper">
+                    <img src=../assets/img/content/avatar4.png alt="" class="posts__item-creator-photo">
+                  </button>
+                  <a href=# class="posts__item-creator-name"> Lea white </a>
+                </div>
+              </div>
+              <div class="posts__item-video-wrapper">
+                <a class="posts__item-video" data-fancybox data-fancybox-type="iframe" href="https://www.youtube.com/watch?v=wJWksPWDKOc&t=7822s">
+                  <img src="../assets/img/content/video.jpg" alt="" class="posts__item-video-img
+                        ">
+                  <div class="posts__item-play-btn">
+                    <svg class="posts__item-play-btn-icon" viewBox="0 0 20 23">
+                      <use href="../assets/img/svg-sprite/sprite.svg#triangle"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="posts__item-footer">
+                <div class="posts__item-footer-statistic">
+                  <div class="posts__item-footer-section">
+                    <svg class="posts__item-footer-section--icon" width="20" height="19" viewBox="0 0 20 19">
+                      <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                    </svg> 142
+                  </div>
+                  <div class="posts__item-footer-section">
+                    <svg class="posts__item-footer-section--icon" width="19" height="20" viewBox="0 0 19 20">
+                      <use href="../assets/img/svg-sprite/sprite.svg#comments"></use>
+                    </svg> 5
+                  </div>
+                </div>
+                <div class="posts__item-footer-section">
+                  <svg class="posts__item-footer-section--icon" width="24" height="24" viewBox="0 0 20 23">
+                    <use href="../assets/img/svg-sprite/sprite.svg#tips"></use>
+                  </svg>
+                  <span>Send tip</span>
+                </div>
+              </div>
+            </div>
+            <div class="posts__item">
+              <div class="posts__item-content">
+                <div class="posts__item-top">
+                  <div class="posts__item-top-main">
+                    <a href="/profiles-item" class="posts__item-avatar-wrap">
+                      <img src="../assets//img/content/small_logo.png" alt="" class="posts__item-avatar">
+                    </a>
+                    <div class="posts__item-top-text">
+                      <a href="/profiles-item" class="posts__item-name">Fan-topia</a>
+                      <p class="posts__item-time">8 months ago</p>
+                    </div>
+                  </div>
+                  <button class="posts__item-top-btn" type="button">
+                    <svg class="posts__item-pin" width="16" height="16" viewBox="0 0 16 16">
+                      <use href="../assets/img/svg-sprite/sprite.svg#pin"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="posts__item-text-wrap info-box">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor id eu leo commodo. Lectus egestas risus non semper a. Quis fermentum ultricies sagittis amet et, ac tortor.</p>
+                  <p><a href='https://www.figma.com/'>Volutpat adipiscing dui proin</a> Volutpat adipiscing dui proin pretium dolor consectetur malesuada faucibus vitae. Sit velit sed enim elementum non nascetur. Volutpat sapien maecenas lectus nulla tincidunt.</p>
+                </div>
+                <div class="posts__item-creator">
+                  <button class="posts__item-creator-photo-wrapper">
+                    <img src=../assets/img/content/avatar4.png alt="" class="posts__item-creator-photo">
+                  </button>
+                  <a href=# class="posts__item-creator-name"> Lea white </a>
+                </div>
+              </div>
+              <div class="posts__item-video-wrapper">
+                <a class="posts__item-video" data-fancybox data-fancybox-type="iframe" href="https://www.youtube.com/watch?v=wJWksPWDKOc&t=7822s">
+                  <img src="../assets/img/content/video.jpg" alt="" class="posts__item-video-img
+                        ">
+                  <div class="posts__item-play-btn">
+                    <svg class="posts__item-play-btn-icon" viewBox="0 0 20 23">
+                      <use href="../assets/img/svg-sprite/sprite.svg#triangle"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="posts__item-footer">
+                <div class="posts__item-footer-statistic">
+                  <div class="posts__item-footer-section">
+                    <svg class="posts__item-footer-section--icon" width="20" height="19" viewBox="0 0 20 19">
+                      <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                    </svg> 142
+                  </div>
+                  <div class="posts__item-footer-section">
+                    <svg class="posts__item-footer-section--icon" width="19" height="20" viewBox="0 0 19 20">
+                      <use href="../assets/img/svg-sprite/sprite.svg#comments"></use>
+                    </svg> 5
+                  </div>
+                </div>
+                <div class="posts__item-footer-section">
+                  <svg class="posts__item-footer-section--icon" width="24" height="24" viewBox="0 0 20 23">
+                    <use href="../assets/img/svg-sprite/sprite.svg#tips"></use>
+                  </svg>
+                  <span>Send tip</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home__promoted-creators">
+          <div class="promoted-creators-sidebar">
+            <h3 class="promoted-creators-sidebar__title">Promoted creators</h3>
+            <div class="promoted-creators-sidebar__list js-swiper swiper">
+              <div class="promoted-creators-sidebar__list-wrapper swiper-wrapper">
+                <div class="promoted-creators-sidebar__slide swiper-slide">
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background2.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar2.png" alt="Natalie Reagen" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="promoted-creators-sidebar__slide swiper-slide">
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background2.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar2.png" alt="Natalie Reagen" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="promoted-creators-sidebar__slide swiper-slide">
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background2.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Natalie Reagen" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar2.png" alt="Natalie Reagen" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Natalie Reagen" class="creator-item__name">Natalie Reagen</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="promoted-creators-sidebar__item">
+                    <div class="creator-item" style="background-image: url(../assets/img/content/background3.png)">
+                      <div class="creator-item__main">
+                        <a href="/creators/Mia Lia" class="creator-item__avatar-wrap">
+                          <img src="../assets/img/content/avatar1.png" alt="Mia Lia" class="creator-item__avatar">
+                        </a>
+                        <a href="/creators/Mia Lia" class="creator-item__name">Mia Lia</a>
+                      </div>
+                      <button class="creator-item__subscribe" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="promoted-creators-sidebar__list-pagination"></div>
+            </div>
+            <nav class="promoted-creators-sidebar__nav">
+              <a href="/terms" class="promoted-creators-sidebar__nav-item">Terms</a>
+              <a href="/privacy" class="promoted-creators-sidebar__nav-item">Privacy</a>
+              <a href="/usc-2257" class="promoted-creators-sidebar__nav-item">USC 2257</a>
+              <a href="/dmca" class="promoted-creators-sidebar__nav-item">DMCA</a>
+              <a href="/blog" class="promoted-creators-sidebar__nav-item">Blog</a>
+            </nav>
+            <div class="promoted-creators-sidebar__socials">
+              <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+                <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+                  <use href="../assets/img/svg-sprite/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+                <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+                  <use href="../assets/img/svg-sprite/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+                <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+                  <use href="../assets/img/svg-sprite/sprite.svg#mail"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <div class="mobile-nav__item-wrap">
+        <a href="/" class="mobile-nav__item mobile-nav__item_home mobile-nav__item_active">
+          <svg class="mobile-nav__item-icon" viewBox="0 0 24 24">
+            <use href="../assets/img/svg-sprite/sprite.svg#home"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="mobile-nav__item-wrap">
+        <a href="/notifications" class="mobile-nav__item mobile-nav__item_notification">
+          <svg class="mobile-nav__item-icon " viewBox="0 0 16 20">
+            <use href="../assets/img/svg-sprite/sprite.svg#notification"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="mobile-nav__item-wrap">
+        <button class="mobile-nav__item mobile-nav__item_add-post" type="button" data-fancybox data-src="#dialog-content">
+          <svg class="mobile-nav__item-icon" viewBox="0 0 17 17">
+            <use href="../assets/img/svg-sprite/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav__item-wrap">
+        <a href="" class="mobile-nav__item mobile-nav__item_message">
+          <svg class="mobile-nav__item-icon" viewBox="0 0 20 20">
+            <use href="../assets/img/svg-sprite/sprite.svg#message"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="mobile-nav__item-wrap">
+        <button type="button" class="mobile-nav__item mobile-nav__item_person mobile-nav__item_no-avatar" id="trigger-mobile-dropdown">
+          <svg class="mobile-nav__item-icon" viewBox="0 0 20 20">
+            <use href="../assets/img/svg-sprite/sprite.svg#person_bg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-profile-dropdown" id="mobile-profile-dropdown">
+      <div class="mobile-profile-dropdown__top">
+        <a href="/07_settings" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#settings"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">Settings</span>
+        </a>
+        <a href="/" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#subscribers"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">Subscribers</span>
+        </a>
+        <a href="/" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#subscriptions"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">Subscriptions</span>
+        </a>
+        <a href="/purchased-posts" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#purchase"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">Purchased posts</span>
+        </a>
+        <a href="/referrals" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#referrals"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">Referrals</span>
+        </a>
+        <a href="/my-balance" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#balance"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">My balance</span>
+        </a>
+        <a href="/become-creator" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#pen"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">Become creator</span>
+        </a>
+        <a href="/help" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#help"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">Help &amp; Support</span>
+        </a>
+        <a href="" class="profile-dropdown__item">
+          <div class="profile-dropdown__item-icon-wrap">
+            <svg class="profile-dropdown__item-icon" viewBox="0 0 24 24">
+              <use href="../assets/img/svg-sprite/sprite.svg#logout"></use>
+            </svg>
+          </div>
+          <span class="profile-dropdown__item-text">Log out</span>
+        </a>
+      </div>
+      <div class="mobile-profile-dropdown__bottom">
+        <div class="promoted-creators-sidebar__nav">
+          <a href="/terms" class="promoted-creators-sidebar__nav-item">Terms</a>
+          <a href="/privacy" class="promoted-creators-sidebar__nav-item">Privacy</a>
+          <a href="/usc-2257" class="promoted-creators-sidebar__nav-item">USC 2257</a>
+          <a href="/dmca" class="promoted-creators-sidebar__nav-item">DMCA</a>
+          <a href="/blog" class="promoted-creators-sidebar__nav-item">Blog</a>
+        </div>
+        <div class="promoted-creators-sidebar__socials">
+          <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+            <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+              <use href="../assets/img/svg-sprite/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+            <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+              <use href="../assets/img/svg-sprite/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="/" target="_blank" rel="noopener noreferrer" class="promoted-creators-sidebar__socials-item">
+            <svg class="promoted-creators-sidebar__socials-item-icon" viewBox="0 0 32 32">
+              <use href="../assets/img/svg-sprite/sprite.svg#mail"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <nav class="footer__nav">
+            <div class="footer__nav-col">
+              <div class="footer__nav-link-wrap">
+                <a href="/" class="footer__nav-link">
+                  <img src="../assets/img/main/header-logo.png" alt="Fun topia logo" class="footer__nav-link-img">
+                </a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/about" class="footer__nav-link">About</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/contact" class="footer__nav-link">Contact</a>
+              </div>
+            </div>
+            <div class="footer__nav-col">
+              <div class="footer__nav-link-wrap">
+                <a href="/blog" class="footer__nav-link">Blog</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/how-it-works" class="footer__nav-link">How it works</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/help" class="footer__nav-link">Help &amp; support</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/usc-2257" class="footer__nav-link">USC 2257</a>
+              </div>
+            </div>
+            <div class="footer__nav-col">
+              <div class="footer__nav-link-wrap">
+                <a href="/terms" class="footer__nav-link">Terms</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/privacy" class="footer__nav-link">Privacy</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/cookie-notice" class="footer__nav-link">Cookie Notice</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/dmca" class="footer__nav-link">DMCA</a>
+              </div>
+            </div>
+            <div class="footer__nav-col">
+              <div class="footer__nav-link-wrap">
+                <a href="/usc-2257" class="footer__nav-link">USC 2257</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/dmca" class="footer__nav-link">DMCA</a>
+              </div>
+            </div>
+          </nav>
+          <div class="footer__socials">
+            <div class="footer__socials-list">
+              <a href="/" target="_blank" rel="noopener noreferrer" class="footer__socials-item">
+                <svg class="mailing-popup__channel-icon" viewBox="0 0 32 32">
+                  <use href="../assets/img/svg-sprite/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="/" target="_blank" rel="noopener noreferrer" class="footer__socials-item">
+                <svg class="mailing-popup__channel-icon" viewBox="0 0 32 32">
+                  <use href="../assets/img/svg-sprite/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__payment-modes">
+              <div class="footer__payment-modes-item">
+                <svg class="footer__payment-modes-item-img" viewBox="0 0 152.407 108">
+                  <use href="../assets/img/svg-sprite/sprite.svg#master-card"></use>
+                </svg>
+              </div>
+              <div class="footer__payment-modes-item">
+                <svg class="footer__payment-modes-item-img" viewBox="0 0 2280 1536">
+                  <use href="../assets/img/svg-sprite/sprite.svg#visa"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">Copyright © 2022 OSOMR Limited T/A Fan-Topia. All Rights Reserved</p>
+          <div class="footer__payment-modes">
+            <div class="footer__payment-modes-item">
+              <svg class="footer__payment-modes-item-img" viewBox="0 0 152.407 108">
+                <use href="../assets/img/svg-sprite/sprite.svg#master-card"></use>
+              </svg>
+            </div>
+            <div class="footer__payment-modes-item">
+              <svg class="footer__payment-modes-item-img" viewBox="0 0 2280 1536">
+                <use href="../assets/img/svg-sprite/sprite.svg#visa"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+
+</html>
+</div>

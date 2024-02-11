@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Page</title>
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <!-- for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" lang="en" content="Page">
+  <link rel="icon" sizes="192x192" href="../assets/img/favicons/android-chrome-192x192.png">
+  <!-- for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Page">
+  <meta name="theme-color" content="#FFFFFF">
+  <!-- select 2 plugin -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <!-- datapicker plugin -->
+  <link rel="text/HTML" href="../../../node_modules/js-datepicker/dist/datepicker.min.css">
+  <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="../assets/img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="../assets/img/favicons/apple-touch-icon-1024x1024.png">
+</head>
+
+<body>
+  <div class="page-wrap js-page-wrap">
+    <div class="page-wrap__content">
+      <div class="login">
+        <div class="login__lady" style="background-image: url(../assets/img/main/girl-login-page.png)" id="lady-image">
+        </div>
+        <div class="login__cta">
+          <div class="login__logo">
+            <img src="../assets/img/main/fan-topia.png" alt="master card logo" class="login__logo-image">
+          </div>
+          <h1 class="login__title">
+            <span class="login__title-part">Earn From Your Fanbase.</span>
+            <span class="login__title-part">It's That Easy.</span>
+          </h1>
+          <h3 class="login__subtitle">Become a creator and enjoy the industries highest payouts.</h3>
+          <div class="login__lady" style="background-image: url(../assets/img/main/girl-login-page.png)">
+          </div>
+        </div>
+        <div class="login__enter">
+          <div class="login__enter-form">
+            <h2 class="login__enter-title">Sign in</h2>
+            <form action="">
+              <div class="login__form-input-list">
+                <div class="login__form-input-holder">
+                  <input type="text" class="login__form-input" placeholder="Email">
+                </div>
+                <div class="login__form-input-holder">
+                  <input type="text" class="login__form-input" placeholder="Password">
+                </div>
+              </div>
+              <div class="login__form-button-wrap">
+                <button class="login__form-button" type="submit">Sign in</button>
+              </div>
+              <div class="login__form-links">
+                <a href="/forgot-password" class="login__form-links-item">Forgot password?</a>
+                <a href="/create-account" class="login__form-links-item">Create account</a>
+              </div>
+            </form>
+          </div>
+          <div class="login__socials">
+            <button class="login__socials-item login__socials-item_google" type="button">
+              <span class="login__socials-item-icon-wrap">
+                <svg width="90" height="92" viewBox="0 0 90 92" xmlns="http://www.w3.org/2000/svg" class="login__socials-item-icon">
+                  <path d="M89.9999 47.1C89.9999 44 89.6999 40.8 89.1999 37.8H45.8999V55.5H70.6999C69.6999 61.2 66.3999 66.2 61.4999 69.4L76.2999 80.9C84.9999 72.8 89.9999 61 89.9999 47.1Z" fill="#4280EF" />
+                  <path d="M45.8999 91.9C58.2999 91.9 68.6999 87.8 76.2999 80.8L61.4999 69.4C57.3999 72.2 52.0999 73.8 45.8999 73.8C33.8999 73.8 23.7999 65.7 20.0999 54.9L4.8999 66.6C12.6999 82.1 28.4999 91.9 45.8999 91.9Z" fill="#34A353" />
+                  <path d="M20.0999 54.8C18.1999 49.1 18.1999 42.9 20.0999 37.2L4.8999 25.4C-1.6001 38.4 -1.6001 53.7 4.8999 66.6L20.0999 54.8Z" fill="#F6B704" />
+                  <path d="M45.8999 18.3C52.3999 18.2 58.7999 20.7 63.4999 25.2L76.5999 12C68.2999 4.20001 57.2999 1.18884e-05 45.8999 0.100012C28.4999 0.100012 12.6999 9.90001 4.8999 25.4L20.0999 37.2C23.7999 26.3 33.8999 18.3 45.8999 18.3Z" fill="#E54335" />
+                </svg>
+              </span> Sign in with Google </button>
+            <button class="login__socials-item login__socials-item_fb" type="button">
+              <span class="login__socials-item-icon-wrap">
+                <svg class="login__socials-item-icon" viewBox="0 0 32 32">
+                  <use href="../assets/img/svg-sprite/sprite.svg#facebook"></use>
+                </svg>
+              </span> Sign in with Facebook </button>
+            <button class="login__socials-item login__socials-item_twitter" type="button">
+              <span class="login__socials-item-icon-wrap">
+                <svg class="login__socials-item-icon" viewBox="0 0 311 254">
+                  <use href="../assets/img/svg-sprite/sprite.svg#twitter-2"></use>
+                </svg>
+              </span> Sign in with Twitter </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <nav class="footer__nav">
+            <div class="footer__nav-col">
+              <div class="footer__nav-link-wrap">
+                <a href="/" class="footer__nav-link">
+                  <img src="../assets/img/main/header-logo.png" alt="Fun topia logo" class="footer__nav-link-img">
+                </a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/about" class="footer__nav-link">About</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/contact" class="footer__nav-link">Contact</a>
+              </div>
+            </div>
+            <div class="footer__nav-col">
+              <div class="footer__nav-link-wrap">
+                <a href="/blog" class="footer__nav-link">Blog</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/how-it-works" class="footer__nav-link">How it works</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/help" class="footer__nav-link">Help &amp; support</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/usc-2257" class="footer__nav-link">USC 2257</a>
+              </div>
+            </div>
+            <div class="footer__nav-col">
+              <div class="footer__nav-link-wrap">
+                <a href="/terms" class="footer__nav-link">Terms</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/privacy" class="footer__nav-link">Privacy</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/cookie-notice" class="footer__nav-link">Cookie Notice</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/dmca" class="footer__nav-link">DMCA</a>
+              </div>
+            </div>
+            <div class="footer__nav-col">
+              <div class="footer__nav-link-wrap">
+                <a href="/usc-2257" class="footer__nav-link">USC 2257</a>
+              </div>
+              <div class="footer__nav-link-wrap">
+                <a href="/dmca" class="footer__nav-link">DMCA</a>
+              </div>
+            </div>
+          </nav>
+          <div class="footer__socials">
+            <div class="footer__socials-list">
+              <a href="/" target="_blank" rel="noopener noreferrer" class="footer__socials-item">
+                <svg class="mailing-popup__channel-icon" viewBox="0 0 32 32">
+                  <use href="../assets/img/svg-sprite/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="/" target="_blank" rel="noopener noreferrer" class="footer__socials-item">
+                <svg class="mailing-popup__channel-icon" viewBox="0 0 32 32">
+                  <use href="../assets/img/svg-sprite/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__payment-modes">
+              <div class="footer__payment-modes-item">
+                <svg class="footer__payment-modes-item-img" viewBox="0 0 152.407 108">
+                  <use href="../assets/img/svg-sprite/sprite.svg#master-card"></use>
+                </svg>
+              </div>
+              <div class="footer__payment-modes-item">
+                <svg class="footer__payment-modes-item-img" viewBox="0 0 2280 1536">
+                  <use href="../assets/img/svg-sprite/sprite.svg#visa"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">Copyright © 2022 OSOMR Limited T/A Fan-Topia. All Rights Reserved</p>
+          <div class="footer__payment-modes">
+            <div class="footer__payment-modes-item">
+              <svg class="footer__payment-modes-item-img" viewBox="0 0 152.407 108">
+                <use href="../assets/img/svg-sprite/sprite.svg#master-card"></use>
+              </svg>
+            </div>
+            <div class="footer__payment-modes-item">
+              <svg class="footer__payment-modes-item-img" viewBox="0 0 2280 1536">
+                <use href="../assets/img/svg-sprite/sprite.svg#visa"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+
+</html>
+</div>
